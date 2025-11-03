@@ -1,13 +1,16 @@
 # Stratagentic.ai Landing Page Design Guidelines
 
 ## Design Approach
-**Reference-Based**: Recreate the aesthetic and tone of has.works - minimalist, high-contrast, monochrome-dominant design with visionary, transformative messaging.
+**Reference-Based**: Recreate the aesthetic and tone of has.works - minimalist, high-contrast design with visionary, transformative messaging.
 
 ## Color System
-- **Primary Dark**: #000000 (dominant background)
-- **Secondary White**: #ffffff (primary text)
-- **Accent Green**: #00FF85 (highlight/CTA color - neon green)
-- **Accent Light**: #f8f8f8 (alternate background sections)
+- **Primary Blue**: #2563EB (hsl 217 84% 53%) - main accent color for CTAs and highlights
+- **Secondary Dark Blue**: #051538 (hsl 221 84% 12%) - deep background color
+- **Tertiary Teal**: #14B8AB (hsl 175 80% 40%) - secondary accent color
+- **Tertiary Dark Teal**: #063733 (hsl 175 80% 12%) - dark teal variant
+- **Base Black**: #000000 - primary dark backgrounds
+- **Base White**: #ffffff - primary light backgrounds and text
+- **Light Background**: #f8f8f8 - alternate section backgrounds
 - **Text Dark**: #111111
 - **Text Light**: #eeeeee
 
@@ -18,6 +21,7 @@
   - H2: Section headings (1.75rem to 3rem)
   - H3: Subsection headings (1.25rem to 2rem)
   - Body: Base text (1rem to 1.125rem)
+  - Manifesto: Large block text (3rem to 5rem) - bold, tight tracking
 - **Style**: Bold, generous sizing with high contrast against backgrounds
 
 ## Spacing System
@@ -34,73 +38,79 @@
 ## Layout Structure
 
 ### 1. Hero Section (Full Viewport)
-- **Background**: Looping video (calm ripple/gradient animation) at 40% opacity
+- **Background**: White
 - **Content**: Vertically and horizontally centered
-- **Heading**: "Your business becomes faster, smarter, lighter."
-- **Subheading**: "You unlock efficiency and scale with intelligent systems designed for progress."
-- **CTA**: Neon green button "Start your transformation"
-- **Treatment**: Dark overlay with white text, video creates subtle motion
+- **Focal Image**: Centered image above headline
+- **Heading**: "Let's make work, feel like less work."
+- **CTA**: Simple button "→ Get started"
+- **Style**: Minimal, clean, inspired by has.works
 
-### 2. Value Proposition Section (Light Background)
-- **Background**: Light accent (#f8f8f8)
-- **Title**: "Your value-driven automation"
-- **Layout**: Three-column responsive grid (auto-fit, minimum 280px columns)
+### 2. Accordion Grid Section
+- **Background**: White
+- **Layout**: Grid of accordion items for different service categories
+- **Categories**: Intelligence & Strategy, Automation & Integration, Experience & Interaction, Growth & Momentum
+- **Interaction**: Click to expand/collapse content
+
+### 3. Value Proposition Section (Light Background)
+- **Background**: White
+- **Title**: "YOUR SERVICES (03)"
+- **Layout**: Three-column responsive grid
 - **Columns**: 
   - Targeted strategy
   - Custom system build  
   - Scaled execution
-- **Text Color**: Dark for readability on light background
+- **Accent**: Blue highlights on hover
 
-### 3. Better World Section (Dark Background)
-- **Background**: Primary dark (#000000)
-- **Title**: "A better world starts within your business"
-- **Content**: Short, poetic paragraph about innovation and progress
-- **Text Color**: Light (#eeeeee)
+### 4. Manifesto Section (Light Background)
+- **Background**: White (#ffffff)
+- **Content**: Large, bold text block (3xl-5xl size)
+- **Text Color**: Black
+- **Max Width**: 4xl container
+- **Text**: Visionary messaging about building better systems
+- **Style**: Creates visual impact through large typography forming a text block
 
-### 4. Offerings Section (Light Background)
-- **Background**: Light accent (#f8f8f8)
-- **Title**: "Your offerings"
+### 5. Offerings Section (Light Background)
+- **Background**: White
+- **Title**: "YOUR OFFERINGS (03)"
 - **Layout**: Three-column grid
-- **Pricing Tiers**:
-  - Single automation — from 30,000 NOK/month
-  - Scaled AI system — from 60,000–120,000 NOK/month
-  - Enterprise bespoke — custom roadmap
-- **Text Color**: Dark
+- **Cards**: Border cards with hover effects (border changes to blue)
+- **Pricing**: No pricing amounts shown
 
-### 5. Case Studies Section (Dark Background)
-- **Background**: Primary dark (#000000)
-- **Title**: "Your results"
-- **Layout**: Two cards with images and result descriptions
-- **Images**: Case study visuals with short result text overlays
-- **Text Color**: Light
+### 6. Results Section (Light Background)
+- **Background**: White
+- **Title**: "YOUR RESULTS (02)"
+- **Layout**: Two-column grid with image cards
+- **Images**: Case study visuals with text overlays
+- **Style**: Dark gradient overlays for text readability
 
-### 6. Contact Section (Dark Background)
-- **Background**: Primary dark (#000000)
+### 7. Contact Section (Light Background)
+- **Background**: White
 - **Title**: "Ready to begin your transformation?"
-- **CTA**: Email link (hello@stratagentic.ai) styled as neon green button
-- **Text Color**: Light
+- **Form**: Contact form with name, email, company, message fields
+- **Email**: Direct email link (hello@stratagentic.ai) with blue hover
+- **Text Color**: Black
 
-### 7. Footer (Minimal)
-- **Background**: Primary dark
+### 8. Footer (Light Background)
+- **Background**: White
 - **Content**: "© 2025 Stratagentic. You create better systems for a better world."
-- **Text Color**: Light, subtle
+- **Text Color**: Black, subtle
 
 ## Component Specifications
 
 ### Buttons
-- **Primary CTA**: Neon green background (#00FF85), black text
-- **Hover State**: Darker green (#00e673)
-- **When on Hero Images**: Blurred background behind button for visibility
-- **No Active/Hover Interactions**: For image-overlay buttons
+- **Primary CTA**: Blue background (#2563EB), white text
+- **Hover State**: Subtle elevation effect
+- **Border**: Clean, minimal styling
 
 ### Grid System
 - **Three-Column Grid**: Auto-fit layout, minimum 280px per column, 32px gap between items
 - **Responsive**: Automatically collapses to fewer columns on smaller screens
 
-### Section Alternation
-- Strict pattern: Dark → Light → Dark → Light → Dark → Dark → Dark
-- Consistent vertical padding using Level 7 spacing (64px)
-- Horizontal padding using Level 3 spacing (24px)
+### Section Design
+- **Background**: Primarily white throughout for clean aesthetic
+- **Borders**: Black borders between sections
+- **Consistent vertical padding**: Using Level 7-8 spacing (64-80px)
+- **Horizontal padding**: Using Level 3 spacing (24px)
 
 ## Animation & Interaction
 
@@ -110,25 +120,25 @@
 - **Duration**: 0.8s ease transition for both opacity and transform
 - **Once Only**: Animation triggers once, doesn't repeat
 
-### Video Background
-- **Format**: MP4, looping
-- **Opacity**: 40% to maintain readability
-- **Style**: Calm, subtle motion (ripple or gradient effect)
+### Hover Effects
+- **Service Cards**: Blue accent color on text
+- **Offering Cards**: Blue border on hover
+- **Buttons**: Subtle elevation and transform
+- **Links**: Blue color on hover
 
 ## Copywriting Voice
 - **Perspective**: Always second-person (you/your), never first-person (we/our/us)
 - **Tone**: Visionary, calm, transformative
-- **Theme**: "A better world, an improved world" - focus on progress, efficiency, clarity
-- **Paragraph Length**: Maximum 25 words per paragraph
+- **Theme**: Progress, efficiency, clarity, building better systems
 - **Language**: Direct, confident, improvement-focused
 
 ## Images
-- **Hero Section**: Video background (ripple-bg.mp4) providing subtle animated texture
-- **Case Studies**: Two case study images (e.g., case1.jpg) showing real project results
+- **Hero Section**: Focal image (centered, above headline)
+- **Results Section**: Two case study images with dark gradient overlays
 - **Treatment**: Images support content, never overwhelm messaging
 
 ## Technical Requirements
-- **File Structure**: Separate index.html, style.css, script.js, /assets folder
 - **Responsive Design**: Mobile-first, fluid typography and spacing
-- **Cross-browser**: Modern browser standards, graceful degradation
-- **Performance**: Optimized video, efficient animations, minimal dependencies
+- **Cross-browser**: Modern browser standards
+- **Performance**: Optimized images, efficient animations
+- **Accessibility**: Proper semantic HTML, ARIA labels where needed

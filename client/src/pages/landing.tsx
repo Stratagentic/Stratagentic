@@ -188,7 +188,7 @@ export default function Landing() {
             data-testid="accordion-intelligence"
           >
             <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#00FF85] transition-transform group-hover:scale-110">+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:scale-110">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
             </div>
             <div className="flex gap-2 justify-end">
@@ -202,7 +202,7 @@ export default function Landing() {
             data-testid="accordion-automation"
           >
             <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#00FF85] transition-transform group-hover:scale-110">+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:scale-110">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation & Integration</h2>
             </div>
             <div className="flex gap-2 justify-end">
@@ -216,7 +216,7 @@ export default function Landing() {
             data-testid="accordion-experience"
           >
             <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#00FF85] transition-transform group-hover:scale-110">+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:scale-110">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience & Interaction</h2>
             </div>
             <div className="flex gap-2 justify-end">
@@ -230,7 +230,7 @@ export default function Landing() {
             data-testid="accordion-growth"
           >
             <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#00FF85] transition-transform group-hover:scale-110">+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:scale-110">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth & Momentum</h2>
             </div>
             <div className="flex gap-2 justify-end">
@@ -254,9 +254,9 @@ export default function Landing() {
           <div className="grid md:grid-cols-3 gap-12">
             <div data-testid="card-value-strategy" className="group">
               <div className="mb-4 transition-all duration-300 group-hover:scale-110">
-                <span className="text-6xl font-bold text-[#00FF85]">+</span>
+                <span className="text-6xl font-bold text-[#2563EB]">+</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
+              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Targeted strategy
               </h3>
               <p className="text-base leading-relaxed">
@@ -265,9 +265,9 @@ export default function Landing() {
             </div>
             <div data-testid="card-value-build" className="group">
               <div className="mb-4 transition-all duration-300 group-hover:scale-110">
-                <span className="text-6xl font-bold text-[#00FF85]">+</span>
+                <span className="text-6xl font-bold text-[#2563EB]">+</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
+              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Custom system build
               </h3>
               <p className="text-base leading-relaxed">
@@ -276,9 +276,9 @@ export default function Landing() {
             </div>
             <div data-testid="card-value-execution" className="group">
               <div className="mb-4 transition-all duration-300 group-hover:scale-110">
-                <span className="text-6xl font-bold text-[#00FF85]">+</span>
+                <span className="text-6xl font-bold text-[#2563EB]">+</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
+              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Scaled execution
               </h3>
               <p className="text-base leading-relaxed">
@@ -296,8 +296,8 @@ export default function Landing() {
         style={{ padding: "var(--space-8) var(--space-3)" }}
         data-testid="section-better-world"
       >
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="text-lg md:text-xl leading-relaxed space-y-6" data-testid="text-better-world-content">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-better-world-content">
             <p>Built for those who imagine better.</p>
             <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
             <p>Just working products. Real implementations. Systems that run quietly in the background while you move forward.</p>
@@ -321,24 +321,24 @@ export default function Landing() {
             YOUR OFFERINGS (03)
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-single">
-              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-single">
+              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Single automation
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
                 You start with one focused solution.
               </p>
             </div>
-            <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-scaled">
-              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-scaled">
+              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Scaled AI system
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
                 You implement comprehensive intelligence.
               </p>
             </div>
-            <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-enterprise">
-              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-enterprise">
+              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Enterprise bespoke
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
@@ -427,7 +427,7 @@ export default function Landing() {
               Or email us directly at{" "}
               <a
                 href="mailto:hello@stratagentic.ai"
-                className="font-bold hover:text-[#00FF85] transition-colors"
+                className="font-bold hover:text-[#2563EB] transition-colors"
                 data-testid="link-email"
               >
                 hello@stratagentic.ai↗
