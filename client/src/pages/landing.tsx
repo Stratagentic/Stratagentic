@@ -195,7 +195,7 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           {/* Intelligence & Strategy */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all border-b border-gray-300"
             data-testid="accordion-intelligence"
             onClick={() => toggleAccordion('intelligence')}
           >
@@ -229,7 +229,7 @@ export default function Landing() {
 
           {/* Automation & Integration */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all border-b border-gray-300"
             data-testid="accordion-automation"
             onClick={() => toggleAccordion('automation')}
           >
@@ -261,7 +261,7 @@ export default function Landing() {
 
           {/* Experience & Interaction */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all border-b border-gray-300"
             data-testid="accordion-experience"
             onClick={() => toggleAccordion('experience')}
           >
@@ -293,7 +293,7 @@ export default function Landing() {
 
           {/* Growth & Momentum */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all border-b border-gray-300"
             data-testid="accordion-growth"
             onClick={() => toggleAccordion('growth')}
           >
