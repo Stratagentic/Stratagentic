@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { pgTable, text, varchar, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, text, varchar, timestamp, jsonb } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -37,3 +37,21 @@ export const insertLeadSchema = createInsertSchema(leads).omit({
 
 export type InsertLead = z.infer<typeof insertLeadSchema>;
 export type Lead = typeof leads.$inferSelect;
+
+export const analytics = pgTable("analytics", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  eventType: text("event_type").notNull(),
+  eventData: jsonb("event_data"),
+  sessionId: text("session_id"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export const insertAnalyticsSchema = createInsertSchema(analytics).omit({
+  id: true,
+  createdAt: true,
+}).extend({
+  eventType: z.enum(["page_view", "form_submit", "cta_click", "scroll_depth", "time_on_page"]),
+});
+
+export type InsertAnalytics = z.infer<typeof insertAnalyticsSchema>;
+export type Analytics = typeof analytics.$inferSelect;

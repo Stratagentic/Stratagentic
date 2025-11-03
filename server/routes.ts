@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertLeadSchema } from "@shared/schema";
+import { insertLeadSchema, insertAnalyticsSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -30,6 +30,24 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Error fetching leads:", error);
       res.status(500).json({ error: "Failed to fetch leads" });
+    }
+  });
+
+  app.post("/api/analytics", async (req, res) => {
+    try {
+      const validatedData = insertAnalyticsSchema.parse(req.body);
+      const event = await storage.trackAnalytics(validatedData);
+      res.status(201).json(event);
+    } catch (error: any) {
+      if (error.name === "ZodError") {
+        const validationError = fromZodError(error);
+        return res.status(400).json({ 
+          error: "Validation failed", 
+          details: validationError.message 
+        });
+      }
+      console.error("Error tracking analytics:", error);
+      res.status(500).json({ error: "Failed to track analytics" });
     }
   });
 

@@ -3,9 +3,37 @@ import { ContactForm } from "@/components/contact-form";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 
+const getSessionId = () => {
+  let sessionId = sessionStorage.getItem('analytics_session_id');
+  if (!sessionId) {
+    sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    sessionStorage.setItem('analytics_session_id', sessionId);
+  }
+  return sessionId;
+};
+
+const trackEvent = async (eventType: string, eventData?: any) => {
+  try {
+    await fetch('/api/analytics', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        eventType,
+        eventData,
+        sessionId: getSessionId(),
+      }),
+    });
+  } catch (error) {
+    console.error('Analytics tracking error:', error);
+  }
+};
+
 export default function Landing() {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
   const [time, setTime] = useState(new Date());
+  const [maxScrollDepth, setMaxScrollDepth] = useState(0);
+  const [nextMilestone, setNextMilestone] = useState(25);
+  const pageLoadTime = useRef(Date.now());
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -14,6 +42,48 @@ export default function Landing() {
 
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    trackEvent('page_view', { 
+      page: 'landing',
+      timestamp: new Date().toISOString() 
+    });
+
+    const handleBeforeUnload = () => {
+      const timeOnPage = Math.floor((Date.now() - pageLoadTime.current) / 1000);
+      navigator.sendBeacon('/api/analytics', JSON.stringify({
+        eventType: 'time_on_page',
+        eventData: { duration: timeOnPage, maxScrollDepth },
+        sessionId: getSessionId(),
+      }));
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [maxScrollDepth]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPercentage = Math.round(
+        (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+      );
+      
+      if (scrollPercentage > maxScrollDepth) {
+        setMaxScrollDepth(scrollPercentage);
+      }
+      
+      if (scrollPercentage >= nextMilestone && nextMilestone <= 100) {
+        trackEvent('scroll_depth', { depth: nextMilestone });
+        setNextMilestone(prev => prev + 25);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [maxScrollDepth, nextMilestone]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -50,6 +120,14 @@ export default function Landing() {
       second: '2-digit',
       hour12: false 
     });
+  };
+
+  const handleCtaClick = () => {
+    trackEvent('cta_click', { 
+      location: 'hero',
+      action: 'scroll_to_contact' 
+    });
+    document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -100,13 +178,13 @@ export default function Landing() {
           >
             You unlock efficiency and scale with intelligent systems designed for progress.
           </p>
-          <a
-            href="mailto:hello@stratagentic.ai"
-            className="inline-block bg-[#00FF85] text-black font-bold px-12 py-4 hover:bg-[#00e673] transition-colors"
+          <button
+            onClick={handleCtaClick}
+            className="inline-block bg-[#00FF85] text-black font-bold px-12 py-4 hover:bg-[#00e673] transition-colors cursor-pointer"
             data-testid="button-hero-cta"
           >
             Start your transformation
-          </a>
+          </button>
         </div>
       </section>
 
@@ -303,6 +381,7 @@ export default function Landing() {
 
       {/* Contact */}
       <section
+        id="contact-section"
         ref={(el) => (sectionsRef.current[4] = el)}
         className="fade-in-section bg-white text-black border-t border-black"
         style={{ padding: "var(--space-8) var(--space-3)" }}

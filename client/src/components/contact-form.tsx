@@ -34,9 +34,21 @@ export function ContactForm() {
     mutationFn: async (data: InsertLead) => {
       return await apiRequest("POST", "/api/leads", data);
     },
-    onSuccess: () => {
+    onSuccess: async () => {
       setIsSubmitted(true);
       form.reset();
+      
+      try {
+        const sessionId = sessionStorage.getItem('analytics_session_id') || 'unknown';
+        await apiRequest("POST", "/api/analytics", {
+          eventType: "form_submit",
+          eventData: { form: "contact", timestamp: new Date().toISOString() },
+          sessionId,
+        });
+      } catch (error) {
+        console.error("Failed to track form submission:", error);
+      }
+      
       toast({
         title: "Message sent!",
         description: "We'll get back to you soon.",
