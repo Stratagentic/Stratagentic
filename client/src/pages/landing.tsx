@@ -162,9 +162,7 @@ export default function Landing() {
             style={{ fontSize: "clamp(3rem, 10vw, 6rem)" }}
             data-testid="text-hero-heading"
           >
-            Let's make work,
-            <br />
-            feel like less work.
+            Let's make work, feel like less work.
           </h1>
           
           {/* CTA Button */}
@@ -421,9 +419,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-12 tracking-tight leading-tight" data-testid="text-contact-heading">
-            Ready to begin
-            <br />
-            your transformation?
+            Ready to begin your transformation?
           </h2>
           <ContactForm />
           <div className="mt-12 pt-12 border-t border-black">
