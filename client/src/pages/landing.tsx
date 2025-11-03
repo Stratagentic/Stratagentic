@@ -130,26 +130,12 @@ export default function Landing() {
       <header className="border-b border-black bg-black" style={{ padding: "var(--space-3)" }}>
         <div className="max-w-[1400px] mx-auto flex justify-between items-start">
           <div>
-            <svg 
-              width="200" 
-              height="32" 
-              viewBox="0 0 200 32" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
+            <img 
+              src="https://stratagentic.ai/assets/stratagenticwhite-DDEPFJWf.png"
+              alt="Stratagentic" 
+              className="h-8"
               data-testid="img-logo"
-            >
-              <text 
-                x="0" 
-                y="24" 
-                fill="white" 
-                fontSize="24" 
-                fontWeight="700" 
-                fontFamily="Inter, system-ui, sans-serif"
-                letterSpacing="-0.02em"
-              >
-                Stratagentic
-              </text>
-            </svg>
+            />
           </div>
           <div className="text-right">
             <div className="text-sm text-white" data-testid="text-time">{formatTime(time)}</div>
