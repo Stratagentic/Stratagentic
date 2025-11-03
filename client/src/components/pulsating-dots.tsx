@@ -41,7 +41,7 @@ export function PulsatingDots({ width = 256, height = 256, className = '' }: Pul
           const x = cx + Math.cos(angle) * ringRadius;
           const y = cy + Math.sin(angle) * ringRadius;
 
-          const brightness = 0.6 + 0.4 * Math.sin((i / rings) * Math.PI);
+          const brightness = (0.6 + 0.4 * Math.sin((i / rings) * Math.PI)) * 0.5;
           // Primary blue: #2563EB = rgb(37, 99, 235)
           ctx.fillStyle = `rgba(37, 99, 235, ${brightness})`;
 
