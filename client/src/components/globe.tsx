@@ -33,7 +33,7 @@ export function Globe({ maxWidth = 512, maxHeight = 512 }: GlobeProps) {
     const { width, height } = dimensions;
 
     const POINTS = 1000;
-    const RADIUS = 250;
+    const RADIUS = Math.min(width, height) * 0.44;
     const COLOR = "#2563EB";
     const points: Array<{ x: number; y: number; z: number; offsetX: number; offsetY: number }> = [];
     let t = 0;
