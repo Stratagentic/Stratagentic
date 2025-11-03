@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ContactForm } from "@/components/contact-form";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
+import heroImage from "@assets/stock_images/minimalist_abstract__58e472cc.jpg";
 
 const getSessionId = () => {
   let sessionId = sessionStorage.getItem('analytics_session_id');
@@ -139,34 +140,43 @@ export default function Landing() {
       </header>
 
       {/* Hero */}
-      <section className="h-screen flex items-center bg-white" style={{ padding: "var(--space-3)" }}>
-        <div className="max-w-[1400px] mx-auto w-full grid md:grid-cols-2 gap-16">
-          <div>
-            <h1
-              className="font-bold leading-none tracking-tighter"
-              style={{ fontSize: "clamp(3rem, 10vw, 8rem)" }}
-              data-testid="text-hero-heading"
-            >
-              Efficient.
-              <br />
-              Intelligent.
-              <br />
-              Automated.
-            </h1>
+      <section className="h-screen flex items-center justify-center bg-white" style={{ padding: "var(--space-3)" }}>
+        <div className="max-w-4xl mx-auto w-full text-center" style={{ padding: "var(--space-7) var(--space-3)" }}>
+          {/* Focal Image */}
+          <div className="mb-12 flex justify-center">
+            <img
+              src={heroImage}
+              alt="Automation"
+              className="w-64 h-auto"
+              data-testid="img-hero-focal"
+            />
           </div>
-          <div className="flex items-center">
-            <div
-              className="text-lg md:text-xl leading-relaxed space-y-4"
-              data-testid="text-hero-subheading"
-            >
-              <p>Built for those who imagine better.</p>
-              <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
-              <p>Just working products. Real implementations. Systems that run quietly in the background while you move forward.</p>
-              <p>Work that took ten hours now takes one. Ideas turn into prototypes, prototypes turn into results — fast, because the world won't slow down to wait.</p>
-              <p>Every project is an exploration: how to make work lighter, decisions sharper, growth inevitable. Close to maximum simplicity, where insight turns into invention.</p>
-              <p>It's not about being big. It's about being awake.</p>
-              <p>You want progress that feels alive. That's what's built here.</p>
-            </div>
+          
+          {/* Headline */}
+          <h1
+            className="font-bold leading-none tracking-tighter mb-8"
+            style={{ fontSize: "clamp(3rem, 10vw, 6rem)" }}
+            data-testid="text-hero-heading"
+          >
+            Efficient.
+            <br />
+            Intelligent.
+            <br />
+            Automated.
+          </h1>
+          
+          {/* Description */}
+          <div
+            className="text-lg md:text-xl leading-relaxed space-y-4 max-w-2xl mx-auto"
+            data-testid="text-hero-subheading"
+          >
+            <p>Built for those who imagine better.</p>
+            <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
+            <p>Just working products. Real implementations. Systems that run quietly in the background while you move forward.</p>
+            <p>Work that took ten hours now takes one. Ideas turn into prototypes, prototypes turn into results — fast, because the world won't slow down to wait.</p>
+            <p>Every project is an exploration: how to make work lighter, decisions sharper, growth inevitable. Close to maximum simplicity, where insight turns into invention.</p>
+            <p>It's not about being big. It's about being awake.</p>
+            <p>You want progress that feels alive. That's what's built here.</p>
           </div>
         </div>
       </section>
