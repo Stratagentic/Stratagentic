@@ -131,9 +131,10 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto flex justify-between items-start">
           <div>
             <img 
-              src="https://stratagentic.ai/assets/stratagenticblack-BIkpLk-k.png"
+              src="https://stratagentic.ai/assets/stratagenticwhite-DDEPFJWf.png"
               alt="Stratagentic" 
               className="h-8"
+              style={{ filter: 'invert(1)' }}
               data-testid="img-logo"
             />
           </div>
