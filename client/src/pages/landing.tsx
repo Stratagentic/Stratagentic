@@ -167,7 +167,7 @@ export default function Landing() {
             }}
             data-testid="text-hero-heading"
           >
-            <span style={{ display: "block", whiteSpace: "nowrap" }}>Let's make work,</span>
+            <span style={{ display: "block", whiteSpace: "nowrap" }}>Let's make work</span>
             <span style={{ display: "block", whiteSpace: "nowrap" }}>feel like less work.</span>
           </h1>
           
