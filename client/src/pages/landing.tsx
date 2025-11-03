@@ -36,6 +36,11 @@ export default function Landing() {
   const [maxScrollDepth, setMaxScrollDepth] = useState(0);
   const [nextMilestone, setNextMilestone] = useState(25);
   const pageLoadTime = useRef(Date.now());
+  const [openAccordion, setOpenAccordion] = useState<string | null>(null);
+
+  const toggleAccordion = (id: string) => {
+    setOpenAccordion(openAccordion === id ? null : id);
+  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -189,62 +194,94 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           {/* Intelligence & Strategy */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all"
             data-testid="accordion-intelligence"
+            onClick={() => toggleAccordion('intelligence')}
           >
-            <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
+            <div className="flex items-center gap-6 mb-6">
+              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'intelligence' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence &<br className="md:hidden" /> Strategy</h2>
             </div>
-            <div className="text-base leading-relaxed">
-              <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
-              <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
-            </div>
+            {openAccordion === 'intelligence' && (
+              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="text-base leading-relaxed">
+                  <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
+                  <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
+                </div>
+                <div className="flex gap-2 justify-end">
+                  {/* Placeholder for images/illustrations */}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Automation & Integration */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all"
             data-testid="accordion-automation"
+            onClick={() => toggleAccordion('automation')}
           >
-            <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
+            <div className="flex items-center gap-6 mb-6">
+              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
             </div>
-            <div className="text-base leading-relaxed">
-              <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
-              <p>Technology begins taking on work so people can focus on what matters.</p>
-            </div>
+            {openAccordion === 'automation' && (
+              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="text-base leading-relaxed">
+                  <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
+                  <p>Technology begins taking on work so people can focus on what matters.</p>
+                </div>
+                <div className="flex gap-2 justify-end">
+                  {/* Placeholder for images/illustrations */}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Experience & Interaction */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all"
             data-testid="accordion-experience"
+            onClick={() => toggleAccordion('experience')}
           >
-            <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
+            <div className="flex items-center gap-6 mb-6">
+              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'experience' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience &<br className="md:hidden" /> Interaction</h2>
             </div>
-            <div className="text-base leading-relaxed">
-              <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
-              <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
-            </div>
+            {openAccordion === 'experience' && (
+              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="text-base leading-relaxed">
+                  <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
+                  <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
+                </div>
+                <div className="flex gap-2 justify-end">
+                  {/* Placeholder for images/illustrations */}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Growth & Momentum */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all"
             data-testid="accordion-growth"
+            onClick={() => toggleAccordion('growth')}
           >
-            <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
+            <div className="flex items-center gap-6 mb-6">
+              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'growth' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth &<br className="md:hidden" /> Momentum</h2>
             </div>
-            <div className="text-base leading-relaxed">
-              <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
-              <p>Growth stops being an event and becomes the natural state of your business.</p>
-            </div>
+            {openAccordion === 'growth' && (
+              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="text-base leading-relaxed">
+                  <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
+                  <p>Growth stops being an event and becomes the natural state of your business.</p>
+                </div>
+                <div className="flex gap-2 justify-end">
+                  {/* Placeholder for images/illustrations */}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
