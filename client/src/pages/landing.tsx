@@ -292,8 +292,7 @@ export default function Landing() {
       {/* Manifesto */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className="fade-in-section bg-white text-black border-t border-black"
-        style={{ padding: "var(--space-8) var(--space-1)" }}
+        className="fade-in-section bg-white text-black border-t border-black py-12 px-6"
         data-testid="section-better-world"
       >
         <div className="max-w-4xl mx-auto text-left">
