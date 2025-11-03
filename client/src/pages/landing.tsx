@@ -191,8 +191,9 @@ export default function Landing() {
               <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence &<br className="md:hidden" /> Strategy</h2>
             </div>
-            <div className="flex gap-2 justify-end">
-              {/* Placeholder for images/content */}
+            <div className="text-base leading-relaxed">
+              <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
+              <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
             </div>
           </div>
 
@@ -205,8 +206,9 @@ export default function Landing() {
               <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
             </div>
-            <div className="flex gap-2 justify-end">
-              {/* Placeholder for images/content */}
+            <div className="text-base leading-relaxed">
+              <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
+              <p>Technology begins taking on work so people can focus on what matters.</p>
             </div>
           </div>
 
@@ -219,8 +221,9 @@ export default function Landing() {
               <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience &<br className="md:hidden" /> Interaction</h2>
             </div>
-            <div className="flex gap-2 justify-end">
-              {/* Placeholder for images/content */}
+            <div className="text-base leading-relaxed">
+              <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
+              <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
             </div>
           </div>
 
@@ -233,8 +236,9 @@ export default function Landing() {
               <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth &<br className="md:hidden" /> Momentum</h2>
             </div>
-            <div className="flex gap-2 justify-end">
-              {/* Placeholder for images/content */}
+            <div className="text-base leading-relaxed">
+              <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
+              <p>Growth stops being an event and becomes the natural state of your business.</p>
             </div>
           </div>
         </div>
@@ -257,10 +261,10 @@ export default function Landing() {
                 <span className="text-6xl font-bold text-[#2563EB]">+</span>
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
-                Targeted strategy
+                Targeted Strategy
               </h3>
               <p className="text-base leading-relaxed">
-                You define clear objectives. Your systems align with business goals.
+                Define clear objectives. Align systems with business goals. Workshops, user cases and best practice to inform and to guide towards team-wide adoption.
               </p>
             </div>
             <div data-testid="card-value-build" className="group">
@@ -268,10 +272,10 @@ export default function Landing() {
                 <span className="text-6xl font-bold text-[#2563EB]">+</span>
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
-                Custom system build
+                Custom System Build
               </h3>
               <p className="text-base leading-relaxed">
-                You receive tailored solutions. Your infrastructure scales with precision.
+                Unique cases needs tailored solutions. Scale  with precision with made-to-measure agentic tooling that improves/removes current and future barriers.
               </p>
             </div>
             <div data-testid="card-value-execution" className="group">
@@ -279,10 +283,10 @@ export default function Landing() {
                 <span className="text-6xl font-bold text-[#2563EB]">+</span>
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
-                Scaled execution
+                Scaled Execution
               </h3>
               <p className="text-base leading-relaxed">
-                You deploy with confidence. Your operations accelerate continuously.
+                Deploy with confidence with proof-of-concept, MVPs or pilot programmes. Accelerate operations continuously as benefits accumulate.
               </p>
             </div>
           </div>
