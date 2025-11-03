@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/contact-form";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 import heroImage from "@assets/stock_images/minimalist_abstract__58e472cc.jpg";
+import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
   let sessionId = sessionStorage.getItem('analytics_session_id');
@@ -126,15 +127,18 @@ export default function Landing() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Header */}
-      <header className="border-b border-black" style={{ padding: "var(--space-3)" }}>
+      <header className="border-b border-black bg-black" style={{ padding: "var(--space-3)" }}>
         <div className="max-w-[1400px] mx-auto flex justify-between items-start">
           <div>
-            <h1 className="font-bold text-xl tracking-tight" data-testid="text-logo">
-              STRATAGENTIC.AI
-            </h1>
+            <img 
+              src={logoImage} 
+              alt="Stratagentic" 
+              className="h-8"
+              data-testid="img-logo"
+            />
           </div>
           <div className="text-right">
-            <div className="text-sm" data-testid="text-time">{formatTime(time)}</div>
+            <div className="text-sm text-white" data-testid="text-time">{formatTime(time)}</div>
           </div>
         </div>
       </header>
