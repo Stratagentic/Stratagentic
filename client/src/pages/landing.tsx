@@ -133,7 +133,7 @@ export default function Landing() {
             <img 
               src="https://stratagentic.ai/assets/stratagenticwhite-DDEPFJWf.png"
               alt="Stratagentic" 
-              className="h-8"
+              className="h-10"
               style={{ filter: 'invert(1)' }}
               data-testid="img-logo"
             />
