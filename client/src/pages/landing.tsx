@@ -293,10 +293,10 @@ export default function Landing() {
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
         className="fade-in-section bg-white text-black border-t border-black"
-        style={{ padding: "var(--space-8) var(--space-3)" }}
+        style={{ padding: "var(--space-8) var(--space-1)" }}
         data-testid="section-better-world"
       >
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-left">
           <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-better-world-content">
             <p>Built for those who imagine better.</p>
             <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
