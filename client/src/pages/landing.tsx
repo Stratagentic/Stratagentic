@@ -153,11 +153,16 @@ export default function Landing() {
           
           {/* Headline */}
           <h1
-            className="font-bold leading-none tracking-tighter mb-8"
-            style={{ fontSize: "clamp(3rem, 10vw, 6rem)" }}
+            className="font-bold mb-8"
+            style={{ 
+              fontSize: "clamp(1.4rem, 5.5vw + 0.5rem, 5.5rem)",
+              lineHeight: "0.92",
+              letterSpacing: "-0.04em"
+            }}
             data-testid="text-hero-heading"
           >
-            Let's make work,<br />feel like less work.
+            <span style={{ display: "block", whiteSpace: "nowrap" }}>Let's make work,</span>
+            <span style={{ display: "block", whiteSpace: "nowrap" }}>feel like less work.</span>
           </h1>
           
           {/* CTA Button */}
