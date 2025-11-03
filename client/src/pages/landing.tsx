@@ -292,7 +292,7 @@ export default function Landing() {
       {/* Manifesto */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className="fade-in-section bg-white text-black border-t border-black"
+        className="fade-in-section bg-white text-black"
         data-testid="section-better-world"
       >
         <div className="max-w-[1400px] mx-auto">
@@ -310,7 +310,7 @@ export default function Landing() {
       {/* Offerings */}
       <section
         ref={(el) => (sectionsRef.current[2] = el)}
-        className="fade-in-section bg-white text-black border-t border-black"
+        className="fade-in-section bg-white text-black"
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-offerings"
       >
