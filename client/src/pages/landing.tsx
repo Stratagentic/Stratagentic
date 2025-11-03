@@ -290,14 +290,11 @@ export default function Landing() {
       {/* Services */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
-        className="fade-in-section border-t border-black"
+        className="fade-in-section"
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-value-proposition"
       >
         <div className="max-w-[1400px] mx-auto">
-          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-value-heading">
-            YOUR SERVICES (03)
-          </h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div data-testid="card-value-strategy" className="group">
               <div className="mb-4 transition-all duration-300 origin-left group-hover:scale-110">
