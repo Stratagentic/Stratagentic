@@ -301,7 +301,7 @@ export default function Landing() {
             <p>Built for those who imagine better.</p>
             <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
             <p>Just working systems. Real implementations. Actions that run quietly in the background while you move forward.</p>
-            <p>Work that took ten hours now takes one. Ideas turn into prototypes, prototypes turn into results — fast, because the world won't slow down to wait.</p>
+            <p>Work that took ten hours now takes one. Ideas turn into prototypes, prototypes turn into results - fast, because the world won't slow down to wait.</p>
             <p>Every project is an exploration: how to make work lighter, decisions sharper, growth inevitable. Close to maximum simplicity, where insight turns into invention.</p>
             <p>It's not about being big. It's about being awake to progress.</p>
             </div>
