@@ -1,0 +1,113 @@
+You are a web designer and developer building a landing page for Stratagentic.ai. 
+The goal is to recreate the aesthetic, layout, and tone of https://has.works/ while adapting the content and structure for Stratagentic’s message.
+
+Follow these exact creative and technical directions:
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+STYLE & AESTHETIC:
+- Minimalist, high-contrast, monochrome-dominant design with bursts of neon green accent (#00FF85).
+- Full-screen hero section with centered text and subtle video background (e.g., calm ripple or gradient animation).
+- Large, bold typography (Inter font) with generous white/dark space.
+- Smooth fade-in transitions on scroll.
+- No “we/our”; always “you/your”.
+- Tone: visionary, calm, transformative — “a better world, an improved world”.
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+COLOUR SYSTEM:
+:root {
+  --brand-primary: #000000;      /* dominant dark */
+  --brand-secondary: #ffffff;    /* white text */
+  --accent-green: #00FF85;       /* highlight accent */
+  --accent-light: #f8f8f8;       /* alternate background */
+  --text-dark: #111111;
+  --text-light: #eeeeee;
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+STRUCTURE:
+File tree:
+  /index.html
+  /style.css
+  /script.js
+  /assets/
+    ripple-bg.mp4
+    /images/
+      case1.jpg
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+HTML CONTENT OUTLINE (index.html):
+
+1. HERO SECTION
+   - Full viewport height.
+   - Background: looping video (assets/ripple-bg.mp4).
+   - Heading: “Your business becomes faster, smarter, lighter.”
+   - Subheading: “You unlock efficiency and scale with intelligent systems designed for progress.”
+   - CTA button: “Start your transformation”.
+
+2. VALUE PROPOSITION SECTION (light background)
+   - Title: “Your value-driven automation”.
+   - Three columns: Targeted strategy, Custom system build, Scaled execution.
+
+3. BETTER WORLD SECTION (dark background)
+   - Title: “A better world starts within your business”.
+   - Short poetic paragraph about innovation and progress.
+
+4. OFFERINGS SECTION (light background)
+   - Title: “Your offerings”.
+   - Three columns:
+     • Single automation — from 30 000 NOK/month.
+     • Scaled AI system — from 60 000–120 000 NOK/month.
+     • Enterprise bespoke — custom roadmap.
+
+5. CASE STUDIES SECTION (dark background)
+   - Title: “Your results”.
+   - Two cards with image + short result text.
+
+6. CONTACT SECTION (dark background)
+   - Title: “Ready to begin your transformation?”
+   - CTA: mailto:hello@stratagentic.ai.
+
+7. FOOTER
+   - Minimal text: “© 2025 Stratagentic. You create better systems for a better world.”
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+CSS LOGIC (style.css):
+- Body: background var(--brand-primary); text color var(--text-light).
+- Sections alternate `.dark-bg` and `.light-bg`.
+- Hero text centered vertically with overlay color and video opacity 0.4.
+- `.btn`: accent-green background, black text, hover darkens to #00e673.
+- `.grid-3`: responsive auto-fit grid (min 280px columns).
+- Scroll fade-in animation defined via IntersectionObserver.
+- section.fade-in: opacity:1; transform:translateY(0).
+
+Include fade-in CSS:
+section {opacity:0; transform:translateY(40px); transition:opacity 0.8s ease, transform 0.8s ease;}
+section.fade-in {opacity:1; transform:translateY(0);}
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+SCRIPT (script.js):
+Use IntersectionObserver to fade in each <section> as it enters viewport:
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('section').forEach(s => observer.observe(s));
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+COPYWRITING RULES:
+- Never use “we”, “our”, or “us”.
+- Always address “you” or “your”.
+- Every section communicates improvement, progress, clarity, or transformation.
+- Keep paragraphs short, under 25 words each.
+- Maintain the theme: “You unlock efficiency. You scale. A better world, an improved world.”
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+OUTPUT REQUIREMENT:
+Generate complete working files (index.html, style.css, script.js) formatted for direct use in Replit HTML/CSS/JS project. 
+Ensure responsive design, correct linking between files, and ready to host instantly.
