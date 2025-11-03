@@ -157,7 +157,7 @@ export default function Landing() {
             style={{ fontSize: "clamp(3rem, 10vw, 6rem)" }}
             data-testid="text-hero-heading"
           >
-            Let's make work, feel like less work.
+            Let's make work,<br />feel like less work.
           </h1>
           
           {/* CTA Button */}
