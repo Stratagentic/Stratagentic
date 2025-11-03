@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { ContactForm } from "@/components/contact-form";
+import { PulsatingDots } from "@/components/pulsating-dots";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
-import heroImage from "@assets/stock_images/minimalist_abstract__58e472cc.jpg";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -146,14 +146,9 @@ export default function Landing() {
       {/* Hero */}
       <section className="h-screen flex items-center justify-center bg-white" style={{ padding: "var(--space-3)" }}>
         <div className="max-w-4xl mx-auto w-full text-center" style={{ padding: "var(--space-7) var(--space-3)" }}>
-          {/* Focal Image */}
+          {/* Focal Animation */}
           <div className="mb-12 flex justify-center">
-            <img
-              src={heroImage}
-              alt="Automation"
-              className="w-64 h-auto"
-              data-testid="img-hero-focal"
-            />
+            <PulsatingDots width={256} height={256} />
           </div>
           
           {/* Headline */}
