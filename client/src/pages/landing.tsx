@@ -1,9 +1,16 @@
-import { useEffect, useRef } from "react";
-import { Button } from "@/components/ui/button";
-import { Mail } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Landing() {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,9 +40,32 @@ export default function Landing() {
     };
   }, []);
 
+  const formatTime = (date: Date) => {
+    return date.toLocaleTimeString('en-US', { 
+      hour: '2-digit', 
+      minute: '2-digit', 
+      second: '2-digit',
+      hour12: false 
+    });
+  };
+
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-white text-black">
+      {/* Header */}
+      <header className="border-b border-black" style={{ padding: "var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto flex justify-between items-start">
+          <div>
+            <h1 className="font-bold text-xl tracking-tight" data-testid="text-logo">
+              STRATAGENTIC.AI
+            </h1>
+          </div>
+          <div className="text-right">
+            <div className="text-sm" data-testid="text-time">{formatTime(time)}</div>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero */}
       <section className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
         <video
           className="hero-video-bg"
@@ -51,348 +81,229 @@ export default function Landing() {
           />
         </video>
         <div className="hero-overlay" />
-        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto" style={{ paddingTop: "var(--space-4)", paddingBottom: "var(--space-4)" }}>
+        <div className="relative z-10 text-center max-w-5xl mx-auto" style={{ padding: "var(--space-7) var(--space-3)" }}>
           <h1
-            className="font-bold leading-tight tracking-tight"
-            style={{ 
-              fontSize: "var(--fs-h1)",
-              marginBottom: "var(--space-5)"
-            }}
+            className="font-bold leading-none tracking-tighter mb-8"
+            style={{ fontSize: "clamp(2.5rem, 8vw, 6rem)" }}
             data-testid="text-hero-heading"
           >
-            Your business becomes faster, smarter, lighter.
+            Your business becomes
+            <br />
+            faster, smarter, lighter.
           </h1>
           <p
-            className="max-w-3xl mx-auto leading-relaxed text-gray-200"
-            style={{ 
-              fontSize: "var(--fs-h3)",
-              marginBottom: "var(--space-6)"
-            }}
+            className="text-lg md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed text-gray-200"
             data-testid="text-hero-subheading"
           >
-            You unlock efficiency and scale with intelligent systems designed
-            for progress.
+            You unlock efficiency and scale with intelligent systems designed for progress.
           </p>
-          <Button
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-[#00e673] transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl"
-            style={{
-              paddingLeft: "var(--space-6)",
-              paddingRight: "var(--space-6)",
-              paddingTop: "var(--space-4)",
-              paddingBottom: "var(--space-4)",
-              fontSize: "var(--fs-base)"
-            }}
+          <a
+            href="mailto:hello@stratagentic.ai"
+            className="inline-block bg-[#00FF85] text-black font-bold px-12 py-4 hover:bg-[#00e673] transition-colors"
             data-testid="button-hero-cta"
           >
             Start your transformation
-          </Button>
+          </a>
         </div>
       </section>
 
-      {/* Value Proposition Section */}
+      {/* Intro */}
+      <section style={{ padding: "var(--space-7) var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-8">
+          <div>
+            <p className="text-5xl font-bold leading-tight tracking-tight" data-testid="text-intro-heading">
+              Transformation built for progress.
+            </p>
+          </div>
+          <div>
+            <p className="text-lg leading-relaxed" data-testid="text-intro-description">
+              STRATAGENTIC.AI is your partner in intelligent automation. You explore the intersection of strategy, technology, and execution.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
-        className="fade-in-section bg-[#f8f8f8] text-gray-900"
-        style={{ 
-          paddingTop: "var(--space-8)",
-          paddingBottom: "var(--space-8)",
-          paddingLeft: "var(--space-3)",
-          paddingRight: "var(--space-3)"
-        }}
+        className="fade-in-section border-t border-black"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-value-proposition"
       >
-        <div className="max-w-7xl mx-auto">
-          <h2
-            className="font-bold text-center tracking-tight"
-            style={{ 
-              fontSize: "var(--fs-h2)",
-              marginBottom: "var(--space-7)"
-            }}
-            data-testid="text-value-heading"
-          >
-            Your value-driven automation
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-value-heading">
+            YOURSERVICES(03)
           </h2>
-          <div
-            className="grid"
-            style={{
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "var(--space-6)"
-            }}
-          >
-            <div className="text-center" data-testid="card-value-strategy">
-              <h3
-                className="font-semibold"
-                style={{ 
-                  fontSize: "var(--fs-h3)",
-                  marginBottom: "var(--space-3)"
-                }}
-              >
-                Targeted strategy
+          <div className="grid md:grid-cols-3 gap-12">
+            <div data-testid="card-value-strategy">
+              <div className="mb-4">
+                <span className="text-6xl font-bold">+</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 tracking-tight">
+                Targetedstrategy
               </h3>
-              <p style={{ fontSize: "var(--fs-base)" }} className="text-gray-700 leading-relaxed">
-                You define clear objectives. Your systems align with business
-                goals.
+              <p className="text-base leading-relaxed">
+                You define clear objectives. Your systems align with business goals.
               </p>
             </div>
-            <div className="text-center" data-testid="card-value-build">
-              <h3
-                className="font-semibold"
-                style={{ 
-                  fontSize: "var(--fs-h3)",
-                  marginBottom: "var(--space-3)"
-                }}
-              >
-                Custom system build
+            <div data-testid="card-value-build">
+              <div className="mb-4">
+                <span className="text-6xl font-bold">+</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 tracking-tight">
+                Customsystembuild
               </h3>
-              <p style={{ fontSize: "var(--fs-base)" }} className="text-gray-700 leading-relaxed">
-                You receive tailored solutions. Your infrastructure scales with
-                precision.
+              <p className="text-base leading-relaxed">
+                You receive tailored solutions. Your infrastructure scales with precision.
               </p>
             </div>
-            <div className="text-center" data-testid="card-value-execution">
-              <h3
-                className="font-semibold"
-                style={{ 
-                  fontSize: "var(--fs-h3)",
-                  marginBottom: "var(--space-3)"
-                }}
-              >
-                Scaled execution
+            <div data-testid="card-value-execution">
+              <div className="mb-4">
+                <span className="text-6xl font-bold">+</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 tracking-tight">
+                Scaledexecution
               </h3>
-              <p style={{ fontSize: "var(--fs-base)" }} className="text-gray-700 leading-relaxed">
-                You deploy with confidence. Your operations accelerate
-                continuously.
+              <p className="text-base leading-relaxed">
+                You deploy with confidence. Your operations accelerate continuously.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Better World Section */}
+      {/* Manifesto */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className="fade-in-section bg-black text-white"
-        style={{ 
-          paddingTop: "var(--space-8)",
-          paddingBottom: "var(--space-8)",
-          paddingLeft: "var(--space-3)",
-          paddingRight: "var(--space-3)"
-        }}
+        className="fade-in-section bg-black text-white border-t border-white"
+        style={{ padding: "var(--space-8) var(--space-3)" }}
         data-testid="section-better-world"
       >
-        <div className="max-w-4xl mx-auto text-center">
-          <h2
-            className="font-bold tracking-tight"
-            style={{ 
-              fontSize: "var(--fs-h2)",
-              marginBottom: "var(--space-6)"
-            }}
-            data-testid="text-better-world-heading"
-          >
-            A better world starts within your business
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-better-world-heading">
+            STRATAGENTIC.AI
           </h2>
-          <p
-            className="leading-relaxed text-gray-300 max-w-2xl mx-auto"
-            style={{ fontSize: "var(--fs-base)" }}
-            data-testid="text-better-world-content"
-          >
-            You innovate with purpose. Your transformation creates ripples of
-            progress. Systems become lighter, decisions become clearer, and
-            every advancement builds a foundation for continuous improvement.
+          <p className="text-4xl md:text-5xl font-bold leading-tight tracking-tight" style={{ wordSpacing: '-0.3em' }} data-testid="text-better-world-content">
+            Abetterworldstartswithin yourbusiness. Nolongmeetings. Nocomplexprocesses. Nowaitinggames. Justasystemthatmovesfast,executessmart,andisn'tafraidtoevolve. Everydecisionisclosertoimpact. Everyactionpullsmorethanitspayload. That'showtransformationstayslean,alive,andmovingforward. Progressoverprocess.Always.
           </p>
         </div>
       </section>
 
-      {/* Offerings Section */}
+      {/* Offerings */}
       <section
         ref={(el) => (sectionsRef.current[2] = el)}
-        className="fade-in-section bg-[#f8f8f8] text-gray-900"
+        className="fade-in-section bg-white text-black border-t border-black"
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-offerings"
       >
-        <div className="max-w-7xl mx-auto">
-          <h2
-            className="font-bold text-center mb-12"
-            style={{ fontSize: "var(--fs-h2)" }}
-            data-testid="text-offerings-heading"
-          >
-            Your offerings
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-offerings-heading">
+            YOUROFFERINGS(03)
           </h2>
-          <div
-            className="grid gap-8"
-            style={{
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            }}
-          >
-            <div
-              className="bg-white p-8 rounded-md border border-gray-200"
-              data-testid="card-offering-single"
-            >
-              <h3
-                className="font-semibold mb-4"
-                style={{ fontSize: "var(--fs-h3)" }}
-              >
-                Single automation
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="border border-black p-8" data-testid="card-offering-single">
+              <h3 className="text-xl font-bold mb-4 tracking-tight">
+                Singleautomation
               </h3>
-              <p
-                className="text-gray-600 mb-4"
-                style={{ fontSize: "var(--fs-base)" }}
-              >
+              <p className="text-sm mb-6 leading-relaxed">
                 You start with one focused solution.
               </p>
-              <p className="font-bold text-2xl" data-testid="text-price-single">
-                From 30,000 NOK/month
+              <p className="font-bold text-lg" data-testid="text-price-single">
+                From30,000NOK/month
               </p>
             </div>
-            <div
-              className="bg-white p-8 rounded-md border border-gray-200"
-              data-testid="card-offering-scaled"
-            >
-              <h3
-                className="font-semibold mb-4"
-                style={{ fontSize: "var(--fs-h3)" }}
-              >
-                Scaled AI system
+            <div className="border border-black p-8" data-testid="card-offering-scaled">
+              <h3 className="text-xl font-bold mb-4 tracking-tight">
+                ScaledAIsystem
               </h3>
-              <p
-                className="text-gray-600 mb-4"
-                style={{ fontSize: "var(--fs-base)" }}
-              >
+              <p className="text-sm mb-6 leading-relaxed">
                 You implement comprehensive intelligence.
               </p>
-              <p className="font-bold text-2xl" data-testid="text-price-scaled">
-                From 60,000–120,000 NOK/month
+              <p className="font-bold text-lg" data-testid="text-price-scaled">
+                From60,000–120,000NOK/month
               </p>
             </div>
-            <div
-              className="bg-white p-8 rounded-md border border-gray-200"
-              data-testid="card-offering-enterprise"
-            >
-              <h3
-                className="font-semibold mb-4"
-                style={{ fontSize: "var(--fs-h3)" }}
-              >
-                Enterprise bespoke
+            <div className="border border-black p-8" data-testid="card-offering-enterprise">
+              <h3 className="text-xl font-bold mb-4 tracking-tight">
+                Enterprisebespoke
               </h3>
-              <p
-                className="text-gray-600 mb-4"
-                style={{ fontSize: "var(--fs-base)" }}
-              >
+              <p className="text-sm mb-6 leading-relaxed">
                 You build a custom roadmap.
               </p>
-              <p
-                className="font-bold text-2xl"
-                data-testid="text-price-enterprise"
-              >
-                Custom engagement
+              <p className="font-bold text-lg" data-testid="text-price-enterprise">
+                Customengagement
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Case Studies Section */}
+      {/* Results */}
       <section
         ref={(el) => (sectionsRef.current[3] = el)}
-        className="fade-in-section bg-black text-white"
+        className="fade-in-section bg-white text-black border-t border-black"
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-case-studies"
       >
-        <div className="max-w-7xl mx-auto">
-          <h2
-            className="font-bold text-center mb-12"
-            style={{ fontSize: "var(--fs-h2)" }}
-            data-testid="text-case-studies-heading"
-          >
-            Your results
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-case-studies-heading">
+            YOURRESULTS(02)
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div
-              className="relative overflow-hidden rounded-md group"
-              data-testid="card-case-study-1"
-            >
-              <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <p
-                    className="text-gray-400 mb-2"
-                    style={{ fontSize: "var(--fs-base)" }}
-                  >
-                    Manufacturing
-                  </p>
-                  <p
-                    className="font-semibold"
-                    style={{ fontSize: "var(--fs-h3)" }}
-                  >
-                    60% efficiency increase
-                  </p>
-                </div>
+            <div className="border border-black aspect-[4/3] flex flex-col justify-end p-8" data-testid="card-case-study-1">
+              <div>
+                <p className="text-sm mb-2">Manufacturing</p>
+                <p className="text-3xl font-bold tracking-tight">
+                  60%efficiencyincrease
+                </p>
               </div>
             </div>
-            <div
-              className="relative overflow-hidden rounded-md group"
-              data-testid="card-case-study-2"
-            >
-              <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <p
-                    className="text-gray-400 mb-2"
-                    style={{ fontSize: "var(--fs-base)" }}
-                  >
-                    Logistics
-                  </p>
-                  <p
-                    className="font-semibold"
-                    style={{ fontSize: "var(--fs-h3)" }}
-                  >
-                    40% cost reduction
-                  </p>
-                </div>
+            <div className="border border-black aspect-[4/3] flex flex-col justify-end p-8" data-testid="card-case-study-2">
+              <div>
+                <p className="text-sm mb-2">Logistics</p>
+                <p className="text-3xl font-bold tracking-tight">
+                  40%costreduction
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact */}
       <section
         ref={(el) => (sectionsRef.current[4] = el)}
-        className="fade-in-section bg-black text-white"
-        style={{ padding: "var(--space-7) var(--space-3)" }}
+        className="fade-in-section bg-white text-black border-t border-black"
+        style={{ padding: "var(--space-8) var(--space-3)" }}
         data-testid="section-contact"
       >
-        <div className="max-w-4xl mx-auto text-center">
-          <h2
-            className="font-bold mb-8"
-            style={{ fontSize: "var(--fs-h2)" }}
-            data-testid="text-contact-heading"
-          >
-            Ready to begin your transformation?
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight leading-tight" data-testid="text-contact-heading">
+            Readytobegin
+            <br />
+            yourtransformation?
           </h2>
           <a
             href="mailto:hello@stratagentic.ai"
+            className="inline-block text-4xl md:text-5xl font-bold hover:text-[#00FF85] transition-colors tracking-tight"
             data-testid="button-contact-cta"
           >
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-[#00e673] font-semibold px-8 py-6 text-lg"
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              hello@stratagentic.ai
-            </Button>
+            hello@stratagentic.ai↗
           </a>
         </div>
       </section>
 
       {/* Footer */}
       <footer
-        className="bg-black text-gray-500 text-center border-t border-gray-800"
+        className="bg-white text-black border-t border-black"
         style={{ padding: "var(--space-5) var(--space-3)" }}
         data-testid="footer"
       >
-        <p style={{ fontSize: "var(--fs-base)" }} data-testid="text-footer">
-          © 2025 Stratagentic. You create better systems for a better world.
-        </p>
+        <div className="max-w-[1400px] mx-auto text-sm">
+          <p data-testid="text-footer">
+            ©2025Stratagentic.Youcreatebettersystemsforabetterworld.
+          </p>
+        </div>
       </footer>
     </div>
   );
