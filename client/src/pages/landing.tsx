@@ -167,19 +167,14 @@ export default function Landing() {
             feel like less work.
           </h1>
           
-          {/* Description */}
-          <div
-            className="text-lg md:text-xl leading-relaxed space-y-4 max-w-2xl mx-auto"
-            data-testid="text-hero-subheading"
+          {/* CTA Button */}
+          <button 
+            className="inline-flex items-center justify-center bg-black text-white px-6 py-3 text-sm hover-elevate active-elevate-2 transition-all"
+            data-testid="button-hero-cta"
           >
-            <p>Built for those who imagine better.</p>
-            <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
-            <p>Just working products. Real implementations. Systems that run quietly in the background while you move forward.</p>
-            <p>Work that took ten hours now takes one. Ideas turn into prototypes, prototypes turn into results — fast, because the world won't slow down to wait.</p>
-            <p>Every project is an exploration: how to make work lighter, decisions sharper, growth inevitable. Close to maximum simplicity, where insight turns into invention.</p>
-            <p>It's not about being big. It's about being awake.</p>
-            <p>You want progress that feels alive. That's what's built here.</p>
-          </div>
+            <span className="mr-2">→</span>
+            Get started
+          </button>
         </div>
       </section>
 
@@ -256,7 +251,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-value-heading">
-            YOURSERVICES(03)
+            YOUR SERVICES (03)
           </h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div data-testid="card-value-strategy" className="group">
@@ -264,7 +259,7 @@ export default function Landing() {
                 <span className="text-6xl font-bold text-[#00FF85]">+</span>
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
-                Targetedstrategy
+                Targeted strategy
               </h3>
               <p className="text-base leading-relaxed">
                 You define clear objectives. Your systems align with business goals.
@@ -275,7 +270,7 @@ export default function Landing() {
                 <span className="text-6xl font-bold text-[#00FF85]">+</span>
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
-                Customsystembuild
+                Custom system build
               </h3>
               <p className="text-base leading-relaxed">
                 You receive tailored solutions. Your infrastructure scales with precision.
@@ -286,7 +281,7 @@ export default function Landing() {
                 <span className="text-6xl font-bold text-[#00FF85]">+</span>
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
-                Scaledexecution
+                Scaled execution
               </h3>
               <p className="text-base leading-relaxed">
                 You deploy with confidence. Your operations accelerate continuously.
@@ -299,17 +294,20 @@ export default function Landing() {
       {/* Manifesto */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className="fade-in-section bg-black text-white border-t border-white"
+        className="fade-in-section bg-white text-black border-t border-black"
         style={{ padding: "var(--space-8) var(--space-3)" }}
         data-testid="section-better-world"
       >
-        <div className="max-w-[1400px] mx-auto">
-          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-better-world-heading">
-            STRATAGENTIC.AI
-          </h2>
-          <p className="text-4xl md:text-5xl font-bold leading-tight tracking-tight" style={{ wordSpacing: '-0.3em' }} data-testid="text-better-world-content">
-            Abetterworldstartswithin yourbusiness. Nolongmeetings. Nocomplexprocesses. Nowaitinggames. Justasystemthatmovesfast,executessmart,andisn'tafraidtoevolve. Everydecisionisclosertoimpact. Everyactionpullsmorethanitspayload. That'showtransformationstayslean,alive,andmovingforward. Progressoverprocess.Always.
-          </p>
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="text-lg md:text-xl leading-relaxed space-y-6" data-testid="text-better-world-content">
+            <p>Built for those who imagine better.</p>
+            <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
+            <p>Just working products. Real implementations. Systems that run quietly in the background while you move forward.</p>
+            <p>Work that took ten hours now takes one. Ideas turn into prototypes, prototypes turn into results — fast, because the world won't slow down to wait.</p>
+            <p>Every project is an exploration: how to make work lighter, decisions sharper, growth inevitable. Close to maximum simplicity, where insight turns into invention.</p>
+            <p>It's not about being big. It's about being awake.</p>
+            <p>You want progress that feels alive. That's what's built here.</p>
+          </div>
         </div>
       </section>
 
@@ -322,40 +320,31 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-offerings-heading">
-            YOUROFFERINGS(03)
+            YOUR OFFERINGS (03)
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-single">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
-                Singleautomation
+                Single automation
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
                 You start with one focused solution.
               </p>
-              <p className="font-bold text-lg" data-testid="text-price-single">
-                From30,000NOK/month
-              </p>
             </div>
             <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-scaled">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
-                ScaledAIsystem
+                Scaled AI system
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
                 You implement comprehensive intelligence.
               </p>
-              <p className="font-bold text-lg" data-testid="text-price-scaled">
-                From60,000–120,000NOK/month
-              </p>
             </div>
             <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-enterprise">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
-                Enterprisebespoke
+                Enterprise bespoke
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
                 You build a custom roadmap.
-              </p>
-              <p className="font-bold text-lg" data-testid="text-price-enterprise">
-                Customengagement
               </p>
             </div>
           </div>
@@ -371,7 +360,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-case-studies-heading">
-            YOURRESULTS(02)
+            YOUR RESULTS (02)
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border border-black overflow-hidden group" data-testid="card-case-study-1">
@@ -386,7 +375,7 @@ export default function Landing() {
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                   <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Manufacturing</p>
                   <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                    60%efficiency
+                    60% efficiency
                     <br />
                     increase
                   </p>
@@ -408,7 +397,7 @@ export default function Landing() {
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                   <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Logistics</p>
                   <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                    40%cost
+                    40% cost
                     <br />
                     reduction
                   </p>
@@ -432,9 +421,9 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-12 tracking-tight leading-tight" data-testid="text-contact-heading">
-            Readytobegin
+            Ready to begin
             <br />
-            yourtransformation?
+            your transformation?
           </h2>
           <ContactForm />
           <div className="mt-12 pt-12 border-t border-black">
@@ -460,7 +449,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto text-sm">
           <p data-testid="text-footer">
-            ©2025Stratagentic.Youcreatebettersystemsforabetterworld.
+            © 2025 Stratagentic. You create better systems for a better world.
           </p>
         </div>
       </footer>
