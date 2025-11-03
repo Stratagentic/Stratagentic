@@ -167,7 +167,7 @@ export default function Landing() {
           
           {/* Description */}
           <p className="text-sm mb-8 max-w-2xl mx-auto leading-relaxed" data-testid="text-hero-description">
-            Stratagentic is a strategy and AI & automation studio based in Norway. Built by experienced consultants and technologists, we move fast and deliver systems that think, adapt, and perform at scale. Our work combines strategy, design, and intelligent automation to make growth measurable and sustainable.
+            Stratagentic is an independent strategy and AI & automation studio based in Norway. We move fast and combine strategy, design, and intelligent automation to make growth measurable and sustainable.
           </p>
           
           {/* CTA Button */}
