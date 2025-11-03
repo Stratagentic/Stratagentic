@@ -318,7 +318,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-offerings-heading">
-            YOUR OFFERINGS (03)
+            Ready to start?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-single">
@@ -326,7 +326,7 @@ export default function Landing() {
                 Single automation
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
-                You start with one focused solution.
+                Start with one focused solution
               </p>
             </div>
             <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-scaled">
@@ -334,7 +334,7 @@ export default function Landing() {
                 Scaled AI system
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
-                You implement comprehensive intelligence.
+                Implement comprehensive intelligence
               </p>
             </div>
             <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-enterprise">
@@ -342,7 +342,7 @@ export default function Landing() {
                 Enterprise bespoke
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
-                You build a custom roadmap.
+                Build a custom roadmap
               </p>
             </div>
           </div>
