@@ -45,7 +45,8 @@ export function PulsatingDots({ width = 256, height = 256, className = '' }: Pul
           // Primary blue: #2563EB = rgb(37, 99, 235)
           ctx.fillStyle = `rgba(37, 99, 235, ${brightness})`;
 
-          const size = 1.2 + 1.2 * Math.sin(t * 0.05 + i * 0.5);
+          const baseSize = 0.7 + 0.7 * Math.sin(t * 0.05 + i * 0.5);
+          const size = Math.max(0.75, baseSize); // Enforce minimum radius for visibility
           ctx.beginPath();
           ctx.arc(x, y, size, 0, Math.PI * 2);
           ctx.fill();
