@@ -210,7 +210,9 @@ export default function Landing() {
                   <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
                 </div>
                 <div className="flex gap-2 justify-end">
-                  {/* Placeholder for images/illustrations */}
+                  <div className="w-32 h-24 bg-[#2563EB]"></div>
+                  <div className="w-32 h-24 bg-[#14B8AB]"></div>
+                  <div className="w-32 h-24 bg-[#063733]"></div>
                 </div>
               </div>
             )}
@@ -233,7 +235,8 @@ export default function Landing() {
                   <p>Technology begins taking on work so people can focus on what matters.</p>
                 </div>
                 <div className="flex gap-2 justify-end">
-                  {/* Placeholder for images/illustrations */}
+                  <div className="w-40 h-24 bg-[#063733]"></div>
+                  <div className="w-40 h-24 bg-[#2563EB]"></div>
                 </div>
               </div>
             )}
@@ -256,7 +259,8 @@ export default function Landing() {
                   <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
                 </div>
                 <div className="flex gap-2 justify-end">
-                  {/* Placeholder for images/illustrations */}
+                  <div className="w-48 h-24 bg-[#14B8AB]"></div>
+                  <div className="w-32 h-24 bg-[#063733]"></div>
                 </div>
               </div>
             )}
@@ -279,7 +283,8 @@ export default function Landing() {
                   <p>Growth stops being an event and becomes the natural state of your business.</p>
                 </div>
                 <div className="flex gap-2 justify-end">
-                  {/* Placeholder for images/illustrations */}
+                  <div className="w-32 h-24 bg-[#2563EB]"></div>
+                  <div className="w-48 h-24 bg-[#14B8AB]"></div>
                 </div>
               </div>
             )}
