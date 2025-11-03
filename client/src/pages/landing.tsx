@@ -155,12 +155,18 @@ export default function Landing() {
             </h1>
           </div>
           <div className="flex items-center">
-            <p
-              className="text-lg md:text-xl leading-relaxed"
+            <div
+              className="text-lg md:text-xl leading-relaxed space-y-4"
               data-testid="text-hero-subheading"
             >
-              STRATAGENTIC.AI is your partner in business transformation. You explore the intersection where strategic thinking, intelligent automation, and rapid execution converge to create measurable progress.
-            </p>
+              <p>Built for those who imagine better.</p>
+              <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
+              <p>Just working products. Real implementations. Systems that run quietly in the background while you move forward.</p>
+              <p>Work that took ten hours now takes one. Ideas turn into prototypes, prototypes turn into results — fast, because the world won't slow down to wait.</p>
+              <p>Every project is an exploration: how to make work lighter, decisions sharper, growth inevitable. Close to maximum simplicity, where insight turns into invention.</p>
+              <p>It's not about being big. It's about being awake.</p>
+              <p>You want progress that feels alive. That's what's built here.</p>
+            </div>
           </div>
         </div>
       </section>
