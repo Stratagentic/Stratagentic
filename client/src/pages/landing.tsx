@@ -166,7 +166,7 @@ export default function Landing() {
           </h1>
           
           {/* Description */}
-          <p className="text-sm mb-8 max-w-2xl mx-auto leading-relaxed" data-testid="text-hero-description">
+          <p className="text-sm mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="text-hero-description">
             Stratagentic is an independent strategy and AI & automation studio based in Norway.<br />
             We move fast and combine strategy, design, and intelligent automation to make growth measurable and sustainable.
           </p>
