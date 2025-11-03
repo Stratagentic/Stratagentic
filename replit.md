@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a landing page application for Stratagentic.ai, designed to showcase business transformation and automation services. The project implements a minimalist, high-contrast design inspired by has.works, featuring a monochrome aesthetic with blue and teal accents. Built as a full-stack TypeScript application using React, Express, and PostgreSQL with Drizzle ORM.
+This is a landing page application for Stratagentic.ai, designed to showcase business transformation and automation services. The project implements a minimalist, high-contrast design inspired by has.works, featuring a monochrome aesthetic with blue and teal accents. The hero section features an interactive 3D globe field animation with magnetic particle effects and physics-based rotation. Built as a full-stack TypeScript application using React, Express, and PostgreSQL with Drizzle ORM.
 
 ## User Preferences
 
