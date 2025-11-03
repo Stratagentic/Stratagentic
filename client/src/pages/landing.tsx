@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { ContactForm } from "@/components/contact-form";
 
 export default function Landing() {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
@@ -278,18 +279,24 @@ export default function Landing() {
         data-testid="section-contact"
       >
         <div className="max-w-[1400px] mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight leading-tight" data-testid="text-contact-heading">
+          <h2 className="text-4xl md:text-6xl font-bold mb-12 tracking-tight leading-tight" data-testid="text-contact-heading">
             Readytobegin
             <br />
             yourtransformation?
           </h2>
-          <a
-            href="mailto:hello@stratagentic.ai"
-            className="inline-block text-4xl md:text-5xl font-bold hover:text-[#00FF85] transition-colors tracking-tight"
-            data-testid="button-contact-cta"
-          >
-            hello@stratagentic.ai↗
-          </a>
+          <ContactForm />
+          <div className="mt-12 pt-12 border-t border-black">
+            <p className="text-lg">
+              Or email us directly at{" "}
+              <a
+                href="mailto:hello@stratagentic.ai"
+                className="font-bold hover:text-[#00FF85] transition-colors"
+                data-testid="link-email"
+              >
+                hello@stratagentic.ai↗
+              </a>
+            </p>
+          </div>
         </div>
       </section>
 
