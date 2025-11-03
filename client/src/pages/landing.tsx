@@ -127,7 +127,7 @@ export default function Landing() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Header */}
-      <header className="border-b border-black" style={{ padding: "var(--space-3)" }}>
+      <header style={{ padding: "var(--space-3)" }}>
         <div className="max-w-[1400px] mx-auto flex justify-between items-start">
           <div>
             <img 
