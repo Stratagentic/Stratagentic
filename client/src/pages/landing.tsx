@@ -292,11 +292,12 @@ export default function Landing() {
       {/* Manifesto */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className="fade-in-section bg-white text-black border-t border-black py-12 px-6"
+        className="fade-in-section bg-white text-black border-t border-black"
         data-testid="section-better-world"
       >
-        <div className="max-w-4xl mx-auto text-left">
-          <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-better-world-content">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="py-12 px-6 max-w-4xl text-left">
+            <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-better-world-content">
             <p>Built for those who imagine better.</p>
             <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never ship.</p>
             <p>Just working products. Real implementations. Systems that run quietly in the background while you move forward.</p>
@@ -304,6 +305,7 @@ export default function Landing() {
             <p>Every project is an exploration: how to make work lighter, decisions sharper, growth inevitable. Close to maximum simplicity, where insight turns into invention.</p>
             <p>It's not about being big. It's about being awake.</p>
             <p>You want progress that feels alive. That's what's built here.</p>
+            </div>
           </div>
         </div>
       </section>
