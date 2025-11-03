@@ -122,14 +122,6 @@ export default function Landing() {
     });
   };
 
-  const handleCtaClick = () => {
-    trackEvent('cta_click', { 
-      location: 'hero',
-      action: 'scroll_to_contact' 
-    });
-    document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Header */}
@@ -147,58 +139,27 @@ export default function Landing() {
       </header>
 
       {/* Hero */}
-      <section className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
-        <video
-          className="hero-video-bg"
-          autoPlay
-          loop
-          muted
-          playsInline
-          data-testid="video-hero-background"
-        >
-          <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-gradient-abstract-background-loop-26104-large.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div className="hero-overlay" />
-        <div className="relative z-10 text-center max-w-5xl mx-auto" style={{ padding: "var(--space-7) var(--space-3)" }}>
-          <h1
-            className="font-bold leading-none tracking-tighter mb-8"
-            style={{ fontSize: "clamp(2.5rem, 8vw, 6rem)" }}
-            data-testid="text-hero-heading"
-          >
-            Your business becomes
-            <br />
-            faster, smarter, lighter.
-          </h1>
-          <p
-            className="text-lg md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed text-gray-200"
-            data-testid="text-hero-subheading"
-          >
-            You unlock efficiency and scale with intelligent systems designed for progress.
-          </p>
-          <button
-            onClick={handleCtaClick}
-            className="inline-block bg-[#00FF85] text-black font-bold px-12 py-4 hover:bg-[#00e673] transition-colors cursor-pointer"
-            data-testid="button-hero-cta"
-          >
-            Start your transformation
-          </button>
-        </div>
-      </section>
-
-      {/* Intro */}
-      <section style={{ padding: "var(--space-7) var(--space-3)" }}>
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-8">
+      <section className="h-screen flex items-center bg-white" style={{ padding: "var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto w-full grid md:grid-cols-2 gap-16">
           <div>
-            <p className="text-5xl font-bold leading-tight tracking-tight" data-testid="text-intro-heading">
-              Transformation built for progress.
-            </p>
+            <h1
+              className="font-bold leading-none tracking-tighter"
+              style={{ fontSize: "clamp(3rem, 10vw, 8rem)" }}
+              data-testid="text-hero-heading"
+            >
+              Efficient.
+              <br />
+              Intelligent.
+              <br />
+              Automated.
+            </h1>
           </div>
-          <div>
-            <p className="text-lg leading-relaxed" data-testid="text-intro-description">
-              STRATAGENTIC.AI is your partner in intelligent automation. You explore the intersection of strategy, technology, and execution.
+          <div className="flex items-center">
+            <p
+              className="text-lg md:text-xl leading-relaxed"
+              data-testid="text-hero-subheading"
+            >
+              STRATAGENTIC.AI is your partner in business transformation. You explore the intersection where strategic thinking, intelligent automation, and rapid execution converge to create measurable progress.
             </p>
           </div>
         </div>
