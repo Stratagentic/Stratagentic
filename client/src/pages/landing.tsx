@@ -138,33 +138,33 @@ export default function Landing() {
             YOURSERVICES(03)
           </h2>
           <div className="grid md:grid-cols-3 gap-12">
-            <div data-testid="card-value-strategy">
-              <div className="mb-4">
-                <span className="text-6xl font-bold">+</span>
+            <div data-testid="card-value-strategy" className="group">
+              <div className="mb-4 transition-all duration-300 group-hover:scale-110">
+                <span className="text-6xl font-bold text-[#00FF85]">+</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight">
+              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
                 Targetedstrategy
               </h3>
               <p className="text-base leading-relaxed">
                 You define clear objectives. Your systems align with business goals.
               </p>
             </div>
-            <div data-testid="card-value-build">
-              <div className="mb-4">
-                <span className="text-6xl font-bold">+</span>
+            <div data-testid="card-value-build" className="group">
+              <div className="mb-4 transition-all duration-300 group-hover:scale-110">
+                <span className="text-6xl font-bold text-[#00FF85]">+</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight">
+              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
                 Customsystembuild
               </h3>
               <p className="text-base leading-relaxed">
                 You receive tailored solutions. Your infrastructure scales with precision.
               </p>
             </div>
-            <div data-testid="card-value-execution">
-              <div className="mb-4">
-                <span className="text-6xl font-bold">+</span>
+            <div data-testid="card-value-execution" className="group">
+              <div className="mb-4 transition-all duration-300 group-hover:scale-110">
+                <span className="text-6xl font-bold text-[#00FF85]">+</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight">
+              <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#00FF85]">
                 Scaledexecution
               </h3>
               <p className="text-base leading-relaxed">
@@ -204,8 +204,8 @@ export default function Landing() {
             YOUROFFERINGS(03)
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="border border-black p-8" data-testid="card-offering-single">
-              <h3 className="text-xl font-bold mb-4 tracking-tight">
+            <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-single">
+              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
                 Singleautomation
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
@@ -215,8 +215,8 @@ export default function Landing() {
                 From30,000NOK/month
               </p>
             </div>
-            <div className="border border-black p-8" data-testid="card-offering-scaled">
-              <h3 className="text-xl font-bold mb-4 tracking-tight">
+            <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-scaled">
+              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
                 ScaledAIsystem
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
@@ -226,8 +226,8 @@ export default function Landing() {
                 From60,000–120,000NOK/month
               </p>
             </div>
-            <div className="border border-black p-8" data-testid="card-offering-enterprise">
-              <h3 className="text-xl font-bold mb-4 tracking-tight">
+            <div className="border border-black p-8 hover:border-[#00FF85] transition-all duration-300 group" data-testid="card-offering-enterprise">
+              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#00FF85] transition-colors">
                 Enterprisebespoke
               </h3>
               <p className="text-sm mb-6 leading-relaxed">
