@@ -78,7 +78,7 @@ export function ContactForm() {
         </p>
         <button
           onClick={() => setIsSubmitted(false)}
-          className="text-[#00FF85] hover:underline font-bold"
+          className="text-[#2563EB] hover:underline font-bold"
           data-testid="button-send-another"
         >
           Send another message
@@ -102,7 +102,7 @@ export function ContactForm() {
                 <FormControl>
                   <Input
                     {...field}
-                    className="border-black focus:border-[#00FF85] focus:ring-[#00FF85]"
+                    className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
                     placeholder="Jane Doe"
                     data-testid="input-name"
                   />
@@ -124,7 +124,7 @@ export function ContactForm() {
                   <Input
                     {...field}
                     type="email"
-                    className="border-black focus:border-[#00FF85] focus:ring-[#00FF85]"
+                    className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
                     placeholder="jane@company.com"
                     data-testid="input-email"
                   />
@@ -147,7 +147,7 @@ export function ContactForm() {
                 <Input
                   {...field}
                   value={field.value || ""}
-                  className="border-black focus:border-[#00FF85] focus:ring-[#00FF85]"
+                  className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
                   placeholder="Company name"
                   data-testid="input-company"
                 />
@@ -168,7 +168,7 @@ export function ContactForm() {
               <FormControl>
                 <Textarea
                   {...field}
-                  className="border-black focus:border-[#00FF85] focus:ring-[#00FF85] min-h-[150px]"
+                  className="border-black focus:border-[#2563EB] focus:ring-[#2563EB] min-h-[150px]"
                   placeholder="Tell us about your transformation goals..."
                   data-testid="input-message"
                 />
@@ -181,7 +181,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={mutation.isPending}
-          className="bg-[#00FF85] text-black font-bold px-12 py-4 hover:bg-[#00e673] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-[#2563EB] text-white font-bold px-12 py-4 hover:bg-[#1d4ed8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           data-testid="button-submit"
         >
           {mutation.isPending ? "Sending..." : "Send message"}
