@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a landing page application for Stratagentic.ai, designed to showcase business transformation and automation services. The project implements a minimalist, high-contrast design inspired by has.works, featuring a monochrome aesthetic with neon green accents. Built as a full-stack TypeScript application using React, Express, and PostgreSQL with Drizzle ORM.
+This is a landing page application for Stratagentic.ai, designed to showcase business transformation and automation services. The project implements a minimalist, high-contrast design inspired by has.works, featuring a monochrome aesthetic with blue and teal accents. Built as a full-stack TypeScript application using React, Express, and PostgreSQL with Drizzle ORM.
 
 ## User Preferences
 
@@ -26,7 +26,11 @@ Preferred communication style: Simple, everyday language.
 **Design System**
 - 8-point spacing grid system with consistent spacing tokens (8px to 80px)
 - Fluid typography using clamp() for responsive text sizing
-- Custom color palette: black/white dominance with #00FF85 neon green accent
+- Custom color palette: black/white dominance with blue/teal accents
+  - Primary Blue: #2563EB (hsl 217 84% 53%)
+  - Secondary Dark Blue: #051538 (hsl 221 84% 12%)
+  - Tertiary Teal: #14B8AB (hsl 175 80% 40%)
+  - Tertiary Dark Teal: #063733 (hsl 175 80% 12%)
 - Inter font family across all typography
 - High-contrast monochrome aesthetic with strategic color accents
 
