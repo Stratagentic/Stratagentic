@@ -127,18 +127,18 @@ export default function Landing() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Header */}
-      <header className="border-b border-black bg-black" style={{ padding: "var(--space-3)" }}>
+      <header className="border-b border-black" style={{ padding: "var(--space-3)" }}>
         <div className="max-w-[1400px] mx-auto flex justify-between items-start">
           <div>
             <img 
-              src="https://stratagentic.ai/assets/stratagenticwhite-DDEPFJWf.png"
+              src="https://stratagentic.ai/assets/stratagenticblack-BIkpLk-k.png"
               alt="Stratagentic" 
               className="h-8"
               data-testid="img-logo"
             />
           </div>
           <div className="text-right">
-            <div className="text-sm text-white" data-testid="text-time">{formatTime(time)}</div>
+            <div className="text-sm" data-testid="text-time">{formatTime(time)}</div>
           </div>
         </div>
       </header>
