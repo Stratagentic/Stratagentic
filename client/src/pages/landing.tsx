@@ -189,7 +189,7 @@ export default function Landing() {
           >
             <div className="flex items-center gap-6">
               <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence &<br className="md:hidden" /> Strategy</h2>
             </div>
             <div className="flex gap-2 justify-end">
               {/* Placeholder for images/content */}
@@ -203,7 +203,7 @@ export default function Landing() {
           >
             <div className="flex items-center gap-6">
               <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation & Integration</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
             </div>
             <div className="flex gap-2 justify-end">
               {/* Placeholder for images/content */}
@@ -217,7 +217,7 @@ export default function Landing() {
           >
             <div className="flex items-center gap-6">
               <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience & Interaction</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience &<br className="md:hidden" /> Interaction</h2>
             </div>
             <div className="flex gap-2 justify-end">
               {/* Placeholder for images/content */}
