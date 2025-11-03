@@ -184,7 +184,7 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           {/* Intelligence & Strategy */}
           <div 
-            className="py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-intelligence"
           >
             <div className="flex items-center gap-6">
@@ -198,7 +198,7 @@ export default function Landing() {
 
           {/* Automation & Integration */}
           <div 
-            className="py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-automation"
           >
             <div className="flex items-center gap-6">
@@ -212,7 +212,7 @@ export default function Landing() {
 
           {/* Experience & Interaction */}
           <div 
-            className="py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-experience"
           >
             <div className="flex items-center gap-6">
@@ -226,7 +226,7 @@ export default function Landing() {
 
           {/* Growth & Momentum */}
           <div 
-            className="py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-6 px-3 md:py-12 md:px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-growth"
           >
             <div className="flex items-center gap-6">
