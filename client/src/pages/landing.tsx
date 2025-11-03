@@ -165,6 +165,11 @@ export default function Landing() {
             <span style={{ display: "block", whiteSpace: "nowrap" }}>feel like less work.</span>
           </h1>
           
+          {/* Description */}
+          <p className="text-sm mb-8 max-w-2xl mx-auto leading-relaxed" data-testid="text-hero-description">
+            Stratagentic is a strategy and AI & automation studio based in Norway. Built by experienced consultants and technologists, we move fast and deliver systems that think, adapt, and perform at scale. Our work combines strategy, design, and intelligent automation to make growth measurable and sustainable.
+          </p>
+          
           {/* CTA Button */}
           <button 
             className="inline-flex items-center justify-center bg-black text-white px-6 py-3 text-sm hover-elevate active-elevate-2 transition-all"
