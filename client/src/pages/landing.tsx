@@ -231,7 +231,7 @@ export default function Landing() {
           >
             <div className="flex items-center gap-6">
               <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth & Momentum</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth &<br className="md:hidden" /> Momentum</h2>
             </div>
             <div className="flex gap-2 justify-end">
               {/* Placeholder for images/content */}
