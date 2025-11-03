@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ContactForm } from "@/components/contact-form";
+import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
+import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 
 export default function Landing() {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
@@ -251,20 +253,48 @@ export default function Landing() {
             YOURRESULTS(02)
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="border border-black aspect-[4/3] flex flex-col justify-end p-8" data-testid="card-case-study-1">
-              <div>
-                <p className="text-sm mb-2">Manufacturing</p>
-                <p className="text-3xl font-bold tracking-tight">
-                  60%efficiencyincrease
-                </p>
+            <div className="border border-black overflow-hidden group" data-testid="card-case-study-1">
+              <div className="relative aspect-[4/3]">
+                <img 
+                  src={manufacturingImage} 
+                  alt="Modern manufacturing facility with automation" 
+                  className="w-full h-full object-cover"
+                  data-testid="img-case-study-1"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Manufacturing</p>
+                  <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                    60%efficiency
+                    <br />
+                    increase
+                  </p>
+                  <p className="text-sm opacity-90 leading-relaxed">
+                    Automated quality control and production scheduling reduced downtime and increased throughput
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="border border-black aspect-[4/3] flex flex-col justify-end p-8" data-testid="card-case-study-2">
-              <div>
-                <p className="text-sm mb-2">Logistics</p>
-                <p className="text-3xl font-bold tracking-tight">
-                  40%costreduction
-                </p>
+            <div className="border border-black overflow-hidden group" data-testid="card-case-study-2">
+              <div className="relative aspect-[4/3]">
+                <img 
+                  src={logisticsImage} 
+                  alt="Automated logistics warehouse" 
+                  className="w-full h-full object-cover"
+                  data-testid="img-case-study-2"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Logistics</p>
+                  <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                    40%cost
+                    <br />
+                    reduction
+                  </p>
+                  <p className="text-sm opacity-90 leading-relaxed">
+                    Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
+                  </p>
+                </div>
               </div>
             </div>
           </div>
