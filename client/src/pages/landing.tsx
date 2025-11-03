@@ -184,11 +184,11 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           {/* Intelligence & Strategy */}
           <div 
-            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer hover-elevate transition-all"
+            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-intelligence"
           >
             <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:scale-110">+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
             </div>
             <div className="flex gap-2 justify-end">
@@ -198,11 +198,11 @@ export default function Landing() {
 
           {/* Automation & Integration */}
           <div 
-            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer hover-elevate transition-all"
+            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-automation"
           >
             <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:scale-110">+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation & Integration</h2>
             </div>
             <div className="flex gap-2 justify-end">
@@ -212,11 +212,11 @@ export default function Landing() {
 
           {/* Experience & Interaction */}
           <div 
-            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer hover-elevate transition-all"
+            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-experience"
           >
             <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:scale-110">+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience & Interaction</h2>
             </div>
             <div className="flex gap-2 justify-end">
@@ -226,11 +226,11 @@ export default function Landing() {
 
           {/* Growth & Momentum */}
           <div 
-            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer hover-elevate transition-all"
+            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-growth"
           >
             <div className="flex items-center gap-6">
-              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:scale-110">+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform group-hover:rotate-90">+</span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth & Momentum</h2>
             </div>
             <div className="flex gap-2 justify-end">
