@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ContactForm } from "@/components/contact-form";
 import { Globe } from "@/components/globe";
+import { Search, Ruler, FlaskConical } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
@@ -300,7 +301,7 @@ export default function Landing() {
           <div className="grid md:grid-cols-3 gap-12">
             <div data-testid="card-value-strategy" className="group">
               <div className="mb-4 transition-all duration-300 group-hover:scale-110">
-                <span className="text-6xl font-bold text-[#2563EB]">+</span>
+                <Search className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Targeted Strategy
@@ -311,7 +312,7 @@ export default function Landing() {
             </div>
             <div data-testid="card-value-build" className="group">
               <div className="mb-4 transition-all duration-300 group-hover:scale-110">
-                <span className="text-6xl font-bold text-[#2563EB]">+</span>
+                <Ruler className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Custom System Build
@@ -322,7 +323,7 @@ export default function Landing() {
             </div>
             <div data-testid="card-value-execution" className="group">
               <div className="mb-4 transition-all duration-300 group-hover:scale-110">
-                <span className="text-6xl font-bold text-[#2563EB]">+</span>
+                <FlaskConical className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Scaled Execution
