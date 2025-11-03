@@ -178,13 +178,13 @@ export default function Landing() {
 
       {/* Accordion Grid */}
       <section
-        className="bg-white border-t border-black"
+        className="bg-white"
         data-testid="section-accordion"
       >
         <div className="max-w-[1400px] mx-auto">
           {/* Intelligence & Strategy */}
           <div 
-            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-intelligence"
           >
             <div className="flex items-center gap-6">
@@ -198,7 +198,7 @@ export default function Landing() {
 
           {/* Automation & Integration */}
           <div 
-            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-automation"
           >
             <div className="flex items-center gap-6">
@@ -212,7 +212,7 @@ export default function Landing() {
 
           {/* Experience & Interaction */}
           <div 
-            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-experience"
           >
             <div className="flex items-center gap-6">
@@ -226,7 +226,7 @@ export default function Landing() {
 
           {/* Growth & Momentum */}
           <div 
-            className="border-b border-black py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
+            className="py-12 px-6 grid md:grid-cols-2 gap-8 items-center group cursor-pointer transition-all"
             data-testid="accordion-growth"
           >
             <div className="flex items-center gap-6">
