@@ -158,11 +158,9 @@ export default function Landing() {
             style={{ fontSize: "clamp(3rem, 10vw, 6rem)" }}
             data-testid="text-hero-heading"
           >
-            Efficient.
+            Let's make work,
             <br />
-            Intelligent.
-            <br />
-            Automated.
+            feel like less work.
           </h1>
           
           {/* Description */}
