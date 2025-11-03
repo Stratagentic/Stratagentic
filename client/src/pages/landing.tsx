@@ -300,7 +300,7 @@ export default function Landing() {
           </h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div data-testid="card-value-strategy" className="group">
-              <div className="mb-4 transition-all duration-300 group-hover:scale-110">
+              <div className="mb-4 transition-all duration-300 origin-left group-hover:scale-110">
                 <Search className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
@@ -311,7 +311,7 @@ export default function Landing() {
               </p>
             </div>
             <div data-testid="card-value-build" className="group">
-              <div className="mb-4 transition-all duration-300 group-hover:scale-110">
+              <div className="mb-4 transition-all duration-300 origin-left group-hover:scale-110">
                 <Ruler className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
@@ -322,7 +322,7 @@ export default function Landing() {
               </p>
             </div>
             <div data-testid="card-value-execution" className="group">
-              <div className="mb-4 transition-all duration-300 group-hover:scale-110">
+              <div className="mb-4 transition-all duration-300 origin-left group-hover:scale-110">
                 <FlaskConical className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
@@ -346,7 +346,7 @@ export default function Landing() {
           <div className="py-12 px-6 text-left">
             <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-better-world-content">
             <p>Built for those who imagine better.</p>
-            <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never see execution. Just working systems. Real implementations Actions that run quietly  in the background while you move forward.</p>
+            <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never see execution. Just working systems. Real implementations. Actions that run quietly  in the background while you move forward.</p>
             <p>What took ten hours now takes one. Ideas become prototypes, prototypes become results - fast, because the world won't wait. Each project is an exploration: how to make work lighter, decisions sharper, growth inevitable.</p>
             <p>It's not about being big. It's about adapting to progress.</p>
             </div>
