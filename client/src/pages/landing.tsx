@@ -450,24 +450,25 @@ export default function Landing() {
               {/* First set of cards */}
               <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-1">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={manufacturingImage} 
-                      alt="Modern manufacturing facility with automation" 
-                      className="w-full h-full object-cover"
-                      data-testid="img-case-study-1"
-                    />
-                    <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Manufacturing</p>
+                  <div className="relative aspect-square flex flex-col">
+                    <div className="relative h-[80%]">
+                      <img 
+                        src={manufacturingImage} 
+                        alt="Modern manufacturing facility with automation" 
+                        className="w-full h-full object-cover"
+                        data-testid="img-case-study-1"
+                      />
+                      <div className="absolute top-0 left-0 right-0 p-8 text-black">
+                        <p className="text-xs uppercase tracking-wider opacity-80">Manufacturing</p>
+                      </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
+                    <div className="h-[20%] bg-white p-8 flex flex-col justify-center text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         60% efficiency
                         <br />
                         increase
                       </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
+                      <p className="text-sm leading-relaxed">
                         Automated quality control and production scheduling reduced downtime and increased throughput
                       </p>
                     </div>
@@ -476,24 +477,25 @@ export default function Landing() {
               </Link>
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-2">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={logisticsImage} 
-                      alt="Automated logistics warehouse" 
-                      className="w-full h-full object-cover"
-                      data-testid="img-case-study-2"
-                    />
-                    <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
+                  <div className="relative aspect-square flex flex-col">
+                    <div className="relative h-[80%]">
+                      <img 
+                        src={logisticsImage} 
+                        alt="Automated logistics warehouse" 
+                        className="w-full h-full object-cover"
+                        data-testid="img-case-study-2"
+                      />
+                      <div className="absolute top-0 left-0 right-0 p-8 text-black">
+                        <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
+                      </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
+                    <div className="h-[20%] bg-white p-8 flex flex-col justify-center text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         40% cost
                         <br />
                         reduction
                       </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
+                      <p className="text-sm leading-relaxed">
                         Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
                       </p>
                     </div>
@@ -502,24 +504,25 @@ export default function Landing() {
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-3">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={prospectResearchImage} 
-                      alt="AI-powered prospect research automation" 
-                      className="w-full h-full object-cover"
-                      data-testid="img-case-study-3"
-                    />
-                    <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
+                  <div className="relative aspect-square flex flex-col">
+                    <div className="relative h-[80%]">
+                      <img 
+                        src={prospectResearchImage} 
+                        alt="AI-powered prospect research automation" 
+                        className="w-full h-full object-cover"
+                        data-testid="img-case-study-3"
+                      />
+                      <div className="absolute top-0 left-0 right-0 p-8 text-black">
+                        <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
+                      </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
+                    <div className="h-[20%] bg-white p-8 flex flex-col justify-center text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         80% time
                         <br />
                         savings
                       </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
+                      <p className="text-sm leading-relaxed">
                         AI agent replaced manual prospecting with personalized, ready-to-use sales insights
                       </p>
                     </div>
@@ -528,24 +531,25 @@ export default function Landing() {
               </Link>
               <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-4">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={salesCollateralImage} 
-                      alt="Sales collateral and marketing materials" 
-                      className="w-full h-full object-cover"
-                      data-testid="img-case-study-4"
-                    />
-                    <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
+                  <div className="relative aspect-square flex flex-col">
+                    <div className="relative h-[80%]">
+                      <img 
+                        src={salesCollateralImage} 
+                        alt="Sales collateral and marketing materials" 
+                        className="w-full h-full object-cover"
+                        data-testid="img-case-study-4"
+                      />
+                      <div className="absolute top-0 left-0 right-0 p-8 text-black">
+                        <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
+                      </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
+                    <div className="h-[20%] bg-white p-8 flex flex-col justify-center text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         75% time
                         <br />
                         reduction
                       </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
+                      <p className="text-sm leading-relaxed">
                         Automated creation of branded, context-aware sales materials that match opportunity stage
                       </p>
                     </div>
