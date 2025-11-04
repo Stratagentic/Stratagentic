@@ -60,23 +60,6 @@ export default function Landing() {
   }, []);
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement;
-      if (!target.closest('[data-testid="button-menu"]') && !target.closest('.absolute')) {
-        setMenuOpen(false);
-      }
-    };
-
-    if (menuOpen) {
-      document.addEventListener('click', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, [menuOpen]);
-
-  useEffect(() => {
     trackEvent('page_view', { 
       page: 'landing',
       timestamp: new Date().toISOString() 
@@ -168,41 +151,42 @@ export default function Landing() {
               data-testid="img-logo"
             />
           </div>
-          <div className="relative">
-            <button 
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="p-2"
-              data-testid="button-menu"
-            >
-              <Menu className="w-6 h-6" />
-            </button>
-            {menuOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white border border-black shadow-lg z-50">
+          <div 
+            className="relative flex items-center"
+            onMouseEnter={() => setMenuOpen(true)}
+            onMouseLeave={() => setMenuOpen(false)}
+          >
+            {menuOpen ? (
+              <div className="flex items-center gap-6">
                 <a 
                   href="#faqs" 
-                  className="block px-4 py-3 text-sm hover:bg-gray-100 transition-colors"
+                  className="text-sm hover:text-[#2563EB] transition-colors"
                   data-testid="link-menu-faqs"
-                  onClick={() => setMenuOpen(false)}
                 >
                   FAQs
                 </a>
                 <a 
                   href="#team" 
-                  className="block px-4 py-3 text-sm hover:bg-gray-100 transition-colors border-t border-gray-300"
+                  className="text-sm hover:text-[#2563EB] transition-colors"
                   data-testid="link-menu-team"
-                  onClick={() => setMenuOpen(false)}
                 >
                   Team
                 </a>
                 <a 
                   href="#resources" 
-                  className="block px-4 py-3 text-sm hover:bg-gray-100 transition-colors border-t border-gray-300"
+                  className="text-sm hover:text-[#2563EB] transition-colors"
                   data-testid="link-menu-resources"
-                  onClick={() => setMenuOpen(false)}
                 >
                   Resources
                 </a>
               </div>
+            ) : (
+              <button 
+                className="p-2"
+                data-testid="button-menu"
+              >
+                <Menu className="w-6 h-6" />
+              </button>
             )}
           </div>
         </div>
