@@ -244,10 +244,7 @@ export default function Landing() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
               </div>
               {openAccordion !== 'automation' && (
-                <div className="flex gap-2">
-                  <div className="w-40 h-24 bg-[#2563EB]"></div>
-                  <div className="w-40 h-24 bg-[#2563EB]"></div>
-                </div>
+                <div className="w-[480px] h-24 bg-[#2563EB]"></div>
               )}
             </div>
             {openAccordion === 'automation' && (
@@ -256,9 +253,8 @@ export default function Landing() {
                   <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
                   <p>Technology begins taking on work so people can focus on what matters.</p>
                 </div>
-                <div className="flex gap-2 justify-end">
-                  <div className="w-40 h-24 bg-[#2563EB]"></div>
-                  <div className="w-40 h-24 bg-[#2563EB]"></div>
+                <div className="flex justify-end">
+                  <div className="w-[480px] h-24 bg-[#2563EB]"></div>
                 </div>
               </div>
             )}
@@ -276,10 +272,7 @@ export default function Landing() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience &<br className="md:hidden" /> Interaction</h2>
               </div>
               {openAccordion !== 'experience' && (
-                <div className="flex gap-2">
-                  <div className="w-48 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                </div>
+                <div className="w-[480px] h-24 bg-[#2563EB]"></div>
               )}
             </div>
             {openAccordion === 'experience' && (
@@ -288,9 +281,8 @@ export default function Landing() {
                   <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
                   <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
                 </div>
-                <div className="flex gap-2 justify-end">
-                  <div className="w-48 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
+                <div className="flex justify-end">
+                  <div className="w-[480px] h-24 bg-[#2563EB]"></div>
                 </div>
               </div>
             )}
@@ -308,10 +300,7 @@ export default function Landing() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth &<br className="md:hidden" /> Momentum</h2>
               </div>
               {openAccordion !== 'growth' && (
-                <div className="flex gap-2">
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-48 h-24 bg-[#2563EB]"></div>
-                </div>
+                <div className="w-[480px] h-24 bg-[#2563EB]"></div>
               )}
             </div>
             {openAccordion === 'growth' && (
@@ -320,9 +309,8 @@ export default function Landing() {
                   <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
                   <p>Growth stops being an event and becomes the natural state of your business.</p>
                 </div>
-                <div className="flex gap-2 justify-end">
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-48 h-24 bg-[#2563EB]"></div>
+                <div className="flex justify-end">
+                  <div className="w-[480px] h-24 bg-[#2563EB]"></div>
                 </div>
               </div>
             )}
