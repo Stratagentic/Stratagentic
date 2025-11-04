@@ -1,0 +1,70 @@
+**Case Study – Sales Collateral Agent | Stratagentic**
+
+---
+
+### **Hero Section**
+
+**Headline:**
+Smarter sales materials, faster turnaround
+
+**Subhead:**
+Automated creation of branded, context-aware sales assets that match the opportunity stage.
+
+---
+
+### **Challenge**
+
+Sales teams were losing time preparing materials for  new deals - relevant case studies, pitch decks, and follow-up documents all required manual customization. Inconsistent messaging and off-brand visuals often slowed down the process, reducing the impact of outreach and proposals.
+
+> “We spent hours tweaking slides and rewriting case studies just to fit each client. We needed something faster - and consistent.”
+
+---
+
+### **Solution**
+
+Enter the **Sales Collateral Agent**, an AI-driven content system that instantly produces on-brand sales materials based on opportunity data. It connects to CRM and content libraries, understands deal context, and assembles tailored outputs using approved templates and brand assets.
+
+The agent generates:
+
+* Case studies aligned to the client’s industry or challenge
+* Pitch decks and demo outlines adapted to buyer personas
+* Follow-up materials like one-pagers and comparison sheets
+
+All documents maintain the company’s tone, structure, and design standards - with limited human editing required.
+
+---
+
+### **Results**
+
+* 75% reduction in time spent preparing sales materials
+* 5x faster turnaround from lead to proposal (5 days to next-day)
+* Brand consistency across all outbound assets
+* Improved win rates from more relevant, personalized content
+
+> “The automation feels invisible - it just gives our team exactly what they need at each stage of the deal.”
+
+---
+
+### **Inside the System**
+
+The agent draws context from CRM data, approved content blocks, and visual templates. It matches deal stage, industry, and persona data to pre-built logic that selects and assembles the right content format automatically.
+
+*Workflow diagram showing input from Opportunity ****→**** CRM → AI engine → Branded output documents.*
+
+###
+
+### **CTA**
+
+**Headline:**
+See how your sales team can create materials in minutes, not hours.
+
+Let Stratagentic show you how automation can simplify your pre-sales process and elevate every client interaction.
+
+**Call-to-action:**
+Book a Discovery Call
+
+---
+
+### **Footer:**
+
+© 2025 Stratagentic. Built in Norway.

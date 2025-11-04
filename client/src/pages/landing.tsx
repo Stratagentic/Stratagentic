@@ -6,6 +6,7 @@ import { Search, Ruler, FlaskConical } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 import prospectResearchImage from "@assets/Gemini_Generated_Image_6bn93u6bn93u6bn9_1762255434711.png";
+import salesCollateralImage from "@assets/generated_images/Sales_collateral_materials_desk_0265e766.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -525,6 +526,32 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
+              <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-4">
+                  <div className="relative aspect-square">
+                    <img 
+                      src={salesCollateralImage} 
+                      alt="Sales collateral and marketing materials" 
+                      className="w-full h-full object-cover"
+                      data-testid="img-case-study-4"
+                    />
+                    <div className="absolute top-0 left-0 right-0 p-8 text-black">
+                      <p className="text-xs uppercase tracking-wider opacity-80">Sales Automation</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        75% time
+                        <br />
+                        reduction
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        Automated creation of branded, context-aware sales materials that match opportunity stage
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
               {/* Duplicate set for seamless infinite scroll */}
               <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300">
@@ -596,6 +623,31 @@ export default function Landing() {
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         AI agent replaced manual prospecting with personalized, ready-to-use sales insights
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300">
+                  <div className="relative aspect-square">
+                    <img 
+                      src={salesCollateralImage} 
+                      alt="Sales collateral and marketing materials" 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-0 left-0 right-0 p-8 text-black">
+                      <p className="text-xs uppercase tracking-wider opacity-80">Sales Automation</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        75% time
+                        <br />
+                        reduction
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        Automated creation of branded, context-aware sales materials that match opportunity stage
                       </p>
                     </div>
                   </div>
