@@ -456,9 +456,11 @@ export default function Landing() {
                       className="w-full h-full object-cover"
                       data-testid="img-case-study-1"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-transparent"></div>
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs mb-8 uppercase tracking-wider opacity-80">Manufacturing</p>
+                      <p className="text-xs uppercase tracking-wider opacity-80">Manufacturing</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         60% efficiency
                         <br />
@@ -480,9 +482,11 @@ export default function Landing() {
                       className="w-full h-full object-cover"
                       data-testid="img-case-study-2"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-transparent"></div>
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs mb-8 uppercase tracking-wider opacity-80">Logistics</p>
+                      <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         40% cost
                         <br />
@@ -504,9 +508,11 @@ export default function Landing() {
                       className="w-full h-full object-cover"
                       data-testid="img-case-study-3"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-transparent"></div>
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs mb-8 uppercase tracking-wider opacity-80">Sales Intelligence</p>
+                      <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         80% time
                         <br />
@@ -528,9 +534,11 @@ export default function Landing() {
                       alt="Modern manufacturing facility with automation" 
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-transparent"></div>
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs mb-8 uppercase tracking-wider opacity-80">Manufacturing</p>
+                      <p className="text-xs uppercase tracking-wider opacity-80">Manufacturing</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         60% efficiency
                         <br />
@@ -551,9 +559,11 @@ export default function Landing() {
                       alt="Automated logistics warehouse" 
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-transparent"></div>
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs mb-8 uppercase tracking-wider opacity-80">Logistics</p>
+                      <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         40% cost
                         <br />
@@ -574,9 +584,11 @@ export default function Landing() {
                       alt="AI-powered prospect research automation" 
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-transparent"></div>
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs mb-8 uppercase tracking-wider opacity-80">Sales Intelligence</p>
+                      <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         80% time
                         <br />
