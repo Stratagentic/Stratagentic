@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/contact-form";
 import { Globe } from "@/components/globe";
 import { Search, Ruler, FlaskConical, Menu } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
-import logisticsImage from "@assets/Screenshot 2025-11-04 at 22.12.45_1762292209398.jpg";
+import logisticsImage from "@assets/Screenshot 2025-11-04 at 23.11.03_1762294280146.jpg";
 import prospectResearchImage from "@assets/Screenshot 2025-11-04 at 22.15.09_1762292233906.jpg";
 import salesCollateralImage from "@assets/Screenshot 2025-11-04 at 22.13.23_1762292269030.jpg";
 import linkedInGrowthImage from "@assets/Screenshot 2025-11-04 at 22.16.12_1762292288472.jpg";
