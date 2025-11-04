@@ -1,0 +1,80 @@
+**Title:**
+Case Study – Prospect Research Agent | Stratagentic
+
+---
+
+### **Hero Section**
+
+**Headline:**
+How one Norwegian B2B company cut sales prep time by 80%
+
+**Subhead:**
+See how an intelligent AI agent replaced manual prospecting with personalized, ready-to-use sales insights - built by Stratagentic.
+
+---
+
+### ****Challenge****
+
+Manual prospect research consumed hours every week.
+Business development spent 3–4 hours per prospect gathering company data, LinkedIn details, and crafting outreach messages, often duplicating effort and missing context. As a result, the sales team struggled to scale their outreach without losing personalization.
+
+> “Our pipeline was growing, but prep time kept us from moving fast enough.”
+> - Head of Sales, B2B SaaS Company
+
+---
+
+### ** Solution**
+
+Stratagentic designed and deployed a Prospect Research Agent - an AI system integrated with the client’s CRM, LinkedIn, and company data sources.
+
+The agent automatically gathers and filters relevant data about identified prospect and company, cross-references internal material such as case studies and product information, and produces a highly personalized one-page Prospect Intel Report for every new contact.
+
+Each report includes key insights, pain points, suggested value propositions, rapport cues, and ready-to-use outreach notes.
+
+---
+
+### ** Results**
+
+**Highlights:**
+
+* 80% reduction in manual research time per prospect
+* 2x increase in booked meetings
+* Consistent tone and personalization across all outreach
+* Agent supports 10+ reps simultaneously with zero added overhead
+
+> “It’s like having a full-time sales assistant who never sleeps - and never misses context.”
+> - Head of Sales
+
+---
+
+### **Inside the system**
+
+Data flows through a seamless, automated pipeline - from CRM to outreach in minutes.
+
+**Visual:**
+Workflow Diagram showing:
+Lead→ CRM → Agent → LinkedIn → Web Intelligence → Intel Report → Sales Outreach Tools
+
+---
+
+### **Demonstration**
+
+See how the Prospect Research Agent works - from data gathering to output delivery.
+
+---
+
+### **CTA**
+
+**Headline:**
+Want this for your sales team?
+
+**Body:**
+Let’s explore how AI agents can remove bottlenecks in your workflow and accelerate growth.
+
+**CTA:**
+Book a Discovery Call
+
+---
+
+**Footer:**
+© 2025 Stratagentic. Built in Norway.
