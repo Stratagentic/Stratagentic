@@ -128,7 +128,7 @@ export default function LinkedInGrowthCaseStudy() {
 
       {/* Results */}
       <section 
-        className="bg-[#F5F5F5] text-black border-t border-gray-300"
+        className="bg-white text-black border-t border-gray-300"
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-results"
       >
@@ -136,27 +136,30 @@ export default function LinkedInGrowthCaseStudy() {
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-results">
             THE RESULTS
           </h2>
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div data-testid="metric-1">
-              <div className="text-4xl md:text-5xl font-bold mb-2">10–15</div>
-              <div className="text-sm">hours saved per month per user</div>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="border border-black p-8" data-testid="card-metric-1">
+              <p className="text-5xl font-bold mb-4 text-[#2563EB]">10-15 hrs</p>
+              <p className="text-base font-bold mb-2">Saved per month per user</p>
             </div>
-            <div data-testid="metric-2">
-              <div className="text-4xl md:text-5xl font-bold mb-2">3x</div>
-              <div className="text-sm">increase in posting consistency</div>
-            </div>
-            <div data-testid="metric-3">
-              <div className="text-4xl md:text-5xl font-bold mb-2">Stronger</div>
-              <div className="text-sm">brand visibility and engagement</div>
-            </div>
-            <div data-testid="metric-4">
-              <div className="text-4xl md:text-5xl font-bold mb-2">Clearer</div>
-              <div className="text-sm">more authentic tone across leadership profiles</div>
+            <div className="border border-black p-8" data-testid="card-metric-2">
+              <p className="text-5xl font-bold mb-4 text-[#2563EB]">3x</p>
+              <p className="text-base font-bold mb-2">Increase in posting consistency</p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-lg max-w-3xl">
-            "It feels like having a content strategist on call—only faster and always on brand."
-          </blockquote>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <ul className="space-y-3 text-base">
+                <li>• Stronger brand visibility and engagement</li>
+                <li>• Clearer, more authentic tone across leadership profiles</li>
+                <li>• System supports multiple executives simultaneously</li>
+              </ul>
+            </div>
+            <div>
+              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-base">
+                "It feels like having a content strategist on call—only faster and always on brand."
+              </blockquote>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -170,48 +173,34 @@ export default function LinkedInGrowthCaseStudy() {
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-system">
             INSIDE THE SYSTEM
           </h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <p className="text-base leading-relaxed">
-                The <strong>LinkedIn Content Idea</strong> uses short text inputs as context, or scrapes current news, then combines brand voice models, approved message libraries, and adaptive tone logic to create ready-to-publish drafts. Output can be edited within the interface or sent directly to scheduling platforms.
-              </p>
+          <p className="text-base leading-relaxed mb-8">
+            The <strong>LinkedIn Content Idea</strong> uses short text inputs as context, or scrapes current news, then combines brand voice models, approved message libraries, and adaptive tone logic to create ready-to-publish drafts.
+          </p>
+          
+          {/* Workflow Diagram */}
+          <div className="flex flex-wrap items-center justify-center gap-4 py-8" data-testid="workflow-diagram">
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">User Input</p>
             </div>
-            <div className="border border-black p-8">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-4">
-                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
-                    User Input
-                  </div>
-                  <div className="text-2xl">→</div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
-                    Scrape News
-                  </div>
-                  <div className="text-2xl">→</div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
-                    AI Content Engine
-                  </div>
-                  <div className="text-2xl">→</div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
-                    Guidelines
-                  </div>
-                  <div className="text-2xl">→</div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
-                    Draft Calendar
-                  </div>
-                  <div className="text-2xl">→</div>
-                </div>
-                <div className="border border-black p-4 text-center text-sm font-bold">
-                  Scheduler Export
-                </div>
-              </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">Scrape News</p>
+            </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px] bg-[#2563EB] text-white">
+              <p className="font-bold">AI Engine</p>
+            </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">Guidelines</p>
+            </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">Draft Calendar</p>
+            </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">Scheduler Export</p>
             </div>
           </div>
         </div>
@@ -219,42 +208,33 @@ export default function LinkedInGrowthCaseStudy() {
 
       {/* CTA */}
       <section 
-        className="bg-[#2563EB] text-white"
+        className="bg-white text-black border-t border-black"
         style={{ padding: "var(--space-8) var(--space-3)" }}
         data-testid="section-cta"
       >
         <div className="max-w-[1400px] mx-auto text-center">
-          <h2 
-            className="font-bold mb-4"
-            style={{ 
-              fontSize: "clamp(2rem, 4vw + 0.5rem, 4rem)",
-              lineHeight: "1.1",
-              letterSpacing: "-0.02em"
-            }}
-            data-testid="text-cta-heading"
-          >
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight leading-tight">
             Stay visible. Stay consistent. Effortlessly.
           </h2>
-          <p className="text-lg mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="text-cta-description">
+          <p className="text-lg mb-8 max-w-2xl mx-auto">
             Let Stratagentic show you how to keep your brand and leadership voice active on LinkedIn—without the weekly grind.
           </p>
-          <Link href="/#contact">
+          <Link href="/#contact-section">
             <button 
-              className="bg-white text-[#2563EB] px-8 py-4 text-lg font-bold hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center bg-black text-white px-6 py-3 text-sm hover-elevate active-elevate-2 transition-all"
               data-testid="button-cta"
             >
-              Book a Discovery Call
+              <span className="mr-2">→</span>
+              Book a discovery call
             </button>
           </Link>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-white text-black border-t border-gray-300" style={{ padding: "var(--space-5) var(--space-3)" }}>
-        <div className="max-w-[1400px] mx-auto text-center">
-          <p className="text-sm opacity-60" data-testid="text-footer">
-            © 2025 Stratagentic. Built in Norway.
-          </p>
+      <footer className="bg-white text-black border-t border-gray-300 py-6" style={{ padding: "var(--space-4) var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto text-center text-sm opacity-60">
+          © 2025 Stratagentic. Built in Norway.
         </div>
       </footer>
     </div>
