@@ -26,7 +26,9 @@ export function ContactForm() {
       name: "",
       email: "",
       company: "",
-      message: "",
+      website: "",
+      automationGoals: "",
+      currentAiUse: "",
     },
   });
 
@@ -90,50 +92,26 @@ export function ContactForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 max-w-2xl">
-        <div className="grid md:grid-cols-2 gap-6">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="font-bold text-sm uppercase tracking-tight">
-                  Your name*
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    {...field}
-                    className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
-                    placeholder="Jane Doe"
-                    data-testid="input-name"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="font-bold text-sm uppercase tracking-tight">
-                  Your email*
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    {...field}
-                    type="email"
-                    className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
-                    placeholder="jane@company.com"
-                    data-testid="input-email"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
+        <FormField
+          control={form.control}
+          name="name"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="font-bold text-sm uppercase tracking-tight">
+                Full name*
+              </FormLabel>
+              <FormControl>
+                <Input
+                  {...field}
+                  className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
+                  placeholder="John Smith"
+                  data-testid="input-name"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
         <FormField
           control={form.control}
@@ -141,14 +119,14 @@ export function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="font-bold text-sm uppercase tracking-tight">
-                Your company
+                Company*
               </FormLabel>
               <FormControl>
                 <Input
                   {...field}
                   value={field.value || ""}
                   className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
-                  placeholder="Company name"
+                  placeholder="Acme Inc."
                   data-testid="input-company"
                 />
               </FormControl>
@@ -159,18 +137,84 @@ export function ContactForm() {
 
         <FormField
           control={form.control}
-          name="message"
+          name="email"
           render={({ field }) => (
             <FormItem>
               <FormLabel className="font-bold text-sm uppercase tracking-tight">
-                Your message*
+                Email*
+              </FormLabel>
+              <FormControl>
+                <Input
+                  {...field}
+                  type="email"
+                  className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
+                  placeholder="john@company.com"
+                  data-testid="input-email"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="website"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="font-bold text-sm uppercase tracking-tight">
+                Website (optional)
+              </FormLabel>
+              <FormControl>
+                <Input
+                  {...field}
+                  value={field.value || ""}
+                  className="border-black focus:border-[#2563EB] focus:ring-[#2563EB]"
+                  placeholder="https://yourcompany.com"
+                  data-testid="input-website"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="automationGoals"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="font-bold text-sm uppercase tracking-tight">
+                What would you like to automate?*
               </FormLabel>
               <FormControl>
                 <Textarea
                   {...field}
-                  className="border-black focus:border-[#2563EB] focus:ring-[#2563EB] min-h-[150px]"
-                  placeholder="Tell us about your transformation goals..."
-                  data-testid="input-message"
+                  className="border-black focus:border-[#2563EB] focus:ring-[#2563EB] min-h-[100px]"
+                  placeholder="e.g., Customer support, Data entry, Sales follow-ups, Report generation"
+                  data-testid="input-automation-goals"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="currentAiUse"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="font-bold text-sm uppercase tracking-tight">
+                Current use of AI (if any)
+              </FormLabel>
+              <FormControl>
+                <Textarea
+                  {...field}
+                  value={field.value || ""}
+                  className="border-black focus:border-[#2563EB] focus:ring-[#2563EB] min-h-[100px]"
+                  placeholder="e.g., ChatGPT for writing, No current AI tools, Custom automation tools"
+                  data-testid="input-current-ai-use"
                 />
               </FormControl>
               <FormMessage />
