@@ -593,7 +593,7 @@ export default function Landing() {
                     <img 
                       src={logisticsImage} 
                       alt="Automated logistics warehouse" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -601,9 +601,7 @@ export default function Landing() {
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        40% cost
-                        <br />
-                        reduction
+                        40% cost reduction
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
@@ -618,7 +616,7 @@ export default function Landing() {
                     <img 
                       src={prospectResearchImage} 
                       alt="AI-powered prospect research automation" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -626,9 +624,7 @@ export default function Landing() {
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        80% time
-                        <br />
-                        savings
+                        80% time savings
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         AI agent replaced manual prospecting with personalized, ready-to-use sales insights
@@ -643,7 +639,7 @@ export default function Landing() {
                     <img 
                       src={salesCollateralImage} 
                       alt="Sales collateral and marketing materials" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -651,9 +647,7 @@ export default function Landing() {
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        75% time
-                        <br />
-                        reduction
+                        75% time reduction
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         Automated creation of branded, context-aware sales materials that match opportunity stage
@@ -668,7 +662,7 @@ export default function Landing() {
                     <img 
                       src={linkedInGrowthImage} 
                       alt="LinkedIn content creation automation" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-5"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -676,9 +670,7 @@ export default function Landing() {
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        10-15 hours
-                        <br />
-                        saved/month
+                        10-15 hours saved/month
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         AI-driven system maintains strong, authentic LinkedIn presence in minutes per week
@@ -693,7 +685,7 @@ export default function Landing() {
                     <img 
                       src={outreachEngineImage} 
                       alt="Automated outreach and email marketing" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-6"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -701,9 +693,7 @@ export default function Landing() {
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        4x outbound
-                        <br />
-                        volume
+                        4x outbound volume
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         AI-powered multi-channel engine personalizes and automates entire outbound workflow
@@ -743,16 +733,14 @@ export default function Landing() {
                     <img 
                       src={logisticsImage} 
                       alt="Automated logistics warehouse" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        40% cost
-                        <br />
-                        reduction
+                        40% cost reduction
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
@@ -767,16 +755,14 @@ export default function Landing() {
                     <img 
                       src={prospectResearchImage} 
                       alt="AI-powered prospect research automation" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        80% time
-                        <br />
-                        savings
+                        80% time savings
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         AI agent replaced manual prospecting with personalized, ready-to-use sales insights
@@ -791,16 +777,14 @@ export default function Landing() {
                     <img 
                       src={salesCollateralImage} 
                       alt="Sales collateral and marketing materials" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        75% time
-                        <br />
-                        reduction
+                        75% time reduction
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         Automated creation of branded, context-aware sales materials that match opportunity stage
@@ -815,16 +799,14 @@ export default function Landing() {
                     <img 
                       src={linkedInGrowthImage} 
                       alt="LinkedIn content creation automation" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">LinkedIn Growth</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        10-15 hours
-                        <br />
-                        saved/month
+                        10-15 hours saved/month
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         AI-driven system maintains strong, authentic LinkedIn presence in minutes per week
@@ -839,16 +821,14 @@ export default function Landing() {
                     <img 
                       src={outreachEngineImage} 
                       alt="Automated outreach and email marketing" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        4x outbound
-                        <br />
-                        volume
+                        4x outbound volume
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         AI-powered multi-channel engine personalizes and automates entire outbound workflow
