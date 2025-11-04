@@ -12,6 +12,7 @@ import outreachEngineImage from "@assets/Screenshot 2025-11-04 at 22.15.38_17622
 import growthMomentumImage from "@assets/Screenshot 2025-11-04 at 22.32.37_1762292437388.jpg";
 import experienceInteractionImage from "@assets/Screenshot 2025-11-04 at 22.27.30_1762292416859.jpg";
 import automationIntegrationImage from "@assets/Screenshot 2025-11-04 at 22.49.31_1762292999371.jpg";
+import intelligenceStrategyImage from "@assets/Screenshot 2025-11-04 at 23.01.10_1762293691773.jpg";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -246,10 +247,8 @@ export default function Landing() {
           >
             {/* Mobile Layout */}
             <div className="md:hidden">
-              <div className="flex gap-2 justify-center mb-4">
-                <div className="w-32 h-24 bg-[#2563EB]"></div>
-                <div className="w-32 h-24 bg-[#2563EB]"></div>
-                <div className="w-32 h-24 bg-[#2563EB]"></div>
+              <div className="mb-4 overflow-hidden">
+                <img src={intelligenceStrategyImage} alt="" className="w-full h-auto object-cover" />
               </div>
               <h2 className="text-3xl font-bold tracking-tight">
                 Intelligence &<br />Strategy
@@ -269,10 +268,8 @@ export default function Landing() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
               </div>
               {openAccordion !== 'intelligence' && (
-                <div className="flex gap-2">
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
+                <div className="overflow-hidden" style={{ width: "480px", height: "96px" }}>
+                  <img src={intelligenceStrategyImage} alt="" className="w-full h-full object-cover" />
                 </div>
               )}
             </div>
@@ -283,10 +280,8 @@ export default function Landing() {
                   <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
                   <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
                 </div>
-                <div className="flex gap-2 justify-end">
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
+                <div className="overflow-hidden" style={{ width: "480px", height: "96px" }}>
+                  <img src={intelligenceStrategyImage} alt="" className="w-full h-full object-cover" />
                 </div>
               </div>
             )}
