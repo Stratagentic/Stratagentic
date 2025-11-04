@@ -1,0 +1,63 @@
+How an automated AI agent reduced delivery coordination time by 60%
+
+Subhead:
+See how a logistics firm streamlined communication, tracking, and task management across multiple carriers with one integrated agent — built by Stratagentic.
+
+Challenge
+
+Coordinating shipments across multiple carriers, suppliers, and clients was a constant bottleneck.
+Operations staff spent hours every day checking transport portals, emailing confirmations, and updating spreadsheets manually. With increasing shipment volume, errors and delays started to multiply.
+
+“Every hour saved in coordination means an hour gained in actual delivery.”
+— Operations Manager, National Logistics Company
+
+Solution
+
+Stratagentic implemented a Logistics Coordination Agent — a system that connects order data, transport APIs, and internal communication tools.
+
+The agent automatically tracks shipments, verifies carrier updates, and synchronizes order statuses across platforms like HubSpot, Google Sheets, and Slack. When discrepancies occur, it flags them instantly and suggests the next best action.
+
+Team members now receive daily summaries and exception alerts — eliminating constant manual follow-up.
+
+Results
+
+Highlights:
+
+60% reduction in manual coordination time
+
+90% fewer missed or delayed shipment updates
+
+Real-time visibility across all carriers and routes
+
+Staff redeployed from admin work to customer service and planning
+
+“The agent feels like an extra team member who keeps every order on track.”
+— Logistics Coordinator
+
+Inside the System
+
+Data flows seamlessly through the agent’s logic:
+Orders → ERP System → Agent → Carrier APIs → Internal Dashboard → Notifications & Reports
+
+Visual:
+Workflow Diagram showing integration points between ERP, carrier systems, and internal dashboards.
+
+Demonstration
+
+Watch how the Logistics Coordination Agent consolidates updates, automates follow-ups, and keeps the entire logistics chain synchronized in real time.
+
+Video placeholder: {{videoDemoLogisticsURL}}
+
+CTA
+
+Headline:
+Want to make logistics move smoother?
+
+Body:
+Let’s explore how Stratagentic’s AI agents can optimize coordination, tracking, and communication in your supply chain.
+
+CTA:
+Book a Discovery Call
+
+Footer:
+© 2025 Stratagentic. Built in Norway.
