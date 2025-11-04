@@ -8,6 +8,8 @@ export default function LogisticsCaseStudy() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+    
     const timer = setInterval(() => {
       setTime(new Date());
     }, 1000);
