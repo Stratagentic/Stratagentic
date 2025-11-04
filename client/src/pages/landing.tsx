@@ -6,7 +6,7 @@ import { Search, Ruler, FlaskConical } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 import prospectResearchImage from "@assets/Gemini_Generated_Image_6bn93u6bn93u6bn9_1762255434711.png";
-import salesCollateralImage from "@assets/Gemini_Generated_Image_66tc8066tc8066tc_1762256896686.png";
+import salesCollateralImage from "@assets/Gemini_Generated_Image_fhapg0fhapg0fhap_1762258437763.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -449,12 +449,12 @@ export default function Landing() {
             <div className="flex animate-scroll-infinite">
               {/* First set of cards */}
               <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300 bg-white" data-testid="card-case-study-1">
-                  <div className="relative aspect-square p-8">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-1">
+                  <div className="relative aspect-square">
                     <img 
                       src={manufacturingImage} 
                       alt="Modern manufacturing facility with automation" 
-                      className="absolute top-8 right-8 w-4/5 h-4/5 object-cover"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-1"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -474,12 +474,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300 bg-white" data-testid="card-case-study-2">
-                  <div className="relative aspect-square p-8">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-2">
+                  <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
                       alt="Automated logistics warehouse" 
-                      className="absolute top-8 right-8 w-4/5 h-4/5 object-cover"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -499,12 +499,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300 bg-white" data-testid="card-case-study-3">
-                  <div className="relative aspect-square p-8">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-3">
+                  <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
                       alt="AI-powered prospect research automation" 
-                      className="absolute top-8 right-8 w-4/5 h-4/5 object-cover"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -524,12 +524,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300 bg-white" data-testid="card-case-study-4">
-                  <div className="relative aspect-square p-8">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-4">
+                  <div className="relative aspect-square">
                     <img 
                       src={salesCollateralImage} 
                       alt="Sales collateral and marketing materials" 
-                      className="absolute top-8 right-8 w-4/5 h-4/5 object-cover"
+                      className="absolute inset-0 w-full h-full object-cover"
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
