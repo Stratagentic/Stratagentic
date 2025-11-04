@@ -1,0 +1,75 @@
+Frequently Asked Questions
+Strategy
+
+What if I don't have a clear strategy yet?
+No problem. Our free Strategy Agent helps you clarify goals, uncover growth opportunities, and define an actionable direction. It guides you through key questions so your AI Opportunity Report is grounded in real business objectives, even if you are starting from scratch.
+
+What if we already have a strategy?
+Perfect. We align your AI roadmap to existing goals and help refine your priorities beyond AI, including growth, process design, and execution.
+
+How do you identify which parts of our business can benefit most from AI?
+We start with an AI Audit to map your workflows, data, and goals. From there, we identify quick wins, bottlenecks, and long-term efficiency gains, ensuring every recommendation has a measurable outcome.
+
+Do we need to change how we work before implementing AI?
+Not necessarily. Most improvements build around your existing systems. When process changes are recommended, they are designed to make operations simpler, not more complex.
+
+Can you still build useful systems if our data isn’t perfect?
+Yes. Many clients begin with fragmented or incomplete data. We design systems that improve data quality over time through structured collection and integration.
+
+AI Solutions
+
+What are AI agents, and what can they do?
+AI agents are intelligent systems that perform business tasks autonomously, from prospect research and customer engagement to data reporting and content creation. They handle repetitive work, surface insights, and scale output without extra headcount.
+
+Do you build everything from scratch, or adapt existing tools?
+We combine both approaches. Some systems are built from the ground up using APIs and workflows, while others integrate best-in-class platforms such as n8n, Zapier, Relevance AI, or custom GPTs, always tailored to your stack and goals.
+
+Can your AI systems integrate with our existing tools?
+Yes. Integration is core to every build. We connect CRMs, marketing platforms, databases, and internal tools so your data flows seamlessly between systems.
+
+How do you handle data security and privacy?
+We follow strict data governance and GDPR compliance standards. Where possible, we use secure EU-based hosting and local processing. Client data remains confidential and under your control at all times.
+
+Does AI replace people, or make their work easier?
+AI supports, not replaces. Our goal is to remove manual friction so your team can focus on higher-value work such as strategy, relationships, and creativity.
+
+What happens if an automation or AI agent fails or produces errors?
+Every system includes error handling, human oversight, and continuous monitoring. If something fails, we identify the cause, adjust logic, and deploy fixes to prevent repeat issues.
+
+Process and Support
+
+What are the stages of your implementation process?
+We begin with a short discovery and audit, followed by design, system build, testing, and live rollout. Each stage includes clear milestones, reviews, and client input.
+
+How much effort is required from our team during implementation?
+Minimal. We do the heavy lifting. Your role is to validate goals, provide access to systems, and review progress at key checkpoints.
+
+How long does implementation take?
+Most client systems go live within 2 to 6 weeks, depending on complexity and integrations.
+
+What happens after the system is live?
+We provide post-launch optimization, monitoring, and regular performance reviews. As your needs evolve, we adjust automations and introduce new capabilities.
+
+Do you offer training for internal teams?
+Yes. We provide tailored onboarding, process documentation, and optional AI literacy sessions to ensure your team understands how to manage and extend the system independently.
+
+Can you collaborate with our existing consultants or IT providers?
+Absolutely. We often work alongside internal teams, marketing agencies, and technology vendors to ensure smooth integration and shared success.
+
+Results and Confidence
+
+What kind of impact can we expect from your AI systems?
+Results vary by scope, but most clients experience significant gains in efficiency, output, and speed of execution. We focus on measurable outcomes that directly support growth or reduce cost.
+
+Can we start small, or do you require a full-scale engagement?
+You can start small. Many clients begin with a pilot project or focused automation to validate value before scaling further.
+
+What happens if the implementation doesn’t deliver results?
+We treat every system as a partnership. If performance falls short, we work iteratively to resolve it. Your success defines our success.
+
+Do you offer pilot projects or proofs of concept?
+Yes. Pilot builds are an excellent way to test automation value quickly before rolling out larger systems.
+
+If your question isn’t covered here, we will address it during your free AI Automation Audit, where we map your systems, identify growth barriers, and uncover new efficiencies.
+
+Our goal is simple: your operations run smoother, your team achieves more, and progress feels effortless.
