@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
+import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 export default function ManufacturingCaseStudy() {
   const [time, setTime] = useState(new Date());
@@ -72,7 +73,7 @@ export default function ManufacturingCaseStudy() {
           <div>
             <Link href="/">
               <img 
-                src="https://stratagentic.ai/assets/stratagenticwhite-DDEPFJWf.png"
+                src={logoImage}
                 alt="Stratagentic" 
                 className="h-10 cursor-pointer"
                 style={{ filter: 'invert(1)' }}
