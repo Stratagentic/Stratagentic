@@ -10,6 +10,7 @@ import salesCollateralImage from "@assets/Gemini_Generated_Image_fhapg0fhapg0fha
 import linkedInGrowthImage from "@assets/Gemini_Generated_Image_shucw7shucw7shuc_1762259541274.png";
 import outreachEngineImage from "@assets/Gemini_Generated_Image_7bxgiv7bxgiv7bxg_1762260457028.png";
 import intelligenceStrategyImage from "@assets/Gemini_Generated_Image_9k0qy79k0qy79k0q_1762263456641.png";
+import automationIntegrationImage from "@assets/Gemini_Generated_Image_a0mxjma0mxjma0mx_1762263623872.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -248,11 +249,29 @@ export default function Landing() {
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
               </div>
+              {openAccordion !== 'automation' && (
+                <div className="flex-shrink-0">
+                  <img 
+                    src={automationIntegrationImage} 
+                    alt="Automation & Integration" 
+                    className="h-24 w-auto"
+                  />
+                </div>
+              )}
             </div>
             {openAccordion === 'automation' && (
-              <div className="text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
-                <p>Technology begins taking on work so people can focus on what matters.</p>
+              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="text-base leading-relaxed">
+                  <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
+                  <p>Technology begins taking on work so people can focus on what matters.</p>
+                </div>
+                <div className="flex justify-end">
+                  <img 
+                    src={automationIntegrationImage} 
+                    alt="Automation & Integration visualization" 
+                    className="h-32 w-auto"
+                  />
+                </div>
               </div>
             )}
           </div>
