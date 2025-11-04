@@ -5,6 +5,7 @@ import { Globe } from "@/components/globe";
 import { Search, Ruler, FlaskConical } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
+import prospectResearchImage from "@assets/stock_images/minimalist_abstract__58e472cc.jpg";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -433,63 +434,162 @@ export default function Landing() {
       {/* Results */}
       <section
         ref={(el) => (sectionsRef.current[3] = el)}
-        className="fade-in-section bg-white text-black border-t border-black"
-        style={{ padding: "var(--space-7) var(--space-3)" }}
+        className="fade-in-section bg-white text-black border-t border-black overflow-hidden"
+        style={{ padding: "var(--space-7) 0" }}
         data-testid="section-case-studies"
       >
-        <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-[1400px] mx-auto px-3">
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-case-studies-heading">
-            YOUR RESULTS (02)
+            Selected work
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Link href="/case-studies/manufacturing" className="block">
-              <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-1">
-                <div className="relative aspect-[4/3]">
-                  <img 
-                    src={manufacturingImage} 
-                    alt="Modern manufacturing facility with automation" 
-                    className="w-full h-full object-cover"
-                    data-testid="img-case-study-1"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Manufacturing</p>
-                    <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                      60% efficiency
-                      <br />
-                      increase
-                    </p>
-                    <p className="text-sm opacity-90 leading-relaxed">
-                      Automated quality control and production scheduling reduced downtime and increased throughput
-                    </p>
+        </div>
+        <div className="relative">
+          <div className="overflow-hidden">
+            <div className="flex animate-scroll-infinite">
+              {/* First set of cards */}
+              <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-1">
+                  <div className="relative aspect-[4/3]">
+                    <img 
+                      src={manufacturingImage} 
+                      alt="Modern manufacturing facility with automation" 
+                      className="w-full h-full object-cover"
+                      data-testid="img-case-study-1"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Manufacturing</p>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        60% efficiency
+                        <br />
+                        increase
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        Automated quality control and production scheduling reduced downtime and increased throughput
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-            <Link href="/case-studies/logistics" className="block">
-              <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-2">
-                <div className="relative aspect-[4/3]">
-                  <img 
-                    src={logisticsImage} 
-                    alt="Automated logistics warehouse" 
-                    className="w-full h-full object-cover"
-                    data-testid="img-case-study-2"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Logistics</p>
-                    <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                      40% cost
-                      <br />
-                      reduction
-                    </p>
-                    <p className="text-sm opacity-90 leading-relaxed">
-                      Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
-                    </p>
+              </Link>
+              <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-2">
+                  <div className="relative aspect-[4/3]">
+                    <img 
+                      src={logisticsImage} 
+                      alt="Automated logistics warehouse" 
+                      className="w-full h-full object-cover"
+                      data-testid="img-case-study-2"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Logistics</p>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        40% cost
+                        <br />
+                        reduction
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+              <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-3">
+                  <div className="relative aspect-[4/3]">
+                    <img 
+                      src={prospectResearchImage} 
+                      alt="AI-powered prospect research automation" 
+                      className="w-full h-full object-cover"
+                      data-testid="img-case-study-3"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Sales Intelligence</p>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        80% time
+                        <br />
+                        savings
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        AI agent replaced manual prospecting with personalized, ready-to-use sales insights
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              {/* Duplicate set for seamless infinite scroll */}
+              <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300">
+                  <div className="relative aspect-[4/3]">
+                    <img 
+                      src={manufacturingImage} 
+                      alt="Modern manufacturing facility with automation" 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Manufacturing</p>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        60% efficiency
+                        <br />
+                        increase
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        Automated quality control and production scheduling reduced downtime and increased throughput
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300">
+                  <div className="relative aspect-[4/3]">
+                    <img 
+                      src={logisticsImage} 
+                      alt="Automated logistics warehouse" 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Logistics</p>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        40% cost
+                        <br />
+                        reduction
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300">
+                  <div className="relative aspect-[4/3]">
+                    <img 
+                      src={prospectResearchImage} 
+                      alt="AI-powered prospect research automation" 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <p className="text-xs mb-2 uppercase tracking-wider opacity-80">Sales Intelligence</p>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        80% time
+                        <br />
+                        savings
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        AI agent replaced manual prospecting with personalized, ready-to-use sales insights
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
