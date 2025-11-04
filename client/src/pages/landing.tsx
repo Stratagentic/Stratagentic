@@ -250,11 +250,11 @@ export default function Landing() {
                 <div className="w-32 h-24 bg-[#2563EB]"></div>
                 <div className="w-32 h-24 bg-[#2563EB]"></div>
               </div>
-              <h2 className="text-3xl font-bold tracking-tight text-center">
+              <h2 className="text-3xl font-bold tracking-tight">
                 Intelligence &<br />Strategy
               </h2>
               {openAccordion === 'intelligence' && (
-                <div className="mt-6 text-base leading-relaxed text-center animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
                   <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
                   <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
                 </div>
@@ -302,11 +302,11 @@ export default function Landing() {
               <div className="mb-4 overflow-hidden">
                 <img src={automationIntegrationImage} alt="" className="w-full h-auto object-cover" />
               </div>
-              <h2 className="text-3xl font-bold tracking-tight text-center">
+              <h2 className="text-3xl font-bold tracking-tight">
                 Automation &<br />Integration
               </h2>
               {openAccordion === 'automation' && (
-                <div className="mt-6 text-base leading-relaxed text-center animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
                   <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
                   <p>Technology begins taking on work so people can focus on what matters.</p>
                 </div>
@@ -352,11 +352,11 @@ export default function Landing() {
               <div className="mb-4 overflow-hidden">
                 <img src={experienceInteractionImage} alt="" className="w-full h-auto object-cover brightness-110" />
               </div>
-              <h2 className="text-3xl font-bold tracking-tight text-center">
+              <h2 className="text-3xl font-bold tracking-tight">
                 Experience &<br />Interaction
               </h2>
               {openAccordion === 'experience' && (
-                <div className="mt-6 text-base leading-relaxed text-center animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
                   <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
                   <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
                 </div>
@@ -402,11 +402,11 @@ export default function Landing() {
               <div className="mb-4 overflow-hidden">
                 <img src={growthMomentumImage} alt="" className="w-full h-auto object-cover" />
               </div>
-              <h2 className="text-3xl font-bold tracking-tight text-center">
+              <h2 className="text-3xl font-bold tracking-tight">
                 Growth &<br />Momentum
               </h2>
               {openAccordion === 'growth' && (
-                <div className="mt-6 text-base leading-relaxed text-center animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
                   <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
                   <p>Growth stops being an event and becomes the natural state of your business.</p>
                 </div>
