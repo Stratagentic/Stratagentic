@@ -449,12 +449,12 @@ export default function Landing() {
             <div className="flex animate-scroll-infinite">
               {/* First set of cards */}
               <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-1">
+                <div className="border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-1">
                   <div className="relative aspect-square">
                     <img 
                       src={manufacturingImage} 
                       alt="Modern manufacturing facility with automation" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       data-testid="img-case-study-1"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -474,12 +474,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-2">
+                <div className="border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-2">
                   <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
                       alt="Automated logistics warehouse" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -499,12 +499,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-3">
+                <div className="border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-3">
                   <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
                       alt="AI-powered prospect research automation" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -524,12 +524,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-4">
+                <div className="border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-4">
                   <div className="relative aspect-square">
                     <img 
                       src={salesCollateralImage} 
                       alt="Sales collateral and marketing materials" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
