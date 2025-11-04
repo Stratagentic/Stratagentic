@@ -786,7 +786,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto text-sm">
           <p data-testid="text-footer">
-            © 2025 Stratagentic. You create better systems for a better world.
+            © 2025 Stratagentic – All rights reserved. AI-assisted, human-approved
           </p>
         </div>
       </footer>
