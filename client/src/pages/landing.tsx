@@ -201,11 +201,11 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           {/* Intelligence & Strategy */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all border-b border-gray-300"
+            className={`px-3 md:px-6 cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'intelligence' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
             data-testid="accordion-intelligence"
             onClick={() => toggleAccordion('intelligence')}
           >
-            <div className="flex items-center justify-between gap-6 mb-6">
+            <div className={`flex items-center justify-between gap-6 ${openAccordion === 'intelligence' ? 'mb-6' : ''}`}>
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'intelligence' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence &<br className="md:hidden" /> Strategy</h2>
@@ -235,11 +235,11 @@ export default function Landing() {
 
           {/* Automation & Integration */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all border-b border-gray-300"
+            className={`px-3 md:px-6 cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'automation' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
             data-testid="accordion-automation"
             onClick={() => toggleAccordion('automation')}
           >
-            <div className="flex items-center justify-between gap-6 mb-6">
+            <div className={`flex items-center justify-between gap-6 ${openAccordion === 'automation' ? 'mb-6' : ''}`}>
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
@@ -263,11 +263,11 @@ export default function Landing() {
 
           {/* Experience & Interaction */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all border-b border-gray-300"
+            className={`px-3 md:px-6 cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'experience' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
             data-testid="accordion-experience"
             onClick={() => toggleAccordion('experience')}
           >
-            <div className="flex items-center justify-between gap-6 mb-6">
+            <div className={`flex items-center justify-between gap-6 ${openAccordion === 'experience' ? 'mb-6' : ''}`}>
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'experience' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience &<br className="md:hidden" /> Interaction</h2>
@@ -291,11 +291,11 @@ export default function Landing() {
 
           {/* Growth & Momentum */}
           <div 
-            className="py-6 px-3 md:py-12 md:px-6 cursor-pointer transition-all border-b border-gray-300"
+            className={`px-3 md:px-6 cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'growth' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
             data-testid="accordion-growth"
             onClick={() => toggleAccordion('growth')}
           >
-            <div className="flex items-center justify-between gap-6 mb-6">
+            <div className={`flex items-center justify-between gap-6 ${openAccordion === 'growth' ? 'mb-6' : ''}`}>
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'growth' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth &<br className="md:hidden" /> Momentum</h2>
