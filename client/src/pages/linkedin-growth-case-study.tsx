@@ -180,14 +180,13 @@ export default function LinkedInGrowthCaseStudy() {
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-4">
                   <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
-                    Scrape News
+                    User Input
                   </div>
                   <div className="text-2xl">→</div>
                 </div>
-                <div className="text-center text-sm font-bold">OR</div>
                 <div className="flex items-center gap-4">
                   <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
-                    User Input
+                    Scrape News
                   </div>
                   <div className="text-2xl">→</div>
                 </div>
