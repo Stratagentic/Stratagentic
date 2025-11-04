@@ -58,7 +58,7 @@ export default function ProspectResearchCaseStudy() {
             How a local company cut sales prep time by 80%
           </h1>
           <p className="text-lg max-w-3xl leading-relaxed" data-testid="text-hero-description">
-            See how an intelligent AI agent replaced manual prospecting with personalized, ready-to-use sales insights - built by Stratagentic.
+            See how an intelligent AI agent replaced manual prospecting with personalized, ready-to-use sales insights.
           </p>
         </div>
       </section>
