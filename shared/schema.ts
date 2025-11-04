@@ -21,8 +21,10 @@ export const leads = pgTable("leads", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   name: text("name").notNull(),
   email: text("email").notNull(),
-  company: text("company"),
-  message: text("message").notNull(),
+  company: text("company").notNull(),
+  website: text("website"),
+  automationNeeds: text("automation_needs").notNull(),
+  currentAiUse: text("current_ai_use").notNull(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
@@ -32,7 +34,10 @@ export const insertLeadSchema = createInsertSchema(leads).omit({
 }).extend({
   email: z.string().email("Please enter a valid email address"),
   name: z.string().min(2, "Name must be at least 2 characters"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  company: z.string().min(2, "Company must be at least 2 characters"),
+  automationNeeds: z.string().min(10, "Please describe what you'd like to automate"),
+  currentAiUse: z.string().min(2, "Please share your current AI use"),
+  website: z.string().optional(),
 });
 
 export type InsertLead = z.infer<typeof insertLeadSchema>;
