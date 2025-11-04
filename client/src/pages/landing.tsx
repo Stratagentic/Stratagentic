@@ -8,7 +8,7 @@ import logisticsImage from "@assets/Screenshot 2025-11-04 at 22.12.45_1762292209
 import prospectResearchImage from "@assets/Screenshot 2025-11-04 at 22.15.09_1762292233906.jpg";
 import salesCollateralImage from "@assets/Screenshot 2025-11-04 at 22.13.23_1762292269030.jpg";
 import linkedInGrowthImage from "@assets/Screenshot 2025-11-04 at 22.16.12_1762292288472.jpg";
-import outreachEngineImage from "@assets/Gemini_Generated_Image_7bxgiv7bxgiv7bxg_1762260457028.png";
+import outreachEngineImage from "@assets/Screenshot 2025-11-04 at 22.15.38_1762292328865.jpg";
 import growthMomentumImage from "@assets/Relaxing2_1762267740236.png";
 import experienceInteractionImage from "@assets/Gemini_Generated_Image_te47eete47eete47_1762272190441.png";
 import automationIntegrationImage from "@assets/Gemini_Generated_Image_xcxx34xcxx34xcxx_1762283665043.png";
