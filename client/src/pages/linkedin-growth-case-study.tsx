@@ -1,0 +1,263 @@
+import { useState, useEffect } from "react";
+import { Link } from "wouter";
+
+export default function LinkedInGrowthCaseStudy() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatTime = (date: Date) => {
+    return date.toLocaleTimeString('en-US', { 
+      hour: '2-digit', 
+      minute: '2-digit',
+      hour12: false 
+    });
+  };
+
+  return (
+    <div className="min-h-screen bg-white text-black">
+      {/* Header */}
+      <header style={{ padding: "var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto flex justify-between items-start">
+          <div>
+            <Link href="/">
+              <img 
+                src="https://stratagentic.ai/assets/stratagenticwhite-DDEPFJWf.png"
+                alt="Stratagentic" 
+                className="h-10 cursor-pointer"
+                style={{ filter: 'invert(1)' }}
+                data-testid="img-logo"
+              />
+            </Link>
+          </div>
+          <div className="text-right">
+            <div className="text-sm" data-testid="text-time">{formatTime(time)}</div>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="bg-white text-black border-t border-black" style={{ padding: "var(--space-8) var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto">
+          <p className="text-xs mb-4 uppercase tracking-wider opacity-60" data-testid="text-category">Case Study</p>
+          <h1 
+            className="font-bold mb-6"
+            style={{ 
+              fontSize: "clamp(2rem, 6vw + 0.5rem, 6rem)",
+              lineHeight: "0.92",
+              letterSpacing: "-0.04em"
+            }}
+            data-testid="text-hero-heading"
+          >
+            Consistent LinkedIn presence without the time drain
+          </h1>
+          <p className="text-lg max-w-5xl leading-relaxed" data-testid="text-hero-description">
+            An AI-driven system that helps teams and executives maintain a strong, authentic LinkedIn presence in minutes a week.
+          </p>
+        </div>
+      </section>
+
+      {/* Challenge */}
+      <section 
+        className="bg-white text-black border-t border-gray-300"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-challenge"
+      >
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading">
+            THE CHALLENGE
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <p className="text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-6">
+                Executives struggled to keep up with LinkedIn content demands.
+              </p>
+            </div>
+            <div className="text-base leading-relaxed space-y-4">
+              <p>
+                Despite knowing the value of thought leadership and visibility, sustaining a steady posting rhythm was challenging. Creating quality posts took hours, often leading to long gaps in activity and inconsistent messaging.
+              </p>
+              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic">
+                "We knew LinkedIn mattered, but planning and writing posts every week just didn't fit into our schedules."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution */}
+      <section 
+        className="bg-white text-black"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-solution"
+      >
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-solution">
+            THE SOLUTION
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <p className="text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-6">
+                LinkedIn Content Idea
+              </p>
+            </div>
+            <div className="text-base leading-relaxed space-y-4">
+              <p>
+                A content automation solution that turns short updates and insights into a steady stream of professional posts. Automatically, or with a few quick prompts—recent wins, client updates, or personal insights—the system drafts multiple post variations ready for review and publishing.
+              </p>
+              <p className="font-bold">The system can:</p>
+              <ul className="space-y-2">
+                <li>• Suggest and write posts in storytelling, thought leadership, educational, or conversational formats</li>
+                <li>• Auto-generate weekly or monthly post calendars</li>
+                <li>• Allow human edits or personalization before approval (encouraged for authenticity)</li>
+                <li>• Export directly to scheduling tools</li>
+              </ul>
+              <p>
+                This enables users to maintain an active, high-quality LinkedIn presence without the time burden.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results */}
+      <section 
+        className="bg-[#F5F5F5] text-black border-t border-gray-300"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-results"
+      >
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-results">
+            THE RESULTS
+          </h2>
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div data-testid="metric-1">
+              <div className="text-4xl md:text-5xl font-bold mb-2">10–15</div>
+              <div className="text-sm">hours saved per month per user</div>
+            </div>
+            <div data-testid="metric-2">
+              <div className="text-4xl md:text-5xl font-bold mb-2">3x</div>
+              <div className="text-sm">increase in posting consistency</div>
+            </div>
+            <div data-testid="metric-3">
+              <div className="text-4xl md:text-5xl font-bold mb-2">Stronger</div>
+              <div className="text-sm">brand visibility and engagement</div>
+            </div>
+            <div data-testid="metric-4">
+              <div className="text-4xl md:text-5xl font-bold mb-2">Clearer</div>
+              <div className="text-sm">more authentic tone across leadership profiles</div>
+            </div>
+          </div>
+          <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-lg max-w-3xl">
+            "It feels like having a content strategist on call—only faster and always on brand."
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Inside the System */}
+      <section 
+        className="bg-white text-black border-t border-gray-300"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-system"
+      >
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-system">
+            INSIDE THE SYSTEM
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <p className="text-base leading-relaxed">
+                The <strong>LinkedIn Content Idea</strong> uses short text inputs as context, or scrapes current news, then combines brand voice models, approved message libraries, and adaptive tone logic to create ready-to-publish drafts. Output can be edited within the interface or sent directly to scheduling platforms.
+              </p>
+            </div>
+            <div className="border border-black p-8">
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
+                    Scrape News
+                  </div>
+                  <div className="text-2xl">→</div>
+                </div>
+                <div className="text-center text-sm font-bold">OR</div>
+                <div className="flex items-center gap-4">
+                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
+                    User Input
+                  </div>
+                  <div className="text-2xl">→</div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
+                    AI Content Engine
+                  </div>
+                  <div className="text-2xl">→</div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
+                    Guidelines
+                  </div>
+                  <div className="text-2xl">→</div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="flex-1 border border-black p-4 text-center text-sm font-bold">
+                    Draft Calendar
+                  </div>
+                  <div className="text-2xl">→</div>
+                </div>
+                <div className="border border-black p-4 text-center text-sm font-bold">
+                  Scheduler Export
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section 
+        className="bg-[#2563EB] text-white"
+        style={{ padding: "var(--space-8) var(--space-3)" }}
+        data-testid="section-cta"
+      >
+        <div className="max-w-[1400px] mx-auto text-center">
+          <h2 
+            className="font-bold mb-4"
+            style={{ 
+              fontSize: "clamp(2rem, 4vw + 0.5rem, 4rem)",
+              lineHeight: "1.1",
+              letterSpacing: "-0.02em"
+            }}
+            data-testid="text-cta-heading"
+          >
+            Stay visible. Stay consistent. Effortlessly.
+          </h2>
+          <p className="text-lg mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="text-cta-description">
+            Let Stratagentic show you how to keep your brand and leadership voice active on LinkedIn—without the weekly grind.
+          </p>
+          <Link href="/#contact">
+            <button 
+              className="bg-white text-[#2563EB] px-8 py-4 text-lg font-bold hover:bg-gray-100 transition-colors"
+              data-testid="button-cta"
+            >
+              Book a Discovery Call
+            </button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-white text-black border-t border-gray-300" style={{ padding: "var(--space-5) var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto text-center">
+          <p className="text-sm opacity-60" data-testid="text-footer">
+            © 2025 Stratagentic. Built in Norway.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}

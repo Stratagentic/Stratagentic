@@ -1,0 +1,71 @@
+**Case Study – LinkedIn Growth System | Stratagentic**
+
+---
+
+### **Hero Section**
+
+**Headline:**
+Consistent LinkedIn presence without the time drain
+
+**Subhead:**
+An AI-driven system that helps teams and executives maintain a strong, authentic LinkedIn presence in minutes a week.
+
+---
+
+### **Challenge**
+
+Executives struggled to keep up with LinkedIn content demands. Despite knowing the value of thought leadership and visibility, sustaining a steady posting rhythm was challenging. Creating quality posts took hours, often leading to long gaps in activity and inconsistent messaging.
+
+> “We knew LinkedIn mattered, but planning and writing posts every week just didn’t fit into our schedules.”
+
+---
+
+### **Solution**
+
+Stratagentic developed the **LinkedIn Content Idea**, a content automation solution that turns short updates and insights into a steady stream of professional posts. Automatically, or with a few quick prompts - recent wins, client updates, or personal insights - the system drafts multiple post variations ready for review and publishing.
+
+The system can:
+
+* Suggest and write posts in storytelling, thought leadership, educational, or conversational formats
+* Auto-generate weekly or monthly post calendars
+* Allow  human edits or personalization before approval (encouraged for authenticity)
+* Export directly to scheduling tools
+
+This enables users to maintain an active, high-quality LinkedIn presence without the time burden.
+
+---
+
+### **Results**
+
+* 10–15 hours saved per month per user
+* 3x increase in posting consistency
+* Stronger brand visibility and engagement
+* Clearer, more authentic tone across leadership profiles
+
+> “It feels like having a content strategist on call- only faster and always on brand.”
+
+---
+
+### **Inside the System**
+
+The **LinkedIn Content Idea** uses short text inputs as context, or scrapes current nest, then combines brand voice models, approved message libraries, and adaptive tone logic to create ready-to-publish drafts. Output can be edited within the interface or sent directly to scheduling platforms.
+
+*Suggested visual: Workflow diagram showing Scrape news **→** OR User Input → AI content engine *→* Guidelines *→ Draft calendar → Scheduler export.*
+
+---
+
+### **CTA**
+
+**Headline:**
+Stay visible. Stay consistent. Effortlessly.
+
+Let Stratagentic show you how to keep your brand and leadership voice active on LinkedIn - without the weekly grind.
+
+**Call-to-action:**
+Book a Discovery Call
+
+---
+
+### **Footer:**
+
+© 2025 Stratagentic. Built in Norway.
