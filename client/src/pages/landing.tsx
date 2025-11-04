@@ -5,7 +5,7 @@ import { Globe } from "@/components/globe";
 import { Search, Ruler, FlaskConical } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
-import prospectResearchImage from "@assets/stock_images/minimalist_abstract__58e472cc.jpg";
+import prospectResearchImage from "@assets/Gemini_Generated_Image_6bn93u6bn93u6bn9_1762255434711.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -449,7 +449,7 @@ export default function Landing() {
               {/* First set of cards */}
               <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-1">
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-square">
                     <img 
                       src={manufacturingImage} 
                       alt="Modern manufacturing facility with automation" 
@@ -473,7 +473,7 @@ export default function Landing() {
               </Link>
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-2">
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
                       alt="Automated logistics warehouse" 
@@ -497,7 +497,7 @@ export default function Landing() {
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300" data-testid="card-case-study-3">
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
                       alt="AI-powered prospect research automation" 
@@ -522,7 +522,7 @@ export default function Landing() {
               {/* Duplicate set for seamless infinite scroll */}
               <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300">
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-square">
                     <img 
                       src={manufacturingImage} 
                       alt="Modern manufacturing facility with automation" 
@@ -545,7 +545,7 @@ export default function Landing() {
               </Link>
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300">
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
                       alt="Automated logistics warehouse" 
@@ -568,7 +568,7 @@ export default function Landing() {
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer hover:border-[#2563EB] transition-all duration-300">
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
                       alt="AI-powered prospect research automation" 
