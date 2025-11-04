@@ -78,10 +78,54 @@ export function Globe({ maxWidth = 512, maxHeight = 512 }: GlobeProps) {
       mouse.active = false;
     };
 
+    // Touch handlers for mobile
+    const handleTouchStart = (e: TouchEvent) => {
+      e.preventDefault();
+      const touch = e.touches[0];
+      isDragging = true;
+      lastX = touch.clientX;
+      lastY = touch.clientY;
+      
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = touch.clientX - rect.left;
+      mouse.y = touch.clientY - rect.top;
+      mouse.active = true;
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      e.preventDefault();
+      const touch = e.touches[0];
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = touch.clientX - rect.left;
+      mouse.y = touch.clientY - rect.top;
+      mouse.active = true;
+
+      if (isDragging) {
+        const dx = touch.clientX - lastX;
+        const dy = touch.clientY - lastY;
+
+        velocityY = -dx * 0.002;
+        velocityX = dy * 0.002;
+
+        lastX = touch.clientX;
+        lastY = touch.clientY;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      isDragging = false;
+      mouse.active = false;
+    };
+
     canvas.addEventListener("mousemove", handleMouseMove);
     canvas.addEventListener("mousedown", handleMouseDown);
     canvas.addEventListener("mouseup", handleMouseUp);
     canvas.addEventListener("mouseleave", handleMouseLeave);
+    
+    canvas.addEventListener("touchstart", handleTouchStart, { passive: false });
+    canvas.addEventListener("touchmove", handleTouchMove, { passive: false });
+    canvas.addEventListener("touchend", handleTouchEnd);
+    canvas.addEventListener("touchcancel", handleTouchEnd);
 
     // Build points in sphere
     for (let i = 0; i < POINTS; i++) {
@@ -188,6 +232,10 @@ export function Globe({ maxWidth = 512, maxHeight = 512 }: GlobeProps) {
       canvas.removeEventListener("mousedown", handleMouseDown);
       canvas.removeEventListener("mouseup", handleMouseUp);
       canvas.removeEventListener("mouseleave", handleMouseLeave);
+      canvas.removeEventListener("touchstart", handleTouchStart);
+      canvas.removeEventListener("touchmove", handleTouchMove);
+      canvas.removeEventListener("touchend", handleTouchEnd);
+      canvas.removeEventListener("touchcancel", handleTouchEnd);
     };
   }, [dimensions]);
 
