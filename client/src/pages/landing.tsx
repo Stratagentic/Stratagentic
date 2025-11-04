@@ -11,6 +11,7 @@ import linkedInGrowthImage from "@assets/Gemini_Generated_Image_shucw7shucw7shuc
 import outreachEngineImage from "@assets/Gemini_Generated_Image_7bxgiv7bxgiv7bxg_1762260457028.png";
 import growthMomentumImage from "@assets/Relaxing2_1762267740236.png";
 import experienceInteractionImage from "@assets/Gemini_Generated_Image_te47eete47eete47_1762272190441.png";
+import automationIntegrationImage from "@assets/Gemini_Generated_Image_xcxx34xcxx34xcxx_1762283665043.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -328,7 +329,9 @@ export default function Landing() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
               </div>
               {openAccordion !== 'automation' && (
-                <div className="w-[480px] h-24 bg-[#2563EB]"></div>
+                <div className="w-[480px] h-24 overflow-hidden">
+                  <img src={automationIntegrationImage} alt="" className="w-full h-full object-cover" />
+                </div>
               )}
             </div>
             {openAccordion === 'automation' && (
@@ -338,7 +341,9 @@ export default function Landing() {
                   <p>Technology begins taking on work so people can focus on what matters.</p>
                 </div>
                 <div className="flex justify-end">
-                  <div className="w-[480px] h-24 bg-[#2563EB]"></div>
+                  <div className="w-[480px] h-24 overflow-hidden">
+                    <img src={automationIntegrationImage} alt="" className="w-full h-full object-cover" />
+                  </div>
                 </div>
               </div>
             )}
