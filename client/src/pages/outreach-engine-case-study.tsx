@@ -222,15 +222,18 @@ export default function OutreachEngineCaseStudy() {
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">CRM</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">↔</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↕</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">↔</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Outreach Platform</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">↔</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↕</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">↔</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px] bg-[#2563EB] text-white">
               <p className="font-bold">AI Engine</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">↔</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↕</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">↔</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Reporting Dashboard</p>
             </div>

@@ -221,23 +221,28 @@ export default function LinkedInGrowthCaseStudy() {
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">User Input</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Scrape News</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px] bg-[#2563EB] text-white">
               <p className="font-bold">AI Engine</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Guidelines</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Draft Calendar</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Scheduler Export</p>
             </div>

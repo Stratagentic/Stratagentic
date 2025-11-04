@@ -216,23 +216,28 @@ export default function LogisticsCaseStudy() {
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Orders</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">ERP System</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px] bg-[#2563EB] text-white">
               <p className="font-bold">Agent</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Carrier APIs</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Dashboard</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Notifications</p>
             </div>

@@ -218,27 +218,33 @@ export default function ProspectResearchCaseStudy() {
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Lead</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">CRM</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px] bg-[#2563EB] text-white">
               <p className="font-bold">Agent</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">LinkedIn</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Web Intelligence</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Intel Report</p>
             </div>
-            <span className="text-2xl text-[#2563EB]">→</span>
+            <span className="text-2xl text-[#2563EB] md:hidden">↓</span>
+            <span className="text-2xl text-[#2563EB] hidden md:inline">→</span>
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Sales Outreach</p>
             </div>
