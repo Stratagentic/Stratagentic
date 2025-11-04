@@ -452,8 +452,8 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-3 gap-12">
             <div data-testid="card-value-strategy" className="group">
-              <div className="mb-4 transition-all duration-300 origin-left group-hover:scale-110">
-                <Search className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
+              <div className="mb-4">
+                <Search className="w-[42px] h-[42px] text-black" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Targeted Strategy
@@ -463,8 +463,8 @@ export default function Landing() {
               </p>
             </div>
             <div data-testid="card-value-build" className="group">
-              <div className="mb-4 transition-all duration-300 origin-left group-hover:scale-110">
-                <Ruler className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
+              <div className="mb-4">
+                <Ruler className="w-[42px] h-[42px] text-black" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Custom System Build
@@ -474,8 +474,8 @@ export default function Landing() {
               </p>
             </div>
             <div data-testid="card-value-execution" className="group">
-              <div className="mb-4 transition-all duration-300 origin-left group-hover:scale-110">
-                <FlaskConical className="w-[60px] h-[60px] text-[#2563EB]" strokeWidth={2.5} />
+              <div className="mb-4">
+                <FlaskConical className="w-[42px] h-[42px] text-black" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Scaled Execution
