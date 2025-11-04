@@ -454,7 +454,7 @@ export default function Landing() {
                     <img 
                       src={manufacturingImage} 
                       alt="Modern manufacturing facility with automation" 
-                      className="absolute top-8 right-8 w-[calc(100%-4rem)] h-[calc(100%-4rem)] object-cover"
+                      className="absolute top-8 right-8 w-4/5 h-4/5 object-cover"
                       data-testid="img-case-study-1"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -479,7 +479,7 @@ export default function Landing() {
                     <img 
                       src={logisticsImage} 
                       alt="Automated logistics warehouse" 
-                      className="absolute top-8 right-8 w-[calc(100%-4rem)] h-[calc(100%-4rem)] object-cover"
+                      className="absolute top-8 right-8 w-4/5 h-4/5 object-cover"
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -504,7 +504,7 @@ export default function Landing() {
                     <img 
                       src={prospectResearchImage} 
                       alt="AI-powered prospect research automation" 
-                      className="absolute top-8 right-8 w-[calc(100%-4rem)] h-[calc(100%-4rem)] object-cover"
+                      className="absolute top-8 right-8 w-4/5 h-4/5 object-cover"
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -529,7 +529,7 @@ export default function Landing() {
                     <img 
                       src={salesCollateralImage} 
                       alt="Sales collateral and marketing materials" 
-                      className="absolute top-8 right-8 w-[calc(100%-4rem)] h-[calc(100%-4rem)] object-cover"
+                      className="absolute top-8 right-8 w-4/5 h-4/5 object-cover"
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
