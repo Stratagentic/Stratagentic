@@ -122,7 +122,7 @@ export default function OutreachEngineCaseStudy() {
               <p>
                 Sales and marketing teams often face the same trade-off – scale outreach or maintain personalization. Manual prospecting, fragmented tools, and poor CRM syncs made it difficult to reach more people without losing quality or context. Leadership lacked visibility into what worked, while reps juggled too many disconnected systems.
               </p>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic">
+              <blockquote className="pl-4 italic text-[#2563EB]">
                 "We were spending more time managing tools than actually reaching prospects. Scaling personalization felt impossible."
               </blockquote>
             </div>
@@ -195,7 +195,7 @@ export default function OutreachEngineCaseStudy() {
               </ul>
             </div>
             <div>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-base">
+              <blockquote className="pl-4 italic text-base text-[#2563EB]">
                 "We finally have a scalable system that personalizes every touchpoint and keeps our CRM perfectly clean."
               </blockquote>
             </div>

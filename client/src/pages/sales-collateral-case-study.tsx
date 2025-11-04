@@ -122,7 +122,7 @@ export default function SalesCollateralCaseStudy() {
               <p>
                 Relevant case studies, pitch decks, and follow-up documents all required manual customization. Inconsistent messaging and off-brand visuals often slowed down the process, reducing the impact of outreach and proposals.
               </p>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic">
+              <blockquote className="pl-4 italic text-[#2563EB]">
                 "We spent hours tweaking slides and rewriting case studies just to fit each client. We needed something faster - and consistent."
               </blockquote>
             </div>
@@ -193,7 +193,7 @@ export default function SalesCollateralCaseStudy() {
               </ul>
             </div>
             <div>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-base">
+              <blockquote className="pl-4 italic text-base text-[#2563EB]">
                 "The automation feels invisible - it just gives our team exactly what they need at each stage of the deal."
               </blockquote>
             </div>

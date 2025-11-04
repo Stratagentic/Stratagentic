@@ -122,7 +122,7 @@ export default function LinkedInGrowthCaseStudy() {
               <p>
                 Despite knowing the value of thought leadership and visibility, sustaining a steady posting rhythm was challenging. Creating quality posts took hours, often leading to long gaps in activity and inconsistent messaging.
               </p>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic">
+              <blockquote className="pl-4 italic text-[#2563EB]">
                 "We knew LinkedIn mattered, but planning and writing posts every week just didn't fit into our schedules."
               </blockquote>
             </div>
@@ -194,7 +194,7 @@ export default function LinkedInGrowthCaseStudy() {
               </ul>
             </div>
             <div>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-base">
+              <blockquote className="pl-4 italic text-base text-[#2563EB]">
                 "It feels like having a content strategist on call – only faster and always on brand."
               </blockquote>
             </div>

@@ -122,7 +122,7 @@ export default function ProspectResearchCaseStudy() {
               <p>
                 Business development spent 3–4 hours per prospect gathering company data, LinkedIn details, and crafting outreach messages, often duplicating effort and missing context. As a result, the sales team struggled to scale their outreach without losing personalization.
               </p>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic">
+              <blockquote className="pl-4 italic text-[#2563EB]">
                 "Our pipeline was growing, but prep time kept us from moving fast enough."
                 <footer className="text-sm mt-2 not-italic opacity-70">- Head of Sales, B2B SaaS Company</footer>
               </blockquote>
@@ -190,7 +190,7 @@ export default function ProspectResearchCaseStudy() {
               </ul>
             </div>
             <div>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-base">
+              <blockquote className="pl-4 italic text-base text-[#2563EB]">
                 "It's like having a full-time sales assistant who never sleeps - and never misses context."
                 <footer className="text-sm mt-2 not-italic opacity-70">- Head of Sales</footer>
               </blockquote>

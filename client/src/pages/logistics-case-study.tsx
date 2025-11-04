@@ -123,7 +123,7 @@ export default function LogisticsCaseStudy() {
               <p>
                 Coordinating shipments across multiple carriers, suppliers, and clients was a constant bottleneck. Operations staff spent hours every day checking transport portals, emailing confirmations, and updating spreadsheets manually. With increasing shipment volume, errors and delays started to multiply.
               </p>
-              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic">
+              <blockquote className="pl-4 italic text-[#2563EB]">
                 "Every hour saved in coordination means an hour gained in actual delivery."
                 <footer className="text-sm mt-2 not-italic opacity-70">– Operations Manager, National Logistics Company</footer>
               </blockquote>
@@ -190,7 +190,7 @@ export default function LogisticsCaseStudy() {
               <p className="text-sm leading-relaxed opacity-70">Complete transparency across all carriers and delivery routes</p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#2563EB] pl-6 py-4 italic text-xl mt-12">
+          <blockquote className="pl-6 py-4 italic text-xl mt-12 text-[#2563EB]">
             "The agent feels like an extra team member who keeps every order on track."
             <footer className="text-sm mt-2 not-italic opacity-70">– Logistics Coordinator</footer>
           </blockquote>
