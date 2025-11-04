@@ -152,42 +152,39 @@ export default function Landing() {
             />
           </div>
           <div 
-            className="relative flex items-center"
+            className="relative flex items-center overflow-hidden"
             onMouseEnter={() => setMenuOpen(true)}
             onMouseLeave={() => setMenuOpen(false)}
           >
-            {menuOpen ? (
-              <div className="flex items-center gap-6">
-                <a 
-                  href="#faqs" 
-                  className="text-sm hover:text-[#2563EB] transition-colors"
-                  data-testid="link-menu-faqs"
-                >
-                  FAQs
-                </a>
-                <a 
-                  href="#team" 
-                  className="text-sm hover:text-[#2563EB] transition-colors"
-                  data-testid="link-menu-team"
-                >
-                  Team
-                </a>
-                <a 
-                  href="#resources" 
-                  className="text-sm hover:text-[#2563EB] transition-colors"
-                  data-testid="link-menu-resources"
-                >
-                  Resources
-                </a>
-              </div>
-            ) : (
-              <button 
-                className="p-2"
-                data-testid="button-menu"
+            <div className={`flex items-center gap-6 transition-all duration-300 ease-out ${menuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}>
+              <a 
+                href="#faqs" 
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
+                data-testid="link-menu-faqs"
               >
-                <Menu className="w-6 h-6" />
-              </button>
-            )}
+                FAQs
+              </a>
+              <a 
+                href="#team" 
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
+                data-testid="link-menu-team"
+              >
+                Team
+              </a>
+              <a 
+                href="#resources" 
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
+                data-testid="link-menu-resources"
+              >
+                Resources
+              </a>
+            </div>
+            <button 
+              className={`p-2 absolute right-0 transition-all duration-300 ease-out ${menuOpen ? 'opacity-0 translate-x-8 pointer-events-none' : 'opacity-100 translate-x-0'}`}
+              data-testid="button-menu"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </header>
