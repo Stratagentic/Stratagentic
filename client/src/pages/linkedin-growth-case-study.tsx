@@ -109,7 +109,7 @@ export default function LinkedInGrowthCaseStudy() {
             </div>
             <div className="text-base leading-relaxed space-y-4">
               <p>
-                A content automation solution that turns short updates and insights into a steady stream of professional posts. Automatically, or with a few quick prompts—recent wins, client updates, or personal insights—the system drafts multiple post variations ready for review and publishing.
+                A content automation solution that turns short updates and insights into a steady stream of professional posts. Automatically, or with a few quick prompts–recent wins, client updates, or personal insights–the system drafts multiple post variations ready for review and publishing.
               </p>
               <p className="font-bold">The system can:</p>
               <ul className="space-y-2">
@@ -156,7 +156,7 @@ export default function LinkedInGrowthCaseStudy() {
             </div>
             <div>
               <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-base">
-                "It feels like having a content strategist on call—only faster and always on brand."
+                "It feels like having a content strategist on call–only faster and always on brand."
               </blockquote>
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function LinkedInGrowthCaseStudy() {
             Stay visible. Stay consistent. Effortlessly.
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Let Stratagentic show you how to keep your brand and leadership voice active on LinkedIn—without the weekly grind.
+            Let Stratagentic show you how to keep your brand and leadership voice active on LinkedIn–without the weekly grind.
           </p>
           <Link href="/#contact-section">
             <button 
