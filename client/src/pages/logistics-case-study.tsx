@@ -151,7 +151,7 @@ export default function LogisticsCaseStudy() {
               <p className="text-sm leading-relaxed opacity-70">Complete transparency across all carriers and delivery routes</p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#14B8AB] pl-6 py-4 italic text-xl mt-12">
+          <blockquote className="border-l-4 border-[#2563EB] pl-6 py-4 italic text-xl mt-12">
             "The agent feels like an extra team member who keeps every order on track."
             <footer className="text-sm mt-2 not-italic opacity-70">– Logistics Coordinator</footer>
           </blockquote>
@@ -160,7 +160,7 @@ export default function LogisticsCaseStudy() {
 
       {/* Inside the System */}
       <section 
-        className="bg-white text-black"
+        className="bg-white text-black border-t border-gray-300"
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-system"
       >
@@ -168,22 +168,34 @@ export default function LogisticsCaseStudy() {
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-system">
             INSIDE THE SYSTEM
           </h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <p className="text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-6">
-                Seamless data flow through the agent's logic
-              </p>
+          <p className="text-base leading-relaxed mb-8">
+            The Logistics Coordination Agent connects order data, transport APIs, and internal communication tools. It automatically tracks shipments, verifies carrier updates, and synchronizes order statuses across various platforms.
+          </p>
+          
+          {/* Workflow Diagram */}
+          <div className="flex flex-wrap items-center justify-center gap-4 py-8" data-testid="workflow-diagram">
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">Orders</p>
             </div>
-            <div className="text-base leading-relaxed space-y-4">
-              <p>
-                Data flows seamlessly through the agent's logic:
-              </p>
-              <div className="bg-gray-50 border border-black p-6 font-mono text-sm">
-                Orders → ERP System → Agent → Carrier APIs → Internal Dashboard → Notifications & Reports
-              </div>
-              <p className="text-sm opacity-70 italic">
-                Workflow diagram showing integration points between ERP, carrier systems, and internal dashboards.
-              </p>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">ERP System</p>
+            </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px] bg-[#2563EB] text-white">
+              <p className="font-bold">Agent</p>
+            </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">Carrier APIs</p>
+            </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">Dashboard</p>
+            </div>
+            <span className="text-2xl text-[#2563EB]">→</span>
+            <div className="border border-black px-6 py-4 text-center min-w-[120px]">
+              <p className="font-bold">Notifications</p>
             </div>
           </div>
         </div>
