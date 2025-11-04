@@ -206,17 +206,18 @@ export default function Landing() {
             data-testid="accordion-intelligence"
             onClick={() => toggleAccordion('intelligence')}
           >
-            <div className="flex items-center justify-between gap-6 mb-6">
+            <div className="flex items-stretch justify-between gap-6 mb-6 min-h-[60px]">
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'intelligence' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence &<br className="md:hidden" /> Strategy</h2>
               </div>
               {openAccordion !== 'intelligence' && (
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 flex items-center">
                   <img 
                     src={intelligenceStrategyImage} 
                     alt="Intelligence & Strategy" 
-                    className="h-16 w-auto object-cover"
+                    className="h-full w-auto object-cover"
+                    style={{ minHeight: '60px', maxHeight: '100px' }}
                   />
                 </div>
               )}
@@ -244,17 +245,18 @@ export default function Landing() {
             data-testid="accordion-automation"
             onClick={() => toggleAccordion('automation')}
           >
-            <div className="flex items-center justify-between gap-6 mb-6">
+            <div className="flex items-stretch justify-between gap-6 mb-6 min-h-[60px]">
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
               </div>
               {openAccordion !== 'automation' && (
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 flex items-center">
                   <img 
                     src={automationIntegrationImage} 
                     alt="Automation & Integration" 
-                    className="h-16 w-auto object-cover"
+                    className="h-full w-auto object-cover"
+                    style={{ minHeight: '60px', maxHeight: '100px' }}
                   />
                 </div>
               )}
