@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 
 export default function ManufacturingCaseStudy() {
   const [time, setTime] = useState(new Date());
   const [menuOpen, setMenuOpen] = useState(false);
+  const [, setLocation] = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -16,6 +17,44 @@ export default function ManufacturingCaseStudy() {
 
     return () => clearInterval(timer);
   }, []);
+
+  // Swipe navigation
+  useEffect(() => {
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartX = e.changedTouches[0].screenX;
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    };
+
+    const handleSwipe = () => {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          // Swiped left - go to next
+          setLocation('/case-studies/logistics');
+        } else {
+          // Swiped right - go to previous (wrap to last)
+          setLocation('/case-studies/outreach-engine');
+        }
+      }
+    };
+
+    document.addEventListener('touchstart', handleTouchStart);
+    document.addEventListener('touchend', handleTouchEnd);
+
+    return () => {
+      document.removeEventListener('touchstart', handleTouchStart);
+      document.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [setLocation]);
 
   const formatTime = (date: Date) => {
     return date.toLocaleTimeString('en-US', { 
