@@ -212,7 +212,7 @@ export default function LogisticsCaseStudy() {
           </p>
           
           {/* Workflow Diagram */}
-          <div className="flex flex-wrap items-center justify-center gap-4 py-8" data-testid="workflow-diagram">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-8" data-testid="workflow-diagram">
             <div className="border border-black px-6 py-4 text-center min-w-[120px]">
               <p className="font-bold">Orders</p>
             </div>
