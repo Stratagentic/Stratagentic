@@ -11,7 +11,7 @@ import linkedInGrowthImage from "@assets/Screenshot 2025-11-04 at 22.16.12_17622
 import outreachEngineImage from "@assets/Screenshot 2025-11-04 at 22.15.38_1762292328865.jpg";
 import growthMomentumImage from "@assets/Screenshot 2025-11-04 at 22.32.37_1762292437388.jpg";
 import experienceInteractionImage from "@assets/Screenshot 2025-11-04 at 22.27.30_1762292416859.jpg";
-import automationIntegrationImage from "@assets/Gemini_Generated_Image_xcxx34xcxx34xcxx_1762283665043.png";
+import automationIntegrationImage from "@assets/Screenshot 2025-11-04 at 22.49.31_1762292999371.jpg";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
