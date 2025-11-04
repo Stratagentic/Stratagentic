@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
-import logisticsHeroImage from "@assets/Gemini_Generated_Image_jo42yfjo42yfjo42_1762285011101.png";
 
 export default function LogisticsCaseStudy() {
   const [time, setTime] = useState(new Date());
@@ -59,17 +58,9 @@ export default function LogisticsCaseStudy() {
           >
             How an automated AI agent reduced delivery coordination time by 60%
           </h1>
-          <p className="text-lg max-w-5xl leading-relaxed mb-12" data-testid="text-hero-description">
+          <p className="text-lg max-w-5xl leading-relaxed" data-testid="text-hero-description">
             Streamlined communication, tracking, and task management across multiple carriers with one integrated agent.
           </p>
-          <div className="flex justify-center">
-            <img 
-              src={logisticsHeroImage} 
-              alt="Logistics coordination illustration" 
-              className="max-w-lg w-full"
-              data-testid="img-hero-illustration"
-            />
-          </div>
         </div>
       </section>
 
