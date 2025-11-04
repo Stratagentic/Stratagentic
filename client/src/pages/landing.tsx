@@ -760,7 +760,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-12 tracking-tight leading-tight" data-testid="text-contact-heading">
-            Ready to begin your transformation?
+            Scale faster than ever – guaranteed results or it's free
           </h2>
           <ContactForm />
           <div className="mt-12 pt-12 border-t border-black">
