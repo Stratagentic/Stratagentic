@@ -45,6 +45,7 @@ export default function Landing() {
   const [nextMilestone, setNextMilestone] = useState(25);
   const pageLoadTime = useRef(Date.now());
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleAccordion = (id: string) => {
     setOpenAccordion(openAccordion === id ? null : id);
@@ -57,6 +58,23 @@ export default function Landing() {
 
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('[data-testid="button-menu"]') && !target.closest('.absolute')) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [menuOpen]);
 
   useEffect(() => {
     trackEvent('page_view', { 
@@ -150,8 +168,42 @@ export default function Landing() {
               data-testid="img-logo"
             />
           </div>
-          <div className="text-right">
-            <Menu className="w-6 h-6" data-testid="button-menu" />
+          <div className="relative">
+            <button 
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="p-2"
+              data-testid="button-menu"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+            {menuOpen && (
+              <div className="absolute right-0 mt-2 w-48 bg-white border border-black shadow-lg z-50">
+                <a 
+                  href="#faqs" 
+                  className="block px-4 py-3 text-sm hover:bg-gray-100 transition-colors"
+                  data-testid="link-menu-faqs"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  FAQs
+                </a>
+                <a 
+                  href="#team" 
+                  className="block px-4 py-3 text-sm hover:bg-gray-100 transition-colors border-t border-gray-300"
+                  data-testid="link-menu-team"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Team
+                </a>
+                <a 
+                  href="#resources" 
+                  className="block px-4 py-3 text-sm hover:bg-gray-100 transition-colors border-t border-gray-300"
+                  data-testid="link-menu-resources"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Resources
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </header>
