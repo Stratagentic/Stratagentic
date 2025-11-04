@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
+import { Menu } from "lucide-react";
 
 export default function SalesCollateralCaseStudy() {
   const [time, setTime] = useState(new Date());
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -36,8 +38,43 @@ export default function SalesCollateralCaseStudy() {
               />
             </Link>
           </div>
-          <div className="text-right">
-            <div className="text-sm" data-testid="text-time">{formatTime(time)}</div>
+          <div 
+            className="relative flex items-center overflow-hidden"
+            onMouseEnter={() => setMenuOpen(true)}
+            onMouseLeave={() => setMenuOpen(false)}
+          >
+            <div className={`flex items-center gap-6 transition-all duration-300 ease-out ${menuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}>
+              <Link 
+                href="/faq" 
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
+                style={{ transform: 'none' }}
+                data-testid="link-menu-faqs"
+              >
+                FAQs
+              </Link>
+              <a 
+                href="#team" 
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
+                style={{ transform: 'none' }}
+                data-testid="link-menu-team"
+              >
+                Team
+              </a>
+              <a 
+                href="#resources" 
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
+                style={{ transform: 'none' }}
+                data-testid="link-menu-resources"
+              >
+                Resources
+              </a>
+            </div>
+            <button 
+              className={`p-2 absolute right-0 transition-all duration-300 ease-out ${menuOpen ? 'opacity-0 translate-x-8 pointer-events-none' : 'opacity-100 translate-x-0'}`}
+              data-testid="button-menu"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </header>
