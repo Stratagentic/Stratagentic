@@ -244,22 +244,20 @@ export default function Landing() {
             onClick={() => toggleAccordion('intelligence')}
           >
             {/* Mobile Layout */}
-            <div className={`md:hidden ${openAccordion === 'intelligence' ? 'mb-6' : ''}`}>
-              {openAccordion !== 'intelligence' ? (
-                <>
-                  <div className="flex gap-2 justify-center mb-4">
-                    <div className="w-32 h-24 bg-[#2563EB]"></div>
-                    <div className="w-32 h-24 bg-[#2563EB]"></div>
-                    <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tight text-center">
-                    Intelligence &<br />Strategy
-                  </h2>
-                </>
-              ) : (
-                <h2 className="text-3xl font-bold tracking-tight text-center mb-6">
-                  Intelligence &<br />Strategy
-                </h2>
+            <div className="md:hidden">
+              <div className="flex gap-2 justify-center mb-4">
+                <div className="w-32 h-24 bg-[#2563EB]"></div>
+                <div className="w-32 h-24 bg-[#2563EB]"></div>
+                <div className="w-32 h-24 bg-[#2563EB]"></div>
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-center">
+                Intelligence &<br />Strategy
+              </h2>
+              {openAccordion === 'intelligence' && (
+                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                  <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
+                  <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
+                </div>
               )}
             </div>
 
@@ -279,7 +277,7 @@ export default function Landing() {
             </div>
 
             {openAccordion === 'intelligence' && (
-              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+              <div className="hidden md:grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="text-base leading-relaxed">
                   <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
                   <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
@@ -300,20 +298,18 @@ export default function Landing() {
             onClick={() => toggleAccordion('automation')}
           >
             {/* Mobile Layout */}
-            <div className={`md:hidden ${openAccordion === 'automation' ? 'mb-6' : ''}`}>
-              {openAccordion !== 'automation' ? (
-                <>
-                  <div className="mb-4 overflow-hidden">
-                    <img src={automationIntegrationImage} alt="" className="w-full h-auto object-cover" />
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tight text-center">
-                    Automation &<br />Integration
-                  </h2>
-                </>
-              ) : (
-                <h2 className="text-3xl font-bold tracking-tight text-center mb-6">
-                  Automation &<br />Integration
-                </h2>
+            <div className="md:hidden">
+              <div className="mb-4 overflow-hidden">
+                <img src={automationIntegrationImage} alt="" className="w-full h-auto object-cover" />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-center">
+                Automation &<br />Integration
+              </h2>
+              {openAccordion === 'automation' && (
+                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                  <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
+                  <p>Technology begins taking on work so people can focus on what matters.</p>
+                </div>
               )}
             </div>
 
@@ -331,7 +327,7 @@ export default function Landing() {
             </div>
 
             {openAccordion === 'automation' && (
-              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+              <div className="hidden md:grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="text-base leading-relaxed">
                   <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
                   <p>Technology begins taking on work so people can focus on what matters.</p>
@@ -352,20 +348,18 @@ export default function Landing() {
             onClick={() => toggleAccordion('experience')}
           >
             {/* Mobile Layout */}
-            <div className={`md:hidden ${openAccordion === 'experience' ? 'mb-6' : ''}`}>
-              {openAccordion !== 'experience' ? (
-                <>
-                  <div className="mb-4 overflow-hidden">
-                    <img src={experienceInteractionImage} alt="" className="w-full h-auto object-cover brightness-110" />
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tight text-center">
-                    Experience &<br />Interaction
-                  </h2>
-                </>
-              ) : (
-                <h2 className="text-3xl font-bold tracking-tight text-center mb-6">
-                  Experience &<br />Interaction
-                </h2>
+            <div className="md:hidden">
+              <div className="mb-4 overflow-hidden">
+                <img src={experienceInteractionImage} alt="" className="w-full h-auto object-cover brightness-110" />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-center">
+                Experience &<br />Interaction
+              </h2>
+              {openAccordion === 'experience' && (
+                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                  <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
+                  <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
+                </div>
               )}
             </div>
 
@@ -383,7 +377,7 @@ export default function Landing() {
             </div>
 
             {openAccordion === 'experience' && (
-              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+              <div className="hidden md:grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="text-base leading-relaxed">
                   <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
                   <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
@@ -404,20 +398,18 @@ export default function Landing() {
             onClick={() => toggleAccordion('growth')}
           >
             {/* Mobile Layout */}
-            <div className={`md:hidden ${openAccordion === 'growth' ? 'mb-6' : ''}`}>
-              {openAccordion !== 'growth' ? (
-                <>
-                  <div className="mb-4 overflow-hidden">
-                    <img src={growthMomentumImage} alt="" className="w-full h-auto object-cover" />
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tight text-center">
-                    Growth &<br />Momentum
-                  </h2>
-                </>
-              ) : (
-                <h2 className="text-3xl font-bold tracking-tight text-center mb-6">
-                  Growth &<br />Momentum
-                </h2>
+            <div className="md:hidden">
+              <div className="mb-4 overflow-hidden">
+                <img src={growthMomentumImage} alt="" className="w-full h-auto object-cover" />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-center">
+                Growth &<br />Momentum
+              </h2>
+              {openAccordion === 'growth' && (
+                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                  <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
+                  <p>Growth stops being an event and becomes the natural state of your business.</p>
+                </div>
               )}
             </div>
 
@@ -435,7 +427,7 @@ export default function Landing() {
             </div>
 
             {openAccordion === 'growth' && (
-              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
+              <div className="hidden md:grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="text-base leading-relaxed">
                   <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
                   <p>Growth stops being an event and becomes the natural state of your business.</p>
