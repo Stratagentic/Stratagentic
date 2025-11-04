@@ -459,7 +459,7 @@ export default function FAQ() {
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-closing"
       >
-        <div className="max-w-[900px] mx-auto text-center">
+        <div className="max-w-[900px] mx-auto">
           <p className="text-lg leading-relaxed mb-4">
             If your question isn't covered here, we will address it during your free AI Automation Audit, where we map your systems, identify growth barriers, and uncover new efficiencies.
           </p>
