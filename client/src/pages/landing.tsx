@@ -243,10 +243,27 @@ export default function Landing() {
             data-testid="accordion-intelligence"
             onClick={() => toggleAccordion('intelligence')}
           >
-            <div className={`flex items-center justify-between gap-6 ${openAccordion === 'intelligence' ? 'mb-6' : ''}`}>
+            {/* Mobile Layout */}
+            <div className={`md:hidden ${openAccordion === 'intelligence' ? 'mb-6' : ''}`}>
+              {openAccordion !== 'intelligence' && (
+                <>
+                  <div className="flex gap-2 justify-center mb-4">
+                    <div className="w-32 h-24 bg-[#2563EB]"></div>
+                    <div className="w-32 h-24 bg-[#2563EB]"></div>
+                    <div className="w-32 h-24 bg-[#2563EB]"></div>
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tight text-center">
+                    Intelligence &<br />Strategy
+                  </h2>
+                </>
+              )}
+            </div>
+
+            {/* Desktop Layout */}
+            <div className={`hidden md:flex items-center justify-between gap-6 ${openAccordion === 'intelligence' ? 'mb-6' : ''}`}>
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'intelligence' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence &<br className="md:hidden" /> Strategy</h2>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
               </div>
               {openAccordion !== 'intelligence' && (
                 <div className="flex gap-2">
@@ -256,6 +273,7 @@ export default function Landing() {
                 </div>
               )}
             </div>
+
             {openAccordion === 'intelligence' && (
               <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="text-base leading-relaxed">
@@ -277,10 +295,25 @@ export default function Landing() {
             data-testid="accordion-automation"
             onClick={() => toggleAccordion('automation')}
           >
-            <div className={`flex items-center justify-between gap-6 ${openAccordion === 'automation' ? 'mb-6' : ''}`}>
+            {/* Mobile Layout */}
+            <div className={`md:hidden ${openAccordion === 'automation' ? 'mb-6' : ''}`}>
+              {openAccordion !== 'automation' && (
+                <>
+                  <div className="mb-4 overflow-hidden">
+                    <img src={automationIntegrationImage} alt="" className="w-full h-auto object-cover" />
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tight text-center">
+                    Automation &<br />Integration
+                  </h2>
+                </>
+              )}
+            </div>
+
+            {/* Desktop Layout */}
+            <div className={`hidden md:flex items-center justify-between gap-6 ${openAccordion === 'automation' ? 'mb-6' : ''}`}>
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation & Integration</h2>
               </div>
               {openAccordion !== 'automation' && (
                 <div className="w-[480px] h-24 overflow-hidden">
@@ -288,6 +321,7 @@ export default function Landing() {
                 </div>
               )}
             </div>
+
             {openAccordion === 'automation' && (
               <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="text-base leading-relaxed">
@@ -309,10 +343,25 @@ export default function Landing() {
             data-testid="accordion-experience"
             onClick={() => toggleAccordion('experience')}
           >
-            <div className={`flex items-center justify-between gap-6 ${openAccordion === 'experience' ? 'mb-6' : ''}`}>
+            {/* Mobile Layout */}
+            <div className={`md:hidden ${openAccordion === 'experience' ? 'mb-6' : ''}`}>
+              {openAccordion !== 'experience' && (
+                <>
+                  <div className="mb-4 overflow-hidden">
+                    <img src={experienceInteractionImage} alt="" className="w-full h-auto object-cover brightness-110" />
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tight text-center">
+                    Experience &<br />Interaction
+                  </h2>
+                </>
+              )}
+            </div>
+
+            {/* Desktop Layout */}
+            <div className={`hidden md:flex items-center justify-between gap-6 ${openAccordion === 'experience' ? 'mb-6' : ''}`}>
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'experience' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience &<br className="md:hidden" /> Interaction</h2>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience & Interaction</h2>
               </div>
               {openAccordion !== 'experience' && (
                 <div className="w-[480px] h-24 overflow-hidden">
@@ -320,6 +369,7 @@ export default function Landing() {
                 </div>
               )}
             </div>
+
             {openAccordion === 'experience' && (
               <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="text-base leading-relaxed">
@@ -341,10 +391,25 @@ export default function Landing() {
             data-testid="accordion-growth"
             onClick={() => toggleAccordion('growth')}
           >
-            <div className={`flex items-center justify-between gap-6 ${openAccordion === 'growth' ? 'mb-6' : ''}`}>
+            {/* Mobile Layout */}
+            <div className={`md:hidden ${openAccordion === 'growth' ? 'mb-6' : ''}`}>
+              {openAccordion !== 'growth' && (
+                <>
+                  <div className="mb-4 overflow-hidden">
+                    <img src={growthMomentumImage} alt="" className="w-full h-auto object-cover" />
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tight text-center">
+                    Growth &<br />Momentum
+                  </h2>
+                </>
+              )}
+            </div>
+
+            {/* Desktop Layout */}
+            <div className={`hidden md:flex items-center justify-between gap-6 ${openAccordion === 'growth' ? 'mb-6' : ''}`}>
               <div className="flex items-center gap-6">
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'growth' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth &<br className="md:hidden" /> Momentum</h2>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth & Momentum</h2>
               </div>
               {openAccordion !== 'growth' && (
                 <div className="w-[480px] h-24 overflow-hidden">
@@ -352,6 +417,7 @@ export default function Landing() {
                 </div>
               )}
             </div>
+
             {openAccordion === 'growth' && (
               <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="text-base leading-relaxed">
