@@ -268,7 +268,7 @@ export default function Landing() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
               </div>
               {openAccordion !== 'intelligence' && (
-                <div className="overflow-hidden" style={{ width: "480px", height: "96px" }}>
+                <div className="w-[480px] h-24 overflow-hidden">
                   <img src={intelligenceStrategyImage} alt="" className="w-full h-full object-cover" />
                 </div>
               )}
@@ -280,7 +280,7 @@ export default function Landing() {
                   <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
                   <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
                 </div>
-                <div className="overflow-hidden" style={{ width: "480px", height: "96px" }}>
+                <div className="w-[480px] h-24 overflow-hidden">
                   <img src={intelligenceStrategyImage} alt="" className="w-full h-full object-cover" />
                 </div>
               </div>
