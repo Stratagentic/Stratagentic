@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
+import faqImage from "@assets/Screenshot 2025-11-04 at 23.27.13_1762295240939.jpg";
 
 export default function FAQ() {
   const [time, setTime] = useState(new Date());
@@ -113,78 +114,95 @@ export default function FAQ() {
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-strategy"
       >
-        <div className="max-w-[900px] mx-auto">
-          <h2 className="text-sm font-bold uppercase tracking-wider mb-8 text-[#2563EB]" data-testid="text-strategy-heading">Strategy</h2>
-          
-          <div className="space-y-4">
-            <div data-testid="faq-strategy-1" className="border-b border-gray-200">
-              <h3 
-                className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
-                onClick={() => toggleFaq('strategy-1')}
-              >
-                What if I don't have a clear strategy yet?
-              </h3>
-              {openFaq === 'strategy-1' && (
-                <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
-                  No problem. Our free Strategy Agent helps you clarify goals, uncover growth opportunities, and define an actionable direction. It guides you through key questions so your AI Opportunity Report is grounded in real business objectives, even if you are starting from scratch.
-                </p>
-              )}
+        <div className="max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr,480px] gap-12">
+            {/* Left Column - FAQ Content */}
+            <div className="max-w-[700px]">
+              <h2 className="text-sm font-bold uppercase tracking-wider mb-8 text-[#2563EB]" data-testid="text-strategy-heading">Strategy</h2>
+              
+              <div className="space-y-4">
+                <div data-testid="faq-strategy-1" className="border-b border-gray-200">
+                  <h3 
+                    className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
+                    onClick={() => toggleFaq('strategy-1')}
+                  >
+                    What if I don't have a clear strategy yet?
+                  </h3>
+                  {openFaq === 'strategy-1' && (
+                    <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
+                      No problem. Our free Strategy Agent helps you clarify goals, uncover growth opportunities, and define an actionable direction. It guides you through key questions so your AI Opportunity Report is grounded in real business objectives, even if you are starting from scratch.
+                    </p>
+                  )}
+                </div>
+
+                <div data-testid="faq-strategy-2" className="border-b border-gray-200">
+                  <h3 
+                    className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
+                    onClick={() => toggleFaq('strategy-2')}
+                  >
+                    What if we already have a strategy?
+                  </h3>
+                  {openFaq === 'strategy-2' && (
+                    <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
+                      Perfect. We align your AI roadmap to existing goals and help refine your priorities beyond AI, including growth, process design, and execution.
+                    </p>
+                  )}
+                </div>
+
+                <div data-testid="faq-strategy-3" className="border-b border-gray-200">
+                  <h3 
+                    className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
+                    onClick={() => toggleFaq('strategy-3')}
+                  >
+                    How do you identify which parts of our business can benefit most from AI?
+                  </h3>
+                  {openFaq === 'strategy-3' && (
+                    <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
+                      We start with an AI Audit to map your workflows, data, and goals. From there, we identify quick wins, bottlenecks, and long-term efficiency gains, ensuring every recommendation has a measurable outcome.
+                    </p>
+                  )}
+                </div>
+
+                <div data-testid="faq-strategy-4" className="border-b border-gray-200">
+                  <h3 
+                    className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
+                    onClick={() => toggleFaq('strategy-4')}
+                  >
+                    Do we need to change how we work before implementing AI?
+                  </h3>
+                  {openFaq === 'strategy-4' && (
+                    <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
+                      Not necessarily. Most improvements build around your existing systems. When process changes are recommended, they are designed to make operations simpler, not more complex.
+                    </p>
+                  )}
+                </div>
+
+                <div data-testid="faq-strategy-5" className="border-b border-gray-200">
+                  <h3 
+                    className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
+                    onClick={() => toggleFaq('strategy-5')}
+                  >
+                    Can you still build useful systems if our data isn't perfect?
+                  </h3>
+                  {openFaq === 'strategy-5' && (
+                    <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
+                      Yes. Many clients begin with fragmented or incomplete data. We design systems that improve data quality over time through structured collection and integration.
+                    </p>
+                  )}
+                </div>
+              </div>
             </div>
 
-            <div data-testid="faq-strategy-2" className="border-b border-gray-200">
-              <h3 
-                className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
-                onClick={() => toggleFaq('strategy-2')}
-              >
-                What if we already have a strategy?
-              </h3>
-              {openFaq === 'strategy-2' && (
-                <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
-                  Perfect. We align your AI roadmap to existing goals and help refine your priorities beyond AI, including growth, process design, and execution.
-                </p>
-              )}
-            </div>
-
-            <div data-testid="faq-strategy-3" className="border-b border-gray-200">
-              <h3 
-                className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
-                onClick={() => toggleFaq('strategy-3')}
-              >
-                How do you identify which parts of our business can benefit most from AI?
-              </h3>
-              {openFaq === 'strategy-3' && (
-                <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
-                  We start with an AI Audit to map your workflows, data, and goals. From there, we identify quick wins, bottlenecks, and long-term efficiency gains, ensuring every recommendation has a measurable outcome.
-                </p>
-              )}
-            </div>
-
-            <div data-testid="faq-strategy-4" className="border-b border-gray-200">
-              <h3 
-                className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
-                onClick={() => toggleFaq('strategy-4')}
-              >
-                Do we need to change how we work before implementing AI?
-              </h3>
-              {openFaq === 'strategy-4' && (
-                <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
-                  Not necessarily. Most improvements build around your existing systems. When process changes are recommended, they are designed to make operations simpler, not more complex.
-                </p>
-              )}
-            </div>
-
-            <div data-testid="faq-strategy-5" className="border-b border-gray-200">
-              <h3 
-                className="text-xl font-bold py-4 cursor-pointer hover:text-[#2563EB] transition-colors"
-                onClick={() => toggleFaq('strategy-5')}
-              >
-                Can you still build useful systems if our data isn't perfect?
-              </h3>
-              {openFaq === 'strategy-5' && (
-                <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
-                  Yes. Many clients begin with fragmented or incomplete data. We design systems that improve data quality over time through structured collection and integration.
-                </p>
-              )}
+            {/* Right Column - Image */}
+            <div className="hidden md:block">
+              <div className="sticky top-8">
+                <img 
+                  src={faqImage} 
+                  alt="Person reading with technology elements" 
+                  className="w-full h-auto object-cover"
+                  data-testid="img-faq-strategy"
+                />
+              </div>
             </div>
           </div>
         </div>
