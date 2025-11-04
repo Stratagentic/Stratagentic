@@ -718,7 +718,7 @@ export default function Landing() {
                 </div>
               </Link>
               {/* Duplicate set for seamless infinite scroll */}
-              <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              {/* <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
                   <div className="relative aspect-square">
                     <img 
@@ -741,7 +741,7 @@ export default function Landing() {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
                   <div className="relative aspect-square">
