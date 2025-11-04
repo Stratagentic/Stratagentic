@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { ContactForm } from "@/components/contact-form";
 import { Globe } from "@/components/globe";
-import { Search, Ruler, FlaskConical } from "lucide-react";
+import { Search, Ruler, FlaskConical, Menu } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 import prospectResearchImage from "@assets/Gemini_Generated_Image_30j2pr30j2pr30j2_1762258609368.png";
@@ -151,7 +151,7 @@ export default function Landing() {
             />
           </div>
           <div className="text-right">
-            <div className="text-sm" data-testid="text-time">{formatTime(time)}</div>
+            <Menu className="w-6 h-6" data-testid="button-menu" />
           </div>
         </div>
       </header>
