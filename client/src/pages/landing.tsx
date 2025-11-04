@@ -488,8 +488,8 @@ export default function Landing() {
         <div className="relative">
           <div className="overflow-x-auto overflow-y-hidden scrollbar-hide">
             <div className="flex">
-              {/* First set of cards */}
-              <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              {/* Manufacturing card hidden for now */}
+              {/* <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-1">
                   <div className="relative aspect-square">
                     <img 
@@ -513,7 +513,7 @@ export default function Landing() {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-2">
                   <div className="relative aspect-square">
