@@ -46,6 +46,11 @@ export default function Landing() {
   const pageLoadTime = useRef(Date.now());
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
   const toggleAccordion = (id: string) => {
     setOpenAccordion(openAccordion === id ? null : id);
