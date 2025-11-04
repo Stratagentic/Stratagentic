@@ -7,7 +7,7 @@ import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c
 import logisticsImage from "@assets/Screenshot 2025-11-04 at 22.12.45_1762292209398.jpg";
 import prospectResearchImage from "@assets/Screenshot 2025-11-04 at 22.15.09_1762292233906.jpg";
 import salesCollateralImage from "@assets/Screenshot 2025-11-04 at 22.13.23_1762292269030.jpg";
-import linkedInGrowthImage from "@assets/Gemini_Generated_Image_shucw7shucw7shuc_1762259541274.png";
+import linkedInGrowthImage from "@assets/Screenshot 2025-11-04 at 22.16.12_1762292288472.jpg";
 import outreachEngineImage from "@assets/Gemini_Generated_Image_7bxgiv7bxgiv7bxg_1762260457028.png";
 import growthMomentumImage from "@assets/Relaxing2_1762267740236.png";
 import experienceInteractionImage from "@assets/Gemini_Generated_Image_te47eete47eete47_1762272190441.png";
