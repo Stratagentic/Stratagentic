@@ -9,7 +9,7 @@ import prospectResearchImage from "@assets/Gemini_Generated_Image_30j2pr30j2pr30
 import salesCollateralImage from "@assets/Gemini_Generated_Image_fhapg0fhapg0fhap_1762258437763.png";
 import linkedInGrowthImage from "@assets/Gemini_Generated_Image_shucw7shucw7shuc_1762259541274.png";
 import outreachEngineImage from "@assets/Gemini_Generated_Image_7bxgiv7bxgiv7bxg_1762260457028.png";
-import growthMomentumImage from "@assets/generated_images/Blue_roller_coaster_relaxation_c5850134.png";
+import growthMomentumImage from "@assets/Relaxing1_1762266219542.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -301,8 +301,9 @@ export default function Landing() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth &<br className="md:hidden" /> Momentum</h2>
               </div>
               {openAccordion !== 'growth' && (
-                <div className="w-[480px] h-24 overflow-hidden rounded-sm">
+                <div className="relative w-[480px] h-24 overflow-hidden rounded-sm">
                   <img src={growthMomentumImage} alt="" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#2563EB] opacity-70 mix-blend-multiply"></div>
                 </div>
               )}
             </div>
@@ -313,8 +314,9 @@ export default function Landing() {
                   <p>Growth stops being an event and becomes the natural state of your business.</p>
                 </div>
                 <div className="flex justify-end">
-                  <div className="w-[480px] h-24 overflow-hidden rounded-sm">
+                  <div className="relative w-[480px] h-24 overflow-hidden rounded-sm">
                     <img src={growthMomentumImage} alt="" className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-[#2563EB] opacity-70 mix-blend-multiply"></div>
                   </div>
                 </div>
               </div>
