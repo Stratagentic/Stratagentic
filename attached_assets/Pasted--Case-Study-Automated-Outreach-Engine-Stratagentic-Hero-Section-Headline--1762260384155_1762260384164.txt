@@ -1,0 +1,73 @@
+**Case Study – Automated Outreach Engine | Stratagentic**
+
+---
+
+### **Hero Section**
+
+**Headline:**
+Scale outreach without adding headcount
+
+**Subhead:**
+An AI-powered multi-channel engine that personalizes, optimizes, and automates your entire outbound workflow.
+
+---
+
+### **Challenge**
+
+Sales and marketing teams often face the same trade-off - scale outreach or maintain personalization. Manual prospecting, fragmented tools, and poor CRM syncs made it difficult to reach more people without losing quality or context. Leadership lacked visibility into what worked, while reps juggled too many disconnected systems.
+
+> “We were spending more time managing tools than actually reaching prospects. Scaling personalization felt impossible.”
+
+---
+
+### **Solution**
+
+The **Automated Outreach Engine**, a unified system connecting multi-channel outreach platforms like Lemlist with workflow integrators (n8n, Make,  Zapier) and CRM systems such as Attio.
+
+This integration enables seamless, intelligent outreach at scale:
+
+* Outreach to hundreds of qualified prospects daily across LinkedIn and email
+* Use AI-driven personalization powered by buying signals, engagement triggers, and intent data
+* A/B test messages, channels, and sequences to continuously improve performance
+* Auto-sync all interactions to your CRM - keeping contacts, deal stages, and notes up to date in real time
+* Dynamically enrich and route leads to the right sales reps based on role, industry, or engagement level
+* Track and analyze campaign results for higher reply and conversion rates
+
+The result is a self-sustaining outreach engine that grows your pipeline while giving leadership complete visibility into performance.
+
+---
+
+### **Results**
+
+* 4x increase in qualified outbound volume without additional staff
+* 2.5x higher reply rate from personalized sequences
+* Real-time CRM visibility for management and operations
+* Continuous optimization through A/B testing and data feedback
+
+> “We finally have a scalable system that personalizes every touchpoint and keeps our CRM perfectly clean.”
+
+---
+
+### **Inside the System**
+
+The Automated Outreach Engine links your CRM, outreach tools, and AI layers into one synchronized workflow. Each prospect interaction is tracked, enriched, and logged automatically, ensuring every message feels personal while keeping operations fully measurable.
+
+*Workflow diagram showing CRM ↔ Outreach Platform ↔ AI Engine ↔ Reporting Dashboard.*
+
+---
+
+### **CTA**
+
+**Headline:**
+Build a self-sustaining outreach engine. Voila!
+
+Let Stratagentic show you how automation can expand your outbound reach and improve every sales interaction.
+
+**Call-to-action:**
+Book a Discovery Call
+
+---
+
+### **Footer:**
+
+© 2025 Stratagentic. Built in Norway.

@@ -8,6 +8,7 @@ import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.j
 import prospectResearchImage from "@assets/Gemini_Generated_Image_30j2pr30j2pr30j2_1762258609368.png";
 import salesCollateralImage from "@assets/Gemini_Generated_Image_fhapg0fhapg0fhap_1762258437763.png";
 import linkedInGrowthImage from "@assets/Gemini_Generated_Image_shucw7shucw7shuc_1762259541274.png";
+import outreachEngineImage from "@assets/Gemini_Generated_Image_7bxgiv7bxgiv7bxg_1762260457028.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -574,6 +575,31 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
+              <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-6">
+                  <div className="relative aspect-square">
+                    <img 
+                      src={outreachEngineImage} 
+                      alt="Automated outreach and email marketing" 
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      data-testid="img-case-study-6"
+                    />
+                    <div className="absolute top-8 left-8 right-8 text-black z-10">
+                      <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
+                    </div>
+                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        4x outbound
+                        <br />
+                        volume
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        AI-powered multi-channel engine personalizes and automates entire outbound workflow
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
               {/* Duplicate set for seamless infinite scroll */}
               <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
                 <div className="border border-black overflow-hidden group cursor-pointer transition-all duration-300">
@@ -690,6 +716,30 @@ export default function Landing() {
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         AI-driven system maintains strong, authentic LinkedIn presence in minutes per week
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+                <div className="border border-black overflow-hidden group cursor-pointer transition-all duration-300">
+                  <div className="relative aspect-square">
+                    <img 
+                      src={outreachEngineImage} 
+                      alt="Automated outreach and email marketing" 
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute top-8 left-8 right-8 text-black z-10">
+                      <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
+                    </div>
+                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        4x outbound
+                        <br />
+                        volume
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        AI-powered multi-channel engine personalizes and automates entire outbound workflow
                       </p>
                     </div>
                   </div>
