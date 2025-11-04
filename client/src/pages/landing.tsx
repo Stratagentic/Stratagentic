@@ -245,7 +245,7 @@ export default function Landing() {
           >
             {/* Mobile Layout */}
             <div className={`md:hidden ${openAccordion === 'intelligence' ? 'mb-6' : ''}`}>
-              {openAccordion !== 'intelligence' && (
+              {openAccordion !== 'intelligence' ? (
                 <>
                   <div className="flex gap-2 justify-center mb-4">
                     <div className="w-32 h-24 bg-[#2563EB]"></div>
@@ -256,6 +256,10 @@ export default function Landing() {
                     Intelligence &<br />Strategy
                   </h2>
                 </>
+              ) : (
+                <h2 className="text-3xl font-bold tracking-tight text-center mb-6">
+                  Intelligence &<br />Strategy
+                </h2>
               )}
             </div>
 
@@ -297,7 +301,7 @@ export default function Landing() {
           >
             {/* Mobile Layout */}
             <div className={`md:hidden ${openAccordion === 'automation' ? 'mb-6' : ''}`}>
-              {openAccordion !== 'automation' && (
+              {openAccordion !== 'automation' ? (
                 <>
                   <div className="mb-4 overflow-hidden">
                     <img src={automationIntegrationImage} alt="" className="w-full h-auto object-cover" />
@@ -306,6 +310,10 @@ export default function Landing() {
                     Automation &<br />Integration
                   </h2>
                 </>
+              ) : (
+                <h2 className="text-3xl font-bold tracking-tight text-center mb-6">
+                  Automation &<br />Integration
+                </h2>
               )}
             </div>
 
@@ -345,7 +353,7 @@ export default function Landing() {
           >
             {/* Mobile Layout */}
             <div className={`md:hidden ${openAccordion === 'experience' ? 'mb-6' : ''}`}>
-              {openAccordion !== 'experience' && (
+              {openAccordion !== 'experience' ? (
                 <>
                   <div className="mb-4 overflow-hidden">
                     <img src={experienceInteractionImage} alt="" className="w-full h-auto object-cover brightness-110" />
@@ -354,6 +362,10 @@ export default function Landing() {
                     Experience &<br />Interaction
                   </h2>
                 </>
+              ) : (
+                <h2 className="text-3xl font-bold tracking-tight text-center mb-6">
+                  Experience &<br />Interaction
+                </h2>
               )}
             </div>
 
@@ -393,7 +405,7 @@ export default function Landing() {
           >
             {/* Mobile Layout */}
             <div className={`md:hidden ${openAccordion === 'growth' ? 'mb-6' : ''}`}>
-              {openAccordion !== 'growth' && (
+              {openAccordion !== 'growth' ? (
                 <>
                   <div className="mb-4 overflow-hidden">
                     <img src={growthMomentumImage} alt="" className="w-full h-auto object-cover" />
@@ -402,6 +414,10 @@ export default function Landing() {
                     Growth &<br />Momentum
                   </h2>
                 </>
+              ) : (
+                <h2 className="text-3xl font-bold tracking-tight text-center mb-6">
+                  Growth &<br />Momentum
+                </h2>
               )}
             </div>
 
