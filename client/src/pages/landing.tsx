@@ -159,21 +159,24 @@ export default function Landing() {
             <div className={`flex items-center gap-6 transition-all duration-300 ease-out ${menuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}>
               <a 
                 href="#faqs" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
+                style={{ transform: 'none' }}
                 data-testid="link-menu-faqs"
               >
                 FAQs
               </a>
               <a 
                 href="#team" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
+                style={{ transform: 'none' }}
                 data-testid="link-menu-team"
               >
                 Team
               </a>
               <a 
                 href="#resources" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
+                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
+                style={{ transform: 'none' }}
                 data-testid="link-menu-resources"
               >
                 Resources
