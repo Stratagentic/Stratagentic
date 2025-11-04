@@ -404,4 +404,8 @@
       transition-duration: 0.01ms !important;
     }
   }
+
+  .overflow-x-auto::-webkit-scrollbar {
+    display: none;
+  }
 }
