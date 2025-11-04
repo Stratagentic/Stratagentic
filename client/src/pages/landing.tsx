@@ -239,7 +239,8 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           {/* Intelligence & Strategy */}
           <div 
-            className={`px-3 md:px-6 cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'intelligence' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
+            className={`cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'intelligence' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
+            style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}
             data-testid="accordion-intelligence"
             onClick={() => toggleAccordion('intelligence')}
           >
@@ -293,7 +294,8 @@ export default function Landing() {
 
           {/* Automation & Integration */}
           <div 
-            className={`px-3 md:px-6 cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'automation' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
+            className={`cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'automation' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
+            style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}
             data-testid="accordion-automation"
             onClick={() => toggleAccordion('automation')}
           >
@@ -343,7 +345,8 @@ export default function Landing() {
 
           {/* Experience & Interaction */}
           <div 
-            className={`px-3 md:px-6 cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'experience' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
+            className={`cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'experience' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
+            style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}
             data-testid="accordion-experience"
             onClick={() => toggleAccordion('experience')}
           >
@@ -393,7 +396,8 @@ export default function Landing() {
 
           {/* Growth & Momentum */}
           <div 
-            className={`px-3 md:px-6 cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'growth' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
+            className={`cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'growth' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
+            style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}
             data-testid="accordion-growth"
             onClick={() => toggleAccordion('growth')}
           >
@@ -496,7 +500,7 @@ export default function Landing() {
         data-testid="section-better-world"
       >
         <div className="max-w-[1400px] mx-auto">
-          <div className="py-12 px-3 md:px-6 text-left">
+          <div className="py-12 text-left" style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}>
             <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-better-world-content">
             <p>Built for those who imagine better.</p>
             <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never see execution. Just working systems. Real implementations. Actions that run quietly  in the background while you move forward.</p>
@@ -554,7 +558,7 @@ export default function Landing() {
         style={{ padding: "var(--space-7) 0" }}
         data-testid="section-case-studies"
       >
-        <div className="max-w-[1400px] mx-auto px-3">
+        <div className="max-w-[1400px] mx-auto" style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}>
           <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-case-studies-heading">
             Selected work
           </h2>
