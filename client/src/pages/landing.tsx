@@ -458,19 +458,15 @@ export default function Landing() {
                       data-testid="img-case-study-1"
                     />
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider bg-white inline-block px-2 py-1">Manufacturing</p>
+                      <p className="text-xs uppercase tracking-wider bg-white inline px-2 py-1">Manufacturing</p>
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
-                      <div className="bg-white p-4">
-                        <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                          60% efficiency
-                          <br />
-                          increase
-                        </p>
-                        <p className="text-sm leading-relaxed">
-                          Automated quality control and production scheduling reduced downtime and increased throughput
-                        </p>
-                      </div>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 bg-white inline-block px-2 py-1" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                        60% efficiency<br />increase
+                      </p>
+                      <p className="text-sm leading-relaxed bg-white inline px-2 py-1" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                        Automated quality control and production scheduling reduced downtime and increased throughput
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -485,19 +481,15 @@ export default function Landing() {
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider bg-white inline-block px-2 py-1">Logistics</p>
+                      <p className="text-xs uppercase tracking-wider bg-white inline px-2 py-1">Logistics</p>
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
-                      <div className="bg-white p-4">
-                        <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                          40% cost
-                          <br />
-                          reduction
-                        </p>
-                        <p className="text-sm leading-relaxed">
-                          Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
-                        </p>
-                      </div>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 bg-white inline-block px-2 py-1" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                        40% cost<br />reduction
+                      </p>
+                      <p className="text-sm leading-relaxed bg-white inline px-2 py-1" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                        Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -512,19 +504,15 @@ export default function Landing() {
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider bg-white inline-block px-2 py-1">Sales Intelligence</p>
+                      <p className="text-xs uppercase tracking-wider bg-white inline px-2 py-1">Sales Intelligence</p>
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
-                      <div className="bg-white p-4">
-                        <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                          80% time
-                          <br />
-                          savings
-                        </p>
-                        <p className="text-sm leading-relaxed">
-                          AI agent replaced manual prospecting with personalized, ready-to-use sales insights
-                        </p>
-                      </div>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 bg-white inline-block px-2 py-1" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                        80% time<br />savings
+                      </p>
+                      <p className="text-sm leading-relaxed bg-white inline px-2 py-1" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                        AI agent replaced manual prospecting with personalized, ready-to-use sales insights
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -539,19 +527,15 @@ export default function Landing() {
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider bg-white inline-block px-2 py-1">Collateral automation</p>
+                      <p className="text-xs uppercase tracking-wider bg-white inline px-2 py-1">Collateral automation</p>
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
-                      <div className="bg-white p-4">
-                        <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                          75% time
-                          <br />
-                          reduction
-                        </p>
-                        <p className="text-sm leading-relaxed">
-                          Automated creation of branded, context-aware sales materials that match opportunity stage
-                        </p>
-                      </div>
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 bg-white inline-block px-2 py-1" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                        75% time<br />reduction
+                      </p>
+                      <p className="text-sm leading-relaxed bg-white inline px-2 py-1" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                        Automated creation of branded, context-aware sales materials that match opportunity stage
+                      </p>
                     </div>
                   </div>
                 </div>
