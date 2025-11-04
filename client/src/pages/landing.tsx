@@ -5,7 +5,7 @@ import { Globe } from "@/components/globe";
 import { Search, Ruler, FlaskConical } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
-import prospectResearchImage from "@assets/Gemini_Generated_Image_6bn93u6bn93u6bn9_1762255434711.png";
+import prospectResearchImage from "@assets/Gemini_Generated_Image_30j2pr30j2pr30j2_1762258609368.png";
 import salesCollateralImage from "@assets/Gemini_Generated_Image_fhapg0fhapg0fhap_1762258437763.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
