@@ -6,7 +6,7 @@ import { Search, Ruler, FlaskConical } from "lucide-react";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 import prospectResearchImage from "@assets/Gemini_Generated_Image_6bn93u6bn93u6bn9_1762255434711.png";
-import salesCollateralImage from "@assets/generated_images/Sales_collateral_materials_desk_0265e766.png";
+import salesCollateralImage from "@assets/Gemini_Generated_Image_66tc8066tc8066tc_1762256896686.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -536,7 +536,7 @@ export default function Landing() {
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Sales Automation</p>
+                      <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
@@ -637,7 +637,7 @@ export default function Landing() {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute top-0 left-0 right-0 p-8 text-black">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Sales Automation</p>
+                      <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-black">
