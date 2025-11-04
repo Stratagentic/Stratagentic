@@ -9,6 +9,7 @@ import prospectResearchImage from "@assets/Gemini_Generated_Image_30j2pr30j2pr30
 import salesCollateralImage from "@assets/Gemini_Generated_Image_fhapg0fhapg0fhap_1762258437763.png";
 import linkedInGrowthImage from "@assets/Gemini_Generated_Image_shucw7shucw7shuc_1762259541274.png";
 import outreachEngineImage from "@assets/Gemini_Generated_Image_7bxgiv7bxgiv7bxg_1762260457028.png";
+import intelligenceStrategyImage from "@assets/Gemini_Generated_Image_9k0qy79k0qy79k0q_1762263456641.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -210,10 +211,12 @@ export default function Landing() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence &<br className="md:hidden" /> Strategy</h2>
               </div>
               {openAccordion !== 'intelligence' && (
-                <div className="flex gap-2">
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
+                <div className="flex-shrink-0">
+                  <img 
+                    src={intelligenceStrategyImage} 
+                    alt="Intelligence & Strategy" 
+                    className="h-24 w-auto"
+                  />
                 </div>
               )}
             </div>
@@ -223,10 +226,12 @@ export default function Landing() {
                   <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
                   <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
                 </div>
-                <div className="flex gap-2 justify-end">
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
+                <div className="flex justify-end">
+                  <img 
+                    src={intelligenceStrategyImage} 
+                    alt="Intelligence & Strategy visualization" 
+                    className="h-32 w-auto"
+                  />
                 </div>
               </div>
             )}
@@ -243,23 +248,11 @@ export default function Landing() {
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation &<br className="md:hidden" /> Integration</h2>
               </div>
-              {openAccordion !== 'automation' && (
-                <div className="flex gap-2">
-                  <div className="w-40 h-24 bg-[#2563EB]"></div>
-                  <div className="w-40 h-24 bg-[#2563EB]"></div>
-                </div>
-              )}
             </div>
             {openAccordion === 'automation' && (
-              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
-                <div className="text-base leading-relaxed">
-                  <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
-                  <p>Technology begins taking on work so people can focus on what matters.</p>
-                </div>
-                <div className="flex gap-2 justify-end">
-                  <div className="w-40 h-24 bg-[#2563EB]"></div>
-                  <div className="w-40 h-24 bg-[#2563EB]"></div>
-                </div>
+              <div className="text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
+                <p>Technology begins taking on work so people can focus on what matters.</p>
               </div>
             )}
           </div>
@@ -275,23 +268,11 @@ export default function Landing() {
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'experience' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience &<br className="md:hidden" /> Interaction</h2>
               </div>
-              {openAccordion !== 'experience' && (
-                <div className="flex gap-2">
-                  <div className="w-48 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                </div>
-              )}
             </div>
             {openAccordion === 'experience' && (
-              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
-                <div className="text-base leading-relaxed">
-                  <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
-                  <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
-                </div>
-                <div className="flex gap-2 justify-end">
-                  <div className="w-48 h-24 bg-[#2563EB]"></div>
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                </div>
+              <div className="text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
+                <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
               </div>
             )}
           </div>
@@ -307,23 +288,11 @@ export default function Landing() {
                 <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'growth' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth &<br className="md:hidden" /> Momentum</h2>
               </div>
-              {openAccordion !== 'growth' && (
-                <div className="flex gap-2">
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-48 h-24 bg-[#2563EB]"></div>
-                </div>
-              )}
             </div>
             {openAccordion === 'growth' && (
-              <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
-                <div className="text-base leading-relaxed">
-                  <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
-                  <p>Growth stops being an event and becomes the natural state of your business.</p>
-                </div>
-                <div className="flex gap-2 justify-end">
-                  <div className="w-32 h-24 bg-[#2563EB]"></div>
-                  <div className="w-48 h-24 bg-[#2563EB]"></div>
-                </div>
+              <div className="text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
+                <p>Growth stops being an event and becomes the natural state of your business.</p>
               </div>
             )}
           </div>
