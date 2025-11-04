@@ -1,169 +1,218 @@
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { ArrowLeft } from "lucide-react";
-import logisticsImage from "@assets/stock_images/logistics_warehouse__536d983c.jpg";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 export default function LogisticsCaseStudy() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatTime = (date: Date) => {
+    return date.toLocaleTimeString('en-US', { 
+      hour: '2-digit', 
+      minute: '2-digit',
+      hour12: false 
+    });
+  };
+
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Header */}
-      <header className="border-b border-black py-4 px-6">
-        <div className="max-w-[1400px] mx-auto flex items-center justify-between">
-          <Link href="/">
-            <a className="flex items-center">
+      <header style={{ padding: "var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto flex justify-between items-start">
+          <div>
+            <Link href="/">
               <img 
                 src={logoImage}
                 alt="Stratagentic" 
-                className="h-10"
+                className="h-10 cursor-pointer"
                 style={{ filter: 'invert(1)' }}
                 data-testid="img-logo"
               />
-            </a>
-          </Link>
-          <Link href="/">
-            <a className="flex items-center gap-2 text-sm hover:text-[#2563EB] transition-colors" style={{ transform: 'none' }} data-testid="link-back">
-              <ArrowLeft className="w-4 h-4" />
-              Back to home
-            </a>
-          </Link>
+            </Link>
+          </div>
+          <div className="text-right">
+            <div className="text-sm" data-testid="text-time">{formatTime(time)}</div>
+          </div>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-16 px-6 border-b border-black" data-testid="section-hero">
+      {/* Hero */}
+      <section className="bg-white text-black border-t border-black" style={{ padding: "var(--space-8) var(--space-3)" }}>
         <div className="max-w-[1400px] mx-auto">
-          <p className="text-xs uppercase tracking-wider mb-6 opacity-60" data-testid="text-case-study-label">Case Study – Logistics Coordination Agent | Stratagentic</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight" data-testid="text-hero-title">
+          <p className="text-xs mb-4 uppercase tracking-wider opacity-60" data-testid="text-category">Case Study</p>
+          <h1 
+            className="font-bold mb-6"
+            style={{ 
+              fontSize: "clamp(2rem, 6vw + 0.5rem, 6rem)",
+              lineHeight: "0.92",
+              letterSpacing: "-0.04em"
+            }}
+            data-testid="text-hero-heading"
+          >
             How an automated AI agent reduced delivery coordination time by 60%
           </h1>
-          <p className="text-xl md:text-2xl opacity-80 max-w-3xl leading-relaxed" data-testid="text-hero-subtitle">
+          <p className="text-lg max-w-5xl leading-relaxed" data-testid="text-hero-description">
             Streamlined communication, tracking, and task management across multiple carriers with one integrated agent.
           </p>
         </div>
       </section>
 
-      {/* Hero Image */}
-      <section className="border-b border-black">
+      {/* Challenge */}
+      <section 
+        className="bg-white text-black border-t border-gray-300"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-challenge"
+      >
         <div className="max-w-[1400px] mx-auto">
-          <img 
-            src={logisticsImage} 
-            alt="Automated logistics warehouse" 
-            className="w-full h-[400px] md:h-[600px] object-cover"
-            data-testid="img-hero"
-          />
-        </div>
-      </section>
-
-      {/* Challenge Section */}
-      <section className="py-16 px-6 border-b border-black" data-testid="section-challenge">
-        <div className="max-w-[900px] mx-auto">
-          <h2 className="text-sm font-bold uppercase tracking-wider mb-8" data-testid="text-challenge-heading">Challenge</h2>
-          <div className="space-y-6 text-lg leading-relaxed">
-            <p data-testid="text-challenge-1">
-              Coordinating shipments across multiple carriers, suppliers, and clients was a constant bottleneck. Operations staff spent hours every day checking transport portals, emailing confirmations, and updating spreadsheets manually. With increasing shipment volume, errors and delays started to multiply.
-            </p>
-            <blockquote className="border-l-4 border-[#2563EB] pl-6 py-4 italic text-xl" data-testid="text-challenge-quote">
-              "Every hour saved in coordination means an hour gained in actual delivery."
-              <footer className="text-sm mt-2 not-italic opacity-70">– Operations Manager, National Logistics Company</footer>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* Solution Section */}
-      <section className="py-16 px-6 border-b border-black bg-[#f5f5f5]" data-testid="section-solution">
-        <div className="max-w-[900px] mx-auto">
-          <h2 className="text-sm font-bold uppercase tracking-wider mb-8" data-testid="text-solution-heading">Solution</h2>
-          <div className="space-y-6 text-lg leading-relaxed">
-            <p data-testid="text-solution-1">
-              <strong>Implementation</strong> – a Logistics Coordination Agent – a system that connects order data, transport APIs, and internal communication tools.
-            </p>
-            <p data-testid="text-solution-2">
-              The agent automatically tracks shipments, verifies carrier updates, and synchronizes order statuses across various platforms. When discrepancies occur, it flags them instantly and suggests the next best action.
-            </p>
-            <p data-testid="text-solution-3">
-              Team members now receive daily summaries and exception alerts – eliminating constant manual follow-up.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Results Section */}
-      <section className="py-16 px-6 border-b border-black" data-testid="section-results">
-        <div className="max-w-[900px] mx-auto">
-          <h2 className="text-sm font-bold uppercase tracking-wider mb-8" data-testid="text-results-heading">Results</h2>
-          <div className="mb-8">
-            <p className="text-sm font-bold uppercase tracking-wider mb-6 opacity-60">Highlights:</p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="border border-black p-6" data-testid="result-1">
-                <p className="text-4xl font-bold text-[#2563EB] mb-2">63%</p>
-                <p className="text-base">reduction in manual coordination time</p>
-              </div>
-              <div className="border border-black p-6" data-testid="result-2">
-                <p className="text-4xl font-bold text-[#2563EB] mb-2">90%</p>
-                <p className="text-base">fewer missed or delayed shipment updates</p>
-              </div>
-              <div className="border border-black p-6" data-testid="result-3">
-                <p className="text-lg font-bold mb-2">Real-time visibility</p>
-                <p className="text-base">across all carriers and routes</p>
-              </div>
-              <div className="border border-black p-6" data-testid="result-4">
-                <p className="text-lg font-bold mb-2">Staff redeployed</p>
-                <p className="text-base">from admin work to customer service and planning</p>
-              </div>
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading">
+            THE CHALLENGE
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <p className="text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-6">
+                Coordination was a constant bottleneck
+              </p>
+            </div>
+            <div className="text-base leading-relaxed space-y-4">
+              <p>
+                Coordinating shipments across multiple carriers, suppliers, and clients was a constant bottleneck. Operations staff spent hours every day checking transport portals, emailing confirmations, and updating spreadsheets manually. With increasing shipment volume, errors and delays started to multiply.
+              </p>
+              <blockquote className="border-l-4 border-[#2563EB] pl-4 italic">
+                "Every hour saved in coordination means an hour gained in actual delivery."
+                <footer className="text-sm mt-2 not-italic opacity-70">– Operations Manager, National Logistics Company</footer>
+              </blockquote>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#14B8AB] pl-6 py-4 italic text-xl mt-8" data-testid="text-results-quote">
+        </div>
+      </section>
+
+      {/* Solution */}
+      <section 
+        className="bg-white text-black"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-solution"
+      >
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-solution">
+            THE SOLUTION
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <p className="text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-6">
+                Logistics Coordination Agent
+              </p>
+            </div>
+            <div className="text-base leading-relaxed space-y-4">
+              <p>
+                Implementation – a Logistics Coordination Agent – a system that connects order data, transport APIs, and internal communication tools.
+              </p>
+              <p>
+                The agent automatically tracks shipments, verifies carrier updates, and synchronizes order statuses across various platforms. When discrepancies occur, it flags them instantly and suggests the next best action.
+              </p>
+              <p>
+                Team members now receive daily summaries and exception alerts – eliminating constant manual follow-up.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results */}
+      <section 
+        className="bg-white text-black border-t border-gray-300"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-results"
+      >
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-results">
+            THE RESULTS
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="border border-black p-8" data-testid="card-metric-1">
+              <p className="text-5xl font-bold mb-4 text-[#2563EB]">63%</p>
+              <p className="text-base font-bold mb-2">Reduction in manual coordination time</p>
+              <p className="text-sm leading-relaxed opacity-70">Staff redeployed from admin work to customer service and planning</p>
+            </div>
+            <div className="border border-black p-8" data-testid="card-metric-2">
+              <p className="text-5xl font-bold mb-4 text-[#2563EB]">90%</p>
+              <p className="text-base font-bold mb-2">Fewer missed or delayed shipment updates</p>
+              <p className="text-sm leading-relaxed opacity-70">Real-time visibility across all carriers and routes</p>
+            </div>
+            <div className="border border-black p-8" data-testid="card-metric-3">
+              <p className="text-5xl font-bold mb-4 text-[#2563EB]">100%</p>
+              <p className="text-base font-bold mb-2">Real-time visibility</p>
+              <p className="text-sm leading-relaxed opacity-70">Complete transparency across all carriers and delivery routes</p>
+            </div>
+          </div>
+          <blockquote className="border-l-4 border-[#14B8AB] pl-6 py-4 italic text-xl mt-12">
             "The agent feels like an extra team member who keeps every order on track."
             <footer className="text-sm mt-2 not-italic opacity-70">– Logistics Coordinator</footer>
           </blockquote>
         </div>
       </section>
 
-      {/* Inside the System Section */}
-      <section className="py-16 px-6 border-b border-black bg-[#f5f5f5]" data-testid="section-system">
-        <div className="max-w-[900px] mx-auto">
-          <h2 className="text-sm font-bold uppercase tracking-wider mb-8" data-testid="text-system-heading">Inside the System</h2>
-          <div className="space-y-6 text-lg leading-relaxed mb-8">
-            <p data-testid="text-system-1">
-              Data flows seamlessly through the agent's logic:
-            </p>
-            <div className="bg-white border border-black p-8 text-center font-mono text-sm" data-testid="text-system-flow">
-              Orders → ERP System → Agent → Carrier APIs → Internal Dashboard → Notifications & Reports
+      {/* Inside the System */}
+      <section 
+        className="bg-white text-black"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-system"
+      >
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-section-heading-system">
+            INSIDE THE SYSTEM
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <p className="text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-6">
+                Seamless data flow through the agent's logic
+              </p>
             </div>
-            <p className="text-sm opacity-70 italic" data-testid="text-system-caption">
-              Workflow diagram showing integration points between ERP, carrier systems, and internal dashboards.
-            </p>
+            <div className="text-base leading-relaxed space-y-4">
+              <p>
+                Data flows seamlessly through the agent's logic:
+              </p>
+              <div className="bg-gray-50 border border-black p-6 font-mono text-sm">
+                Orders → ERP System → Agent → Carrier APIs → Internal Dashboard → Notifications & Reports
+              </div>
+              <p className="text-sm opacity-70 italic">
+                Workflow diagram showing integration points between ERP, carrier systems, and internal dashboards.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-6 bg-black text-white" data-testid="section-cta">
-        <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6" data-testid="text-cta-heading">
+      {/* CTA */}
+      <section 
+        className="bg-white text-black border-t border-black"
+        style={{ padding: "var(--space-8) var(--space-3)" }}
+        data-testid="section-cta"
+      >
+        <div className="max-w-[1400px] mx-auto text-center">
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight leading-tight">
             Want to make logistics move smoother?
           </h2>
-          <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto" data-testid="text-cta-body">
+          <p className="text-lg max-w-3xl mx-auto mb-8 leading-relaxed">
             Let's explore how Stratagentic's AI agents can optimize coordination, tracking, and communication in your supply chain.
           </p>
           <Link href="/#contact-section">
-            <a 
-              className="inline-block bg-[#2563EB] text-white px-8 py-4 text-lg font-bold hover:bg-[#1d4ed8] transition-colors"
+            <button 
+              className="inline-flex items-center justify-center bg-black text-white px-6 py-3 text-sm hover-elevate active-elevate-2 transition-all"
               data-testid="button-cta"
             >
+              <span className="mr-2">→</span>
               Book a Discovery Call
-            </a>
+            </button>
           </Link>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-8 px-6 border-t border-black">
-        <div className="max-w-[1400px] mx-auto text-center">
-          <p className="text-sm opacity-60">© 2024 Stratagentic.ai – All rights reserved</p>
-        </div>
-      </footer>
     </div>
   );
 }
