@@ -245,44 +245,15 @@ export default function Landing() {
             data-testid="accordion-intelligence"
             onClick={() => toggleAccordion('intelligence')}
           >
-            {/* Mobile Layout */}
-            <div className="md:hidden">
-              <div className="mb-4 overflow-hidden">
-                <img src={intelligenceStrategyImage} alt="" className="w-full h-auto object-cover" />
-              </div>
-              <h2 className="text-3xl font-bold tracking-tight">
-                Intelligence &<br />Strategy
-              </h2>
-              {openAccordion === 'intelligence' && (
-                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                  <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
-                  <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Desktop Layout */}
-            <div className={`hidden md:flex items-center justify-between gap-6 ${openAccordion === 'intelligence' ? 'mb-6' : ''}`}>
-              <div className="flex items-center gap-6">
-                <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'intelligence' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
-              </div>
-              {openAccordion !== 'intelligence' && (
-                <div className="w-[480px] h-24 overflow-hidden flex-shrink-0">
-                  <img src={intelligenceStrategyImage} alt="" className="w-full h-full object-cover" />
-                </div>
-              )}
+            <div className="flex items-center gap-6">
+              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'intelligence' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
             </div>
 
             {openAccordion === 'intelligence' && (
-              <div className="hidden md:flex justify-between gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
-                <div className="text-base leading-relaxed flex-1">
-                  <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
-                  <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
-                </div>
-                <div className="w-[480px] h-24 overflow-hidden flex-shrink-0">
-                  <img src={intelligenceStrategyImage} alt="" className="w-full h-full object-cover" />
-                </div>
+              <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
+                <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
               </div>
             )}
           </div>
@@ -294,46 +265,15 @@ export default function Landing() {
             data-testid="accordion-automation"
             onClick={() => toggleAccordion('automation')}
           >
-            {/* Mobile Layout */}
-            <div className="md:hidden">
-              <div className="mb-4 overflow-hidden">
-                <img src={automationIntegrationImage} alt="" className="w-full h-auto object-cover" />
-              </div>
-              <h2 className="text-3xl font-bold tracking-tight">
-                Automation &<br />Integration
-              </h2>
-              {openAccordion === 'automation' && (
-                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                  <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
-                  <p>Technology begins taking on work so people can focus on what matters.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Desktop Layout */}
-            <div className={`hidden md:flex items-center justify-between gap-6 ${openAccordion === 'automation' ? 'mb-6' : ''}`}>
-              <div className="flex items-center gap-6">
-                <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation & Integration</h2>
-              </div>
-              {openAccordion !== 'automation' && (
-                <div className="w-[480px] h-24 overflow-hidden">
-                  <img src={automationIntegrationImage} alt="" className="w-full h-full object-cover" />
-                </div>
-              )}
+            <div className="flex items-center gap-6">
+              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation & Integration</h2>
             </div>
 
             {openAccordion === 'automation' && (
-              <div className="hidden md:grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
-                <div className="text-base leading-relaxed">
-                  <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
-                  <p>Technology begins taking on work so people can focus on what matters.</p>
-                </div>
-                <div className="flex justify-end">
-                  <div className="w-[480px] h-24 overflow-hidden">
-                    <img src={automationIntegrationImage} alt="" className="w-full h-full object-cover" />
-                  </div>
-                </div>
+              <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
+                <p>Technology begins taking on work so people can focus on what matters.</p>
               </div>
             )}
           </div>
@@ -345,46 +285,15 @@ export default function Landing() {
             data-testid="accordion-experience"
             onClick={() => toggleAccordion('experience')}
           >
-            {/* Mobile Layout */}
-            <div className="md:hidden">
-              <div className="mb-4 overflow-hidden">
-                <img src={experienceInteractionImage} alt="" className="w-full h-auto object-cover brightness-110" />
-              </div>
-              <h2 className="text-3xl font-bold tracking-tight">
-                Experience &<br />Interaction
-              </h2>
-              {openAccordion === 'experience' && (
-                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                  <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
-                  <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Desktop Layout */}
-            <div className={`hidden md:flex items-center justify-between gap-6 ${openAccordion === 'experience' ? 'mb-6' : ''}`}>
-              <div className="flex items-center gap-6">
-                <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'experience' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience & Interaction</h2>
-              </div>
-              {openAccordion !== 'experience' && (
-                <div className="w-[480px] h-24 overflow-hidden">
-                  <img src={experienceInteractionImage} alt="" className="w-full h-full object-cover brightness-110" />
-                </div>
-              )}
+            <div className="flex items-center gap-6">
+              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'experience' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience & Interaction</h2>
             </div>
 
             {openAccordion === 'experience' && (
-              <div className="hidden md:grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
-                <div className="text-base leading-relaxed">
-                  <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
-                  <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
-                </div>
-                <div className="flex justify-end">
-                  <div className="w-[480px] h-24 overflow-hidden">
-                    <img src={experienceInteractionImage} alt="" className="w-full h-full object-cover brightness-110" />
-                  </div>
-                </div>
+              <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
+                <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
               </div>
             )}
           </div>
@@ -396,46 +305,15 @@ export default function Landing() {
             data-testid="accordion-growth"
             onClick={() => toggleAccordion('growth')}
           >
-            {/* Mobile Layout */}
-            <div className="md:hidden">
-              <div className="mb-4 overflow-hidden">
-                <img src={growthMomentumImage} alt="" className="w-full h-auto object-cover" />
-              </div>
-              <h2 className="text-3xl font-bold tracking-tight">
-                Growth &<br />Momentum
-              </h2>
-              {openAccordion === 'growth' && (
-                <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                  <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
-                  <p>Growth stops being an event and becomes the natural state of your business.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Desktop Layout */}
-            <div className={`hidden md:flex items-center justify-between gap-6 ${openAccordion === 'growth' ? 'mb-6' : ''}`}>
-              <div className="flex items-center gap-6">
-                <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'growth' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth & Momentum</h2>
-              </div>
-              {openAccordion !== 'growth' && (
-                <div className="w-[480px] h-24 overflow-hidden">
-                  <img src={growthMomentumImage} alt="" className="w-full h-full object-cover" />
-                </div>
-              )}
+            <div className="flex items-center gap-6">
+              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'growth' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth & Momentum</h2>
             </div>
 
             {openAccordion === 'growth' && (
-              <div className="hidden md:grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-top-4 duration-300">
-                <div className="text-base leading-relaxed">
-                  <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
-                  <p>Growth stops being an event and becomes the natural state of your business.</p>
-                </div>
-                <div className="flex justify-end">
-                  <div className="w-[480px] h-24 overflow-hidden">
-                    <img src={growthMomentumImage} alt="" className="w-full h-full object-cover" />
-                  </div>
-                </div>
+              <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
+                <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
+                <p>Growth stops being an event and becomes the natural state of your business.</p>
               </div>
             )}
           </div>
