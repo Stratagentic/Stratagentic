@@ -437,7 +437,7 @@ export default function Landing() {
           </h2>
         </div>
         <div className="relative">
-          <div className="overflow-x-auto overflow-y-hidden scrollbar-hide">
+          <div className="overflow-x-auto overflow-y-hidden scrollbar-hide" style={{ WebkitOverflowScrolling: 'touch' }}>
             <div className="flex">
               {/* Manufacturing card hidden for now */}
               {/* <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
@@ -465,7 +465,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link> */}
-              <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/logistics" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-2">
                   <div className="relative aspect-square">
                     <img 
@@ -488,7 +488,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-3">
                   <div className="relative aspect-square">
                     <img 
@@ -511,7 +511,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-4">
                   <div className="relative aspect-square">
                     <img 
@@ -534,7 +534,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-5">
                   <div className="relative aspect-square">
                     <img 
@@ -557,7 +557,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-6">
                   <div className="relative aspect-square">
                     <img 
@@ -605,7 +605,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link> */}
-              <Link href="/case-studies/logistics" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/logistics" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
                   <div className="relative aspect-square">
                     <img 
@@ -627,7 +627,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
                   <div className="relative aspect-square">
                     <img 
@@ -649,7 +649,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
                   <div className="relative aspect-square">
                     <img 
@@ -671,7 +671,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
                   <div className="relative aspect-square">
                     <img 
@@ -693,7 +693,7 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
+              <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
                   <div className="relative aspect-square">
                     <img 
