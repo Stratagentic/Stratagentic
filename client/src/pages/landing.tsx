@@ -3,12 +3,11 @@ import { Link } from "wouter";
 import { ContactForm } from "@/components/contact-form";
 import { Globe } from "@/components/globe";
 import { Search, Ruler, FlaskConical, Menu } from "lucide-react";
-import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
-import logisticsImage from "@assets/Screenshot 2025-11-04 at 23.11.03_1762294280146.jpg";
-import prospectResearchImage from "@assets/Screenshot 2025-11-04 at 22.15.09_1762292233906.jpg";
-import salesCollateralImage from "@assets/Screenshot 2025-11-04 at 22.13.23_1762292269030.jpg";
-import linkedInGrowthImage from "@assets/Screenshot 2025-11-04 at 22.16.12_1762292288472.jpg";
-import outreachEngineImage from "@assets/Screenshot 2025-11-04 at 23.12.57_1762294393030.jpg";
+import logisticsImage from "@assets/20251106_2128_Relaxed Productivity Growth_remix_01k9ddkydze5fbb85envg8ewet_1762463943885.png";
+import prospectResearchImage from "@assets/20251106_2144_Yoga with Documents_remix_01k9degg35fj9vbrjbgdcgnxm6_1762463943885.png";
+import salesCollateralImage from "@assets/20251106_2132_Reading in the Park_remix_01k9ddv12rfqvrpzqte4g8r9yy_1762463943885.png";
+import linkedInGrowthImage from "@assets/20251106_2052_Chatting with AI_simple_compose_01k9dbhq30f8m9968761vrqywq_1762463943885.png";
+import outreachEngineImage from "@assets/20251106_2058_Automated Workflow Bliss_remix_01k9dbsp5qejw8148yk03b5qve_1762463943885.png";
 import growthMomentumImage from "@assets/Screenshot 2025-11-04 at 22.32.37_1762292437388.jpg";
 import experienceInteractionImage from "@assets/Screenshot 2025-11-04 at 22.27.30_1762292416859.jpg";
 import automationIntegrationImage from "@assets/Screenshot 2025-11-04 at 22.49.31_1762292999371.jpg";
@@ -470,8 +469,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
-                      alt="Automated logistics warehouse" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Relaxed productivity and growth illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -493,8 +492,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
-                      alt="AI-powered prospect research automation" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Yoga with documents illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -516,8 +515,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={salesCollateralImage} 
-                      alt="Sales collateral and marketing materials" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Reading in the park illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -539,8 +538,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={linkedInGrowthImage} 
-                      alt="LinkedIn content creation automation" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Chatting with AI illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                       data-testid="img-case-study-5"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -562,8 +561,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={outreachEngineImage} 
-                      alt="Automated outreach and email marketing" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Automated workflow bliss illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                       data-testid="img-case-study-6"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -610,8 +609,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
-                      alt="Automated logistics warehouse" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Relaxed productivity and growth illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
@@ -632,8 +631,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
-                      alt="AI-powered prospect research automation" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Yoga with documents illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
@@ -654,8 +653,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={salesCollateralImage} 
-                      alt="Sales collateral and marketing materials" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Reading in the park illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
@@ -676,8 +675,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={linkedInGrowthImage} 
-                      alt="LinkedIn content creation automation" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Chatting with AI illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">LinkedIn Growth</p>
@@ -698,8 +697,8 @@ export default function Landing() {
                   <div className="relative aspect-square">
                     <img 
                       src={outreachEngineImage} 
-                      alt="Automated outreach and email marketing" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Automated workflow bliss illustration" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
