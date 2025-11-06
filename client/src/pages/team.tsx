@@ -2,6 +2,12 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
+import johannesDefault from "@assets/JohannesStruweg_1762463512984.jpg";
+import johannesMotoX from "@assets/JanesMotoX_1762463229813.png";
+import johannesAgassi from "@assets/JanesAgassi_1762463229813.png";
+import johannesTeen from "@assets/JanesTeen_1762463229813.png";
+import johannesViking from "@assets/JanesViking_1762463229813.png";
+import johannesJoker from "@assets/JanesJoker_1762463229813.png";
 
 export default function Team() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +26,32 @@ export default function Team() {
     window.location.assign("/#resources");
   };
 
+  // Windows XP-style error sound
+  const playErrorSound = () => {
+    try {
+      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+      
+      // Windows XP error sound is approximately 800Hz
+      oscillator.frequency.value = 800;
+      oscillator.type = 'sine';
+      
+      // Volume envelope
+      gainNode.gain.setValueAtTime(0, audioContext.currentTime);
+      gainNode.gain.linearRampToValueAtTime(0.3, audioContext.currentTime + 0.01);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+      
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 0.3);
+    } catch (error) {
+      console.log('Audio playback not supported');
+    }
+  };
+
   // Placeholder photo arrays - user can replace with actual photos
   const franciscoPhotos = [
     "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
@@ -30,11 +62,12 @@ export default function Team() {
   ];
 
   const johannesPhotos = [
-    "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1542178243-bc20204b769f?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop"
+    johannesDefault,
+    johannesMotoX,
+    johannesAgassi,
+    johannesTeen,
+    johannesViking,
+    johannesJoker
   ];
 
   const cycleFranciscoPhoto = () => {
@@ -42,7 +75,8 @@ export default function Team() {
   };
 
   const cycleJohannesPhoto = () => {
-    setJohannesPhotoIndex((prev) => (prev + 1) % 5);
+    playErrorSound();
+    setJohannesPhotoIndex((prev) => (prev + 1) % 6);
   };
 
   return (
