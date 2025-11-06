@@ -1,14 +1,24 @@
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
-import logoImage from "@assets/Stratagentic logo.png";
+import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 export default function Team() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [, setLocation] = useLocation();
   
   // Track which photo variant is shown for each team member (0-4 for 5 photos)
   const [franciscoPhotoIndex, setFranciscoPhotoIndex] = useState(0);
   const [johannesPhotoIndex, setJohannesPhotoIndex] = useState(0);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const navigateToResources = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.assign("/#resources");
+  };
 
   // Placeholder photo arrays - user can replace with actual photos
   const franciscoPhotos = [
@@ -74,9 +84,10 @@ export default function Team() {
                 Team
               </Link>
               <a 
-                href="#resources" 
+                href="/#resources" 
                 className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
                 style={{ transform: 'none' }}
+                onClick={navigateToResources}
                 data-testid="link-menu-resources"
               >
                 Resources
@@ -84,6 +95,8 @@ export default function Team() {
             </div>
             <button 
               className={`p-2 absolute right-0 transition-all duration-300 ease-out ${menuOpen ? 'opacity-0 translate-x-8 pointer-events-none' : 'opacity-100 translate-x-0'}`}
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
               data-testid="button-menu"
             >
               <Menu className="w-6 h-6" />
@@ -122,17 +135,18 @@ export default function Team() {
             {/* Francisco Acasuso */}
             <div className="grid md:grid-cols-[300px_1fr] gap-8 md:gap-12" data-testid="card-founder-francisco">
               <div className="flex flex-col items-start">
-                <div 
-                  className="w-full aspect-square border border-black overflow-hidden cursor-pointer hover:border-[#2563EB] transition-all duration-300"
+                <button 
+                  className="w-full aspect-square border border-black overflow-hidden cursor-pointer hover:border-[#2563EB] transition-all duration-300 p-0 bg-transparent"
                   onClick={cycleFranciscoPhoto}
-                  data-testid="img-francisco-headshot"
+                  aria-label="Cycle through Francisco's photos"
+                  data-testid="button-francisco-headshot"
                 >
                   <img 
                     src={franciscoPhotos[franciscoPhotoIndex]}
                     alt="Francisco Acasuso"
                     className="w-full h-full object-cover"
                   />
-                </div>
+                </button>
                 <div className="mt-4">
                   <h3 className="text-xl font-bold mb-1" data-testid="text-francisco-name">Francisco Acasuso</h3>
                   <p className="text-sm text-gray-600" data-testid="text-francisco-title">Co-founder & CEO</p>
@@ -169,17 +183,18 @@ export default function Team() {
             {/* Johannes Struweg */}
             <div className="grid md:grid-cols-[300px_1fr] gap-8 md:gap-12" data-testid="card-founder-johannes">
               <div className="flex flex-col items-start">
-                <div 
-                  className="w-full aspect-square border border-black overflow-hidden cursor-pointer hover:border-[#2563EB] transition-all duration-300"
+                <button 
+                  className="w-full aspect-square border border-black overflow-hidden cursor-pointer hover:border-[#2563EB] transition-all duration-300 p-0 bg-transparent"
                   onClick={cycleJohannesPhoto}
-                  data-testid="img-johannes-headshot"
+                  aria-label="Cycle through Johannes's photos"
+                  data-testid="button-johannes-headshot"
                 >
                   <img 
                     src={johannesPhotos[johannesPhotoIndex]}
                     alt="Johannes Struweg"
                     className="w-full h-full object-cover"
                   />
-                </div>
+                </button>
                 <div className="mt-4">
                   <h3 className="text-xl font-bold mb-1" data-testid="text-johannes-name">Johannes Struweg</h3>
                   <p className="text-sm text-gray-600" data-testid="text-johannes-title">Co-founder & COO</p>
