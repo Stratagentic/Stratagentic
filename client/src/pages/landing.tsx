@@ -470,7 +470,7 @@ export default function Landing() {
                     <img 
                       src={logisticsImage} 
                       alt="Relaxed productivity and growth illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -493,7 +493,7 @@ export default function Landing() {
                     <img 
                       src={prospectResearchImage} 
                       alt="Yoga with documents illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -516,7 +516,7 @@ export default function Landing() {
                     <img 
                       src={salesCollateralImage} 
                       alt="Reading in the park illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -539,7 +539,7 @@ export default function Landing() {
                     <img 
                       src={linkedInGrowthImage} 
                       alt="Chatting with AI illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                       data-testid="img-case-study-5"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -562,7 +562,7 @@ export default function Landing() {
                     <img 
                       src={outreachEngineImage} 
                       alt="Automated workflow bliss illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                       data-testid="img-case-study-6"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -610,7 +610,7 @@ export default function Landing() {
                     <img 
                       src={logisticsImage} 
                       alt="Relaxed productivity and growth illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
@@ -632,7 +632,7 @@ export default function Landing() {
                     <img 
                       src={prospectResearchImage} 
                       alt="Yoga with documents illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
@@ -654,7 +654,7 @@ export default function Landing() {
                     <img 
                       src={salesCollateralImage} 
                       alt="Reading in the park illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
@@ -676,7 +676,7 @@ export default function Landing() {
                     <img 
                       src={linkedInGrowthImage} 
                       alt="Chatting with AI illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">LinkedIn Growth</p>
@@ -698,7 +698,7 @@ export default function Landing() {
                     <img 
                       src={outreachEngineImage} 
                       alt="Automated workflow bliss illustration" 
-                      className="absolute inset-0 w-full h-full object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
