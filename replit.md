@@ -4,6 +4,33 @@
 
 This is a landing page application for Stratagentic.ai, designed to showcase business transformation and automation services. The project implements a minimalist, high-contrast design inspired by has.works, featuring a monochrome aesthetic with blue and teal accents. The hero section features an interactive 3D globe field animation with magnetic particle effects and physics-based rotation. Built as a full-stack TypeScript application using React, Express, and PostgreSQL with Drizzle ORM.
 
+## Application Pages
+
+### Landing Page (/)
+- Hero section with interactive 3D globe animation
+- Expandable accordion grid showcasing services
+- Manifesto section with large typography
+- Case study carousel
+- Contact form with PostgreSQL backend
+- Analytics tracking
+
+### Team Page (/team)
+- Ethos section styled like manifesto (large bold text)
+- Founder profiles with interactive headshots
+- Each headshot cycles through 5 photo variants on click
+- Accessible button controls with keyboard support
+- Consistent design system with landing page
+- Mobile-responsive layout
+
+### FAQ Page (/faq)
+- Two-column layout with sticky image
+- Left-aligned content (max-width 700px)
+- Follows the same minimalist design system
+
+### Case Study Pages
+- Individual pages for each case study
+- Consistent brutalist design aesthetic
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
