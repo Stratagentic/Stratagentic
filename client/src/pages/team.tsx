@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
+import franciscoDefault from "@assets/1523195690482_1762463807189.jpg";
 import johannesDefault from "@assets/JohannesStruweg_1762463512984.jpg";
 import johannesMotoX from "@assets/JanesMotoX_1762463229813.png";
 import johannesAgassi from "@assets/JanesAgassi_1762463229813.png";
@@ -52,9 +53,8 @@ export default function Team() {
     }
   };
 
-  // Placeholder photo arrays - user can replace with actual photos
   const franciscoPhotos = [
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    franciscoDefault,
     "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
     "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
     "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
