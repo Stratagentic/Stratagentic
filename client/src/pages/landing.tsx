@@ -465,12 +465,12 @@ export default function Landing() {
                 </div>
               </Link> */}
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-2">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-2">
                   <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
                       alt="Relaxed productivity and growth illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -488,12 +488,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-3">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-3">
                   <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
                       alt="Yoga with documents illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -511,12 +511,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-4">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-4">
                   <div className="relative aspect-square">
                     <img 
                       src={salesCollateralImage} 
                       alt="Reading in the park illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -534,12 +534,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-5">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-5">
                   <div className="relative aspect-square">
                     <img 
                       src={linkedInGrowthImage} 
                       alt="Chatting with AI illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                       data-testid="img-case-study-5"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -557,12 +557,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-6">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-6">
                   <div className="relative aspect-square">
                     <img 
                       src={outreachEngineImage} 
                       alt="Automated workflow bliss illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                       data-testid="img-case-study-6"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -605,12 +605,12 @@ export default function Landing() {
                 </div>
               </Link> */}
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
+                <div className="relative border border-black overflow-hidden cursor-pointer">
                   <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
                       alt="Relaxed productivity and growth illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
@@ -627,12 +627,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
+                <div className="relative border border-black overflow-hidden cursor-pointer">
                   <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
                       alt="Yoga with documents illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
@@ -649,12 +649,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
+                <div className="relative border border-black overflow-hidden cursor-pointer">
                   <div className="relative aspect-square">
                     <img 
                       src={salesCollateralImage} 
                       alt="Reading in the park illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
@@ -671,12 +671,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
+                <div className="relative border border-black overflow-hidden cursor-pointer">
                   <div className="relative aspect-square">
                     <img 
                       src={linkedInGrowthImage} 
                       alt="Chatting with AI illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">LinkedIn Growth</p>
@@ -693,12 +693,12 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
+                <div className="relative border border-black overflow-hidden cursor-pointer">
                   <div className="relative aspect-square">
                     <img 
                       src={outreachEngineImage} 
                       alt="Automated workflow bliss illustration" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      className="absolute inset-0 w-full h-full object-contain object-top"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
