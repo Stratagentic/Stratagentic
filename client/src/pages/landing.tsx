@@ -467,7 +467,11 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-3 gap-12">
             {/* Revenue Engine */}
-            <div data-testid="card-use-case-revenue" className="group">
+            <div 
+              data-testid="card-use-case-revenue" 
+              className="group cursor-pointer"
+              onClick={() => setExpandedUseCases(prev => ({ ...prev, revenue: !prev.revenue }))}
+            >
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Revenue Engine
               </h3>
@@ -481,35 +485,50 @@ export default function Landing() {
               {expandedUseCases.revenue && (
                 <div className="mt-4 space-y-4">
                   <div>
-                    <p className="text-sm font-bold mb-2">What We Automate:</p>
-                    <ul className="text-sm space-y-1 list-disc list-inside ml-2">
-                      <li>Lead generation and qualification using AI scoring</li>
-                      <li>Sales outreach and follow-ups that never miss an opportunity</li>
-                      <li>Customer support handling 80% of inquiries automatically</li>
-                      <li>Pipeline tracking and reporting that updates in real-time</li>
+                    <p className="text-sm text-[#2563EB] mb-2">What We Automate</p>
+                    <ul className="text-sm space-y-1 list-none">
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Lead generation and qualification using AI scoring</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Sales outreach and follow-ups that never miss an opportunity</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Customer support handling 80% of inquiries automatically</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Pipeline tracking and reporting that updates in real-time</span>
+                      </li>
                     </ul>
                   </div>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Real Impact:</span> A Nordic B2B company reduced sales admin from 15 hours to 2 hours weekly. Their team closed 40% more deals in the same timeframe.
+                    <span className="text-[#2563EB]">Real Impact</span> A Nordic B2B company reduced sales admin from 15 hours to 2 hours weekly. Their team closed 40% more deals in the same timeframe.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Tech Stack:</span> We work with your existing CRM, email platforms, and data systems. No proprietary lock-in.
+                    <span className="text-[#2563EB]">Tech Stack</span> We work with your existing CRM, email platforms, and data systems. No proprietary lock-in.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Best For:</span> Businesses spending too much time on sales tasks instead of selling. Teams where manual follow-up means lost revenue.
+                    <span className="text-[#2563EB]">Best For</span> Businesses spending too much time on sales tasks instead of selling. Teams where manual follow-up means lost revenue.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Start Here:</span> Revenue audit (free) → Custom automation strategy → Implementation in 4-6 weeks
+                    <span className="text-[#2563EB]">Start Here</span> Revenue audit (free) → Custom automation strategy → Implementation in 4-6 weeks
                   </p>
                 </div>
               )}
               
               <button
-                onClick={() => setExpandedUseCases(prev => ({ ...prev, revenue: !prev.revenue }))}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setExpandedUseCases(prev => ({ ...prev, revenue: !prev.revenue }));
+                }}
                 className="text-sm text-[#2563EB] hover:text-[#1d4ed8] transition-colors underline mt-2"
                 data-testid="button-toggle-revenue"
               >
@@ -518,7 +537,11 @@ export default function Landing() {
             </div>
             
             {/* International Expansion */}
-            <div data-testid="card-use-case-expansion" className="group">
+            <div 
+              data-testid="card-use-case-expansion" 
+              className="group cursor-pointer"
+              onClick={() => setExpandedUseCases(prev => ({ ...prev, expansion: !prev.expansion }))}
+            >
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 International Expansion
               </h3>
@@ -532,35 +555,50 @@ export default function Landing() {
               {expandedUseCases.expansion && (
                 <div className="mt-4 space-y-4">
                   <div>
-                    <p className="text-sm font-bold mb-2">What We Automate:</p>
-                    <ul className="text-sm space-y-1 list-disc list-inside ml-2">
-                      <li>Real-time translation for customer support in 50+ languages</li>
-                      <li>Content localization for websites, marketing, and documentation</li>
-                      <li>Multi-currency pricing and regional compliance handling</li>
-                      <li>Cultural adaptation ensuring your messaging works in each market</li>
+                    <p className="text-sm text-[#2563EB] mb-2">What We Automate</p>
+                    <ul className="text-sm space-y-1 list-none">
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Real-time translation for customer support in 50+ languages</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Content localization for websites, marketing, and documentation</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Multi-currency pricing and regional compliance handling</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Cultural adaptation ensuring your messaging works in each market</span>
+                      </li>
                     </ul>
                   </div>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Real Impact:</span> A Norwegian software company entered three new markets in four months. Zero international hires. Support response time stayed under 2 hours across all time zones.
+                    <span className="text-[#2563EB]">Real Impact</span> A Norwegian software company entered three new markets in four months. Zero international hires. Support response time stayed under 2 hours across all time zones.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Tech Stack:</span> Custom language models trained on your terminology, integrated with your existing systems.
+                    <span className="text-[#2563EB]">Tech Stack</span> Custom language models trained on your terminology, integrated with your existing systems.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Best For:</span> Businesses looking to expand internationally without the traditional costs of translation services, international teams, and complex operations management.
+                    <span className="text-[#2563EB]">Best For</span> Businesses looking to expand internationally without the traditional costs of translation services, international teams, and complex operations management.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Start Here:</span> Market entry assessment → Localization strategy → Phased rollout over 6-8 weeks
+                    <span className="text-[#2563EB]">Start Here</span> Market entry assessment → Localization strategy → Phased rollout over 6-8 weeks
                   </p>
                 </div>
               )}
               
               <button
-                onClick={() => setExpandedUseCases(prev => ({ ...prev, expansion: !prev.expansion }))}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setExpandedUseCases(prev => ({ ...prev, expansion: !prev.expansion }));
+                }}
                 className="text-sm text-[#2563EB] hover:text-[#1d4ed8] transition-colors underline mt-2"
                 data-testid="button-toggle-expansion"
               >
@@ -814,7 +852,7 @@ export default function Landing() {
                 </div>
               </Link> */}
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black hover:border-[#2563EB] overflow-hidden cursor-pointer group transition-colors" data-testid="card-case-study-2">
+                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-2">
                   <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
@@ -837,7 +875,7 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black hover:border-[#2563EB] overflow-hidden cursor-pointer group transition-colors" data-testid="card-case-study-3">
+                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-3">
                   <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
@@ -860,7 +898,7 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black hover:border-[#2563EB] overflow-hidden cursor-pointer group transition-colors" data-testid="card-case-study-4">
+                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-4">
                   <div className="relative aspect-square">
                     <img 
                       src={salesCollateralImage} 
@@ -883,7 +921,7 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black hover:border-[#2563EB] overflow-hidden cursor-pointer group transition-colors" data-testid="card-case-study-5">
+                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-5">
                   <div className="relative aspect-square">
                     <img 
                       src={linkedInGrowthImage} 
@@ -906,7 +944,7 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black hover:border-[#2563EB] overflow-hidden cursor-pointer group transition-colors" data-testid="card-case-study-6">
+                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-6">
                   <div className="relative aspect-square">
                     <img 
                       src={outreachEngineImage} 
