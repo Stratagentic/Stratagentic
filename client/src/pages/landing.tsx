@@ -46,6 +46,15 @@ export default function Landing() {
   const [nextMilestone, setNextMilestone] = useState(25);
   const pageLoadTime = useRef(Date.now());
   const [menuOpen, setMenuOpen] = useState(false);
+  const [expandedUseCases, setExpandedUseCases] = useState<{
+    revenue: boolean;
+    expansion: boolean;
+    operations: boolean;
+  }>({
+    revenue: false,
+    expansion: false,
+    operations: false,
+  });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -360,6 +369,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-3 gap-12">
+            {/* Revenue Engine */}
             <div data-testid="card-use-case-revenue" className="group">
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Revenue Engine
@@ -370,10 +380,47 @@ export default function Landing() {
               <p className="text-base leading-relaxed mb-4">
                 Transform sales, marketing, and customer success with intelligent automation. Stop losing deals to slow follow-up. Stop burning hours on data entry and status updates.
               </p>
-              <a href="#" className="text-sm text-black hover:text-[#2563EB] transition-colors underline">
-                read more
-              </a>
+              
+              {expandedUseCases.revenue && (
+                <div className="mt-4 space-y-4">
+                  <div>
+                    <p className="text-sm font-bold mb-2">What We Automate:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside ml-2">
+                      <li>Lead generation and qualification using AI scoring</li>
+                      <li>Sales outreach and follow-ups that never miss an opportunity</li>
+                      <li>Customer support handling 80% of inquiries automatically</li>
+                      <li>Pipeline tracking and reporting that updates in real-time</li>
+                    </ul>
+                  </div>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Real Impact:</span> A Nordic B2B company reduced sales admin from 15 hours to 2 hours weekly. Their team closed 40% more deals in the same timeframe.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Tech Stack:</span> We work with your existing CRM, email platforms, and data systems. No proprietary lock-in.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Best For:</span> Businesses spending too much time on sales tasks instead of selling. Teams where manual follow-up means lost revenue.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Start Here:</span> Revenue audit (free) → Custom automation strategy → Implementation in 4-6 weeks
+                  </p>
+                </div>
+              )}
+              
+              <button
+                onClick={() => setExpandedUseCases(prev => ({ ...prev, revenue: !prev.revenue }))}
+                className="text-sm text-[#2563EB] hover:text-[#1d4ed8] transition-colors underline mt-2"
+                data-testid="button-toggle-revenue"
+              >
+                {expandedUseCases.revenue ? 'show less' : 'read more'}
+              </button>
             </div>
+            
+            {/* International Expansion */}
             <div data-testid="card-use-case-expansion" className="group">
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 International Expansion
@@ -384,10 +431,47 @@ export default function Landing() {
               <p className="text-base leading-relaxed mb-4">
                 Break language barriers and enter new markets without hiring international teams. AI-powered translation, localization, and cultural adaptation let you serve customers worldwide.
               </p>
-              <a href="#" className="text-sm text-black hover:text-[#2563EB] transition-colors underline">
-                read more
-              </a>
+              
+              {expandedUseCases.expansion && (
+                <div className="mt-4 space-y-4">
+                  <div>
+                    <p className="text-sm font-bold mb-2">What We Automate:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside ml-2">
+                      <li>Real-time translation for customer support in 50+ languages</li>
+                      <li>Content localization for websites, marketing, and documentation</li>
+                      <li>Multi-currency pricing and regional compliance handling</li>
+                      <li>Cultural adaptation ensuring your messaging works in each market</li>
+                    </ul>
+                  </div>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Real Impact:</span> A Norwegian software company entered three new markets in four months. Zero international hires. Support response time stayed under 2 hours across all time zones.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Tech Stack:</span> Custom language models trained on your terminology, integrated with your existing systems.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Best For:</span> Businesses looking to expand internationally without the traditional costs of translation services, international teams, and complex operations management.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Start Here:</span> Market entry assessment → Localization strategy → Phased rollout over 6-8 weeks
+                  </p>
+                </div>
+              )}
+              
+              <button
+                onClick={() => setExpandedUseCases(prev => ({ ...prev, expansion: !prev.expansion }))}
+                className="text-sm text-[#2563EB] hover:text-[#1d4ed8] transition-colors underline mt-2"
+                data-testid="button-toggle-expansion"
+              >
+                {expandedUseCases.expansion ? 'show less' : 'read more'}
+              </button>
             </div>
+            
+            {/* Operations & Back-Office */}
             <div data-testid="card-use-case-operations" className="group">
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Operations & Back-Office
@@ -398,9 +482,44 @@ export default function Landing() {
               <p className="text-base leading-relaxed mb-4">
                 Automate HR, finance, data processing, and administrative tasks that drain your team's energy. Free employees from repetitive work so they focus on strategic initiatives that grow your business.
               </p>
-              <a href="#" className="text-sm text-black hover:text-[#2563EB] transition-colors underline">
-                read more
-              </a>
+              
+              {expandedUseCases.operations && (
+                <div className="mt-4 space-y-4">
+                  <div>
+                    <p className="text-sm font-bold mb-2">What We Automate:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside ml-2">
+                      <li>Invoice processing and expense management running on autopilot</li>
+                      <li>HR onboarding and document processing with zero manual data entry</li>
+                      <li>Data analysis and reporting that takes minutes, not days</li>
+                      <li>Administrative workflows that currently waste 20+ hours weekly</li>
+                    </ul>
+                  </div>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Real Impact:</span> A professional services firm cut month-end reporting from 3 days to 45 minutes. Their finance team now spends time on analysis instead of spreadsheet babysitting.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Tech Stack:</span> Connects to your ERP, HRIS, and existing databases. Works with Excel, Google Sheets, or whatever you already use.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Best For:</span> Businesses drowning in paperwork and manual data entry. Teams prevented from strategic work because they're stuck on administrative tasks.
+                  </p>
+                  
+                  <p className="text-sm leading-relaxed">
+                    <span className="font-bold">Start Here:</span> Operations audit → Priority workflow automation → Deployment in 3-5 weeks
+                  </p>
+                </div>
+              )}
+              
+              <button
+                onClick={() => setExpandedUseCases(prev => ({ ...prev, operations: !prev.operations }))}
+                className="text-sm text-[#2563EB] hover:text-[#1d4ed8] transition-colors underline mt-2"
+                data-testid="button-toggle-operations"
+              >
+                {expandedUseCases.operations ? 'show less' : 'read more'}
+              </button>
             </div>
           </div>
         </div>
