@@ -45,12 +45,7 @@ export default function Landing() {
   const [maxScrollDepth, setMaxScrollDepth] = useState(0);
   const [nextMilestone, setNextMilestone] = useState(25);
   const pageLoadTime = useRef(Date.now());
-  const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
-  
-  const toggleAccordion = (id: string) => {
-    setOpenAccordion(openAccordion === id ? null : id);
-  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -233,90 +228,125 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Accordion Grid */}
+      {/* Services Grid */}
       <section
         className="bg-white"
-        data-testid="section-accordion"
+        style={{ padding: "var(--space-7) var(--space-3)" }}
+        data-testid="section-services"
       >
         <div className="max-w-[1400px] mx-auto">
-          {/* Intelligence & Strategy */}
-          <div 
-            className={`cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'intelligence' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
-            style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}
-            data-testid="accordion-intelligence"
-            onClick={() => toggleAccordion('intelligence')}
-          >
-            <div className="flex items-center gap-6">
-              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'intelligence' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Intelligence & Strategy</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Intelligence & Strategy */}
+            <div className="border border-black p-8" data-testid="card-service-intelligence">
+              <h3 className="text-2xl font-bold mb-4 tracking-tight">Intelligence & Strategy</h3>
+              
+              <p className="text-sm mb-6 leading-relaxed">
+                Define clear objectives. Align systems with business goals. We run workshops with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks—just practical roadmaps that guide adoption.
+              </p>
+              
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">What You Get:</p>
+                <ul className="text-sm space-y-1 list-disc list-inside">
+                  <li>Complete workflow audit identifying time-wasters and automation opportunities</li>
+                  <li>Prioritized roadmap showing which processes to automate first for maximum impact</li>
+                  <li>Implementation timeline with realistic milestones and resource requirements</li>
+                  <li>Team alignment workshops ensuring everyone understands the changes</li>
+                </ul>
+              </div>
+              
+              <p className="text-sm mb-4 text-[#2563EB]">
+                <span className="font-bold">Best For:</span> Businesses that know they need automation but don't know where to start. Teams spending more time on repetitive tasks than strategic work.
+              </p>
+              
+              <div className="text-sm">
+                <span className="inline-block bg-black text-white px-2 py-1">1-2 weeks</span>
+                <span className="ml-2">from kickoff to delivery</span>
+              </div>
             </div>
 
-            {openAccordion === 'intelligence' && (
-              <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                <p className="mb-4">Clarity begins here. Objectives become measurable, systems align with business goals, and decisions start making sense together.</p>
-                <p>Forward-thinking companies unlock growth and efficiency when intelligence works across strategy, data, and delivery.</p>
+            {/* Automation & Integration */}
+            <div className="border border-black p-8" data-testid="card-service-automation">
+              <h3 className="text-2xl font-bold mb-4 tracking-tight">Automation & Integration</h3>
+              
+              <p className="text-sm mb-6 leading-relaxed">
+                We build custom systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees—tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate.
+              </p>
+              
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">What You Get:</p>
+                <ul className="text-sm space-y-1 list-disc list-inside">
+                  <li>Custom automation tools built for your specific workflows</li>
+                  <li>Integration with existing systems (CRM, email, spreadsheets, databases)</li>
+                  <li>AI agents that handle customer inquiries, data entry, and routine decisions</li>
+                  <li>Handoff documentation so your team owns what we build</li>
+                </ul>
               </div>
-            )}
-          </div>
-
-          {/* Automation & Integration */}
-          <div 
-            className={`cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'automation' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
-            style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}
-            data-testid="accordion-automation"
-            onClick={() => toggleAccordion('automation')}
-          >
-            <div className="flex items-center gap-6">
-              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'automation' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Automation & Integration</h2>
+              
+              <p className="text-sm mb-4 text-[#2563EB]">
+                <span className="font-bold">Best For:</span> Companies with unique processes that generic software can't handle. Teams tired of manual work that "someone should really automate."
+              </p>
+              
+              <div className="text-sm">
+                <span className="inline-block bg-black text-white px-2 py-1">2-6 weeks</span>
+                <span className="ml-2">depending on complexity</span>
+              </div>
             </div>
 
-            {openAccordion === 'automation' && (
-              <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                <p className="mb-4">Friction ends here. Tools connect, workflows run on autopilot, and what once slowed things down starts to accelerate progress.</p>
-                <p>Technology begins taking on work so people can focus on what matters.</p>
+            {/* Experience & Interaction */}
+            <div className="border border-black p-8" data-testid="card-service-experience">
+              <h3 className="text-2xl font-bold mb-4 tracking-tight">Experience & Interaction</h3>
+              
+              <p className="text-sm mb-6 leading-relaxed">
+                Transform how your team and customers interact with your systems. We design interfaces and workflows that feel natural, not technical. The goal is adoption without training—systems that work the way people think.
+              </p>
+              
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">What You Get:</p>
+                <ul className="text-sm space-y-1 list-disc list-inside">
+                  <li>User interface design for internal tools and customer-facing applications</li>
+                  <li>Conversational AI that handles support inquiries in your brand voice</li>
+                  <li>Self-service portals that reduce support workload by 60-80%</li>
+                  <li>Interaction patterns tested with real users, not assumptions</li>
+                </ul>
               </div>
-            )}
-          </div>
-
-          {/* Experience & Interaction */}
-          <div 
-            className={`cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'experience' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
-            style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}
-            data-testid="accordion-experience"
-            onClick={() => toggleAccordion('experience')}
-          >
-            <div className="flex items-center gap-6">
-              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'experience' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Experience & Interaction</h2>
+              
+              <p className="text-sm mb-4 text-[#2563EB]">
+                <span className="font-bold">Best For:</span> Businesses where adoption is the bottleneck. Teams with powerful systems that nobody actually uses because they're too complicated.
+              </p>
+              
+              <div className="text-sm">
+                <span className="inline-block bg-black text-white px-2 py-1">3-8 weeks</span>
+                <span className="ml-2">for design and implementation</span>
+              </div>
             </div>
 
-            {openAccordion === 'experience' && (
-              <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                <p className="mb-4">Every touchpoint counts. When systems feel intuitive, teams work faster and customers stay longer.</p>
-                <p>Design, usability, and data combine to create human-centric experiences that drive growth.</p>
+            {/* Growth & Momentum */}
+            <div className="border border-black p-8" data-testid="card-service-growth">
+              <h3 className="text-2xl font-bold mb-4 tracking-tight">Growth & Momentum</h3>
+              
+              <p className="text-sm mb-6 leading-relaxed">
+                Scale revenue without scaling headcount. We automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects.
+              </p>
+              
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">What You Get:</p>
+                <ul className="text-sm space-y-1 list-disc list-inside">
+                  <li>Lead scoring and qualification that runs automatically</li>
+                  <li>Outreach sequences that adapt based on prospect behavior</li>
+                  <li>Pipeline management that updates itself as deals progress</li>
+                  <li>Performance dashboards showing what's working and what's not</li>
+                </ul>
               </div>
-            )}
-          </div>
-
-          {/* Growth & Momentum */}
-          <div 
-            className={`cursor-pointer transition-all border-b border-gray-300 ${openAccordion === 'growth' ? 'py-6 md:py-12' : 'py-4 md:py-6'}`}
-            style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}
-            data-testid="accordion-growth"
-            onClick={() => toggleAccordion('growth')}
-          >
-            <div className="flex items-center gap-6">
-              <span className={`text-4xl md:text-5xl font-bold text-[#2563EB] transition-transform ${openAccordion === 'growth' ? 'rotate-45' : 'hover:rotate-90'}`}>+</span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Growth & Momentum</h2>
+              
+              <p className="text-sm mb-4 text-[#2563EB]">
+                <span className="font-bold">Best For:</span> Sales and marketing teams drowning in manual follow-up. Companies that need to grow revenue faster than they can hire.
+              </p>
+              
+              <div className="text-sm">
+                <span className="inline-block bg-black text-white px-2 py-1">2-4 weeks</span>
+                <span className="ml-2">to first automation, continuous optimization after</span>
+              </div>
             </div>
-
-            {openAccordion === 'growth' && (
-              <div className="mt-6 text-base leading-relaxed animate-in fade-in slide-in-from-top-4 duration-300">
-                <p className="mb-4">Early wins are only the start. Systems keep improving, operations gain speed, and performance compounds over time.</p>
-                <p>Growth stops being an event and becomes the natural state of your business.</p>
-              </div>
-            )}
           </div>
         </div>
       </section>
