@@ -371,16 +371,18 @@ export default function Landing() {
         className="fade-in-section bg-white text-black"
         data-testid="section-better-world"
       >
-        <div className="max-w-[1400px] mx-auto">
-          <div className="py-12 text-left" style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}>
-            <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-better-world-content">
-            <p>Built for those who imagine better.</p>
-            <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never see execution. Just working systems. Real implementations. Actions that run quietly  in the background while you move forward.</p>
-            <p>What took ten hours now takes one. Ideas become prototypes, prototypes become results - fast, because the world won't wait. Each project is an exploration: how to make work lighter, decisions sharper, growth inevitable.</p>
-            <p>It's not about being big. It's about adapting to progress.</p>
-            </div>
-          </div>
-        </div>
+        <div className="max-w-[1400px] mx-auto"
+        style={{ wordBreak: "normal", overflowWrap: "normal" }}
+      >
+        <div className="py-12 text-left px-[var(--space-3)]">
+        <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+          < p className="mb-8">Built for those who imagine better.</p>
+          < p className="mb-8">No endless decks. No recommendations that gather dust. No six-month roadmaps that never see execution. Just working systems. Real implementations. Actions that run quietly in the background while you move forward.</p>
+          <p className="mb-8">What took ten hours now takes one. Ideas become prototypes, prototypes become results - fast, because the world won't wait. Each project is an exploration: how to make work lighter, decisions sharper, growth inevitable.</p>
+        <p>It's not about being big. It's about adapting to progress.</p>
+      </div>
+    </div>
+  </div>
       </section>
 
       {/* Offerings */}
