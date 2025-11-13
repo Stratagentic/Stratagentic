@@ -1,0 +1,38 @@
+Revenue Engine
+Automate your entire go-to-market system
+Transform sales, marketing, and customer success with intelligent automation. Stop losing deals to slow follow-up. Stop burning hours on data entry and status updates.
+What We Automate:
+* Lead generation and qualification using AI scoring
+* Sales outreach and follow-ups that never miss an opportunity
+* Customer support handling 80% of inquiries automatically
+* Pipeline tracking and reporting that updates in real-time
+Real Impact: A Nordic B2B company reduced sales admin from 15 hours to 2 hours weekly. Their team closed 40% more deals in the same timeframe.
+Tech Stack: We work with your existing CRM, email platforms, and data systems. No proprietary lock-in.
+Best For: Businesses spending too much time on sales tasks instead of selling. Teams where manual follow-up means lost revenue.
+Start Here: Revenue audit (free) → Custom automation strategy → Implementation in 4-6 weeks
+
+International Expansion
+Scale globally without operational overhead
+Break language barriers and enter new markets without hiring international teams. AI-powered translation, localization, and cultural adaptation let you serve customers worldwide.
+What We Automate:
+* Real-time translation for customer support in 50+ languages
+* Content localization for websites, marketing, and documentation
+* Multi-currency pricing and regional compliance handling
+* Cultural adaptation ensuring your messaging works in each market
+Real Impact: A Norwegian software company entered three new markets in four months. Zero international hires. Support response time stayed under 2 hours across all time zones.
+Tech Stack: Custom language models trained on your terminology, integrated with your existing systems.
+Best For: Businesses looking to expand internationally without the traditional costs of translation services, international teams, and complex operations management.
+Start Here: Market entry assessment → Localization strategy → Phased rollout over 6-8 weeks
+
+Operations & Back-Office
+Eliminate the busywork strangling your business
+Automate HR, finance, data processing, and administrative tasks that drain your team's energy. Free employees from repetitive work so they focus on strategic initiatives that grow your business.
+What We Automate:
+* Invoice processing and expense management running on autopilot
+* HR onboarding and document processing with zero manual data entry
+* Data analysis and reporting that takes minutes, not days
+* Administrative workflows that currently waste 20+ hours weekly
+Real Impact: A professional services firm cut month-end reporting from 3 days to 45 minutes. Their finance team now spends time on analysis instead of spreadsheet babysitting.
+Tech Stack: Connects to your ERP, HRIS, and existing databases. Works with Excel, Google Sheets, or whatever you already use.
+Best For: Businesses drowning in paperwork and manual data entry. Teams prevented from strategic work because they're stuck on administrative tasks.
+Start Here: Operations audit → Priority workflow automation → Deployment in 3-5 weeks
