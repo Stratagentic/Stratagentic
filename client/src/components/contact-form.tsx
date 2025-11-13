@@ -228,7 +228,7 @@ export function ContactForm() {
           className="bg-[#2563EB] text-white font-bold px-12 py-4 hover:bg-[#1d4ed8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           data-testid="button-submit"
         >
-          {mutation.isPending ? "Sending..." : "Send message"}
+          {mutation.isPending ? "Sending..." : "Get Free Workflow Audit"}
         </button>
       </form>
     </Form>
