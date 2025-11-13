@@ -677,7 +677,7 @@ export default function Landing() {
             Ready to start?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-single">
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-single">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Single Automation
               </h3>
@@ -697,7 +697,7 @@ export default function Landing() {
                 </ul>
               </div>
               
-              <div className="space-y-2">
+              <div className="space-y-2 mt-auto">
                 <p className="text-sm">
                   <span className="inline-block bg-black text-white px-2 py-1">Investment: Fixed project fee</span>
                 </p>
@@ -707,7 +707,7 @@ export default function Landing() {
               </div>
             </div>
             
-            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-scaled">
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-scaled">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Scaled AI System
               </h3>
@@ -728,7 +728,7 @@ export default function Landing() {
                 </ul>
               </div>
               
-              <div className="space-y-2">
+              <div className="space-y-2 mt-auto">
                 <p className="text-sm">
                   <span className="inline-block bg-black text-white px-2 py-1">Investment: Monthly engagement</span>
                 </p>
@@ -738,7 +738,7 @@ export default function Landing() {
               </div>
             </div>
             
-            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-enterprise">
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-enterprise">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Strategic Transformation
               </h3>
@@ -759,7 +759,7 @@ export default function Landing() {
                 </ul>
               </div>
               
-              <div className="space-y-2">
+              <div className="space-y-2 mt-auto">
                 <p className="text-sm">
                   <span className="inline-block bg-black text-white px-2 py-1">Investment: Quarterly partnership</span>
                 </p>
