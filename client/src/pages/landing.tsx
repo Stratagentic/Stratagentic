@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { ContactForm } from "@/components/contact-form";
 import { Globe } from "@/components/globe";
-import { Search, Ruler, FlaskConical, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import logisticsImage from "@assets/20251106_2128_Relaxed Productivity Growth_remix_01k9ddkydze5fbb85envg8ewet_1762463943885.png";
 import prospectResearchImage from "@assets/20251106_2144_Yoga with Documents_remix_01k9degg35fj9vbrjbgdcgnxm6_1762463943885.png";
 import salesCollateralImage from "@assets/20251106_2132_Reading in the Park_remix_01k9ddv12rfqvrpzqte4g8r9yy_1762463943885.png";
@@ -351,47 +351,56 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Services */}
+      {/* Use Cases */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
         className="fade-in-section"
         style={{ padding: "var(--space-7) var(--space-3)" }}
-        data-testid="section-value-proposition"
+        data-testid="section-use-cases"
       >
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-3 gap-12">
-            <div data-testid="card-value-strategy" className="group">
-              <div className="mb-4">
-                <Search className="w-[42px] h-[42px] text-black" strokeWidth={2.5} />
-              </div>
+            <div data-testid="card-use-case-revenue" className="group">
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
-                Targeted Strategy
+                Revenue Engine
               </h3>
-              <p className="text-base leading-relaxed">
-                Define clear objectives. Align systems with business goals. Workshops, user cases and best practice to inform and to guide towards team-wide adoption.
+              <p className="text-sm font-bold mb-3">
+                Automate your entire go-to-market system
               </p>
+              <p className="text-base leading-relaxed mb-4">
+                Transform sales, marketing, and customer success with intelligent automation. Stop losing deals to slow follow-up. Stop burning hours on data entry and status updates.
+              </p>
+              <a href="#" className="text-sm text-black hover:text-[#2563EB] transition-colors underline">
+                read more
+              </a>
             </div>
-            <div data-testid="card-value-build" className="group">
-              <div className="mb-4">
-                <Ruler className="w-[42px] h-[42px] text-black" strokeWidth={2.5} />
-              </div>
+            <div data-testid="card-use-case-expansion" className="group">
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
-                Custom System Build
+                International Expansion
               </h3>
-              <p className="text-base leading-relaxed">
-                Unique cases needs tailored solutions. Scale  with precision with made-to-measure agentic tooling that improves/removes current and future barriers.
+              <p className="text-sm font-bold mb-3">
+                Scale globally without operational overhead
               </p>
+              <p className="text-base leading-relaxed mb-4">
+                Break language barriers and enter new markets without hiring international teams. AI-powered translation, localization, and cultural adaptation let you serve customers worldwide.
+              </p>
+              <a href="#" className="text-sm text-black hover:text-[#2563EB] transition-colors underline">
+                read more
+              </a>
             </div>
-            <div data-testid="card-value-execution" className="group">
-              <div className="mb-4">
-                <FlaskConical className="w-[42px] h-[42px] text-black" strokeWidth={2.5} />
-              </div>
+            <div data-testid="card-use-case-operations" className="group">
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
-                Scaled Execution
+                Operations & Back-Office
               </h3>
-              <p className="text-base leading-relaxed">
-                Deploy with confidence with proof-of-concept, MVPs or pilot programmes. Accelerate operations continuously as benefits accumulate.
+              <p className="text-sm font-bold mb-3">
+                Eliminate the busywork strangling your business
               </p>
+              <p className="text-base leading-relaxed mb-4">
+                Automate HR, finance, data processing, and administrative tasks that drain your team's energy. Free employees from repetitive work so they focus on strategic initiatives that grow your business.
+              </p>
+              <a href="#" className="text-sm text-black hover:text-[#2563EB] transition-colors underline">
+                read more
+              </a>
             </div>
           </div>
         </div>
