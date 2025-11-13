@@ -628,11 +628,12 @@ export default function Landing() {
         className="fade-in-section bg-white text-black"
         data-testid="section-better-world"
       >
-        <div className="max-w-[1400px] mx-auto">
-          <div className="py-12 text-left" style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}>
+        <div className="max-w-[1400px] mx-auto px-[var(--space-3)]">
+          <div className="py-12 text-left">
             <div 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8 overflow-wrap-anywhere" 
               data-testid="text-better-world-content"
+              style={{ wordBreak: 'normal', overflowWrap: 'break-word' }}
             >
               {manifestoParagraphs.map((paragraph, pIndex) => {
                 let globalIndex = 0;
