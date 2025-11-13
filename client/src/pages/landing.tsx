@@ -438,27 +438,94 @@ export default function Landing() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-single">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
-                Single automation
+                Single Automation
               </h3>
-              <p className="text-sm mb-6 leading-relaxed">
-                Start with one focused solution
+              <p className="text-sm mb-4 leading-relaxed">
+                Start with one focused workflow
               </p>
+              <p className="text-sm mb-6 leading-relaxed">
+                Best for companies wanting to test automation with a specific pain point before committing to larger transformation.
+              </p>
+              
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">You Get:</p>
+                <ul className="text-sm space-y-1 ml-4">
+                  <li>One workflow fully automated</li>
+                  <li>2-week implementation</li>
+                  <li>Handoff training for your team</li>
+                </ul>
+              </div>
+              
+              <div className="space-y-2">
+                <p className="text-sm">
+                  <span className="inline-block bg-black text-white px-2 py-1">Investment: Fixed project fee</span>
+                </p>
+                <p className="text-sm">
+                  <span className="inline-block bg-black text-white px-2 py-1">Timeline: 2-3 weeks start to finish</span>
+                </p>
+              </div>
             </div>
+            
             <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-scaled">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
-                Scaled AI system
+                Scaled AI System
               </h3>
-              <p className="text-sm mb-6 leading-relaxed">
-                Implement comprehensive intelligence
+              <p className="text-sm mb-4 leading-relaxed">
+                Deploy comprehensive intelligence
               </p>
+              <p className="text-sm mb-6 leading-relaxed">
+                Best for businesses ready to automate multiple connected workflows and build an integrated automation layer.
+              </p>
+              
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">You Get:</p>
+                <ul className="text-sm space-y-1 ml-4">
+                  <li>3-5 automated workflows</li>
+                  <li>Custom AI agents for your needs</li>
+                  <li>6 weeks implementation</li>
+                  <li>3 months optimization support</li>
+                </ul>
+              </div>
+              
+              <div className="space-y-2">
+                <p className="text-sm">
+                  <span className="inline-block bg-black text-white px-2 py-1">Investment: Monthly engagement</span>
+                </p>
+                <p className="text-sm">
+                  <span className="inline-block bg-black text-white px-2 py-1">Timeline: 6-8 weeks to full deployment</span>
+                </p>
+              </div>
             </div>
+            
             <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group" data-testid="card-offering-enterprise">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
-                Enterprise bespoke
+                Strategic Transformation
               </h3>
-              <p className="text-sm mb-6 leading-relaxed">
-                Build a custom roadmap
+              <p className="text-sm mb-4 leading-relaxed">
+                Build a custom automation roadmap
               </p>
+              <p className="text-sm mb-6 leading-relaxed">
+                Best for complete operational transformation with multiple departments and complex integration requirements.
+              </p>
+              
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">You Get:</p>
+                <ul className="text-sm space-y-1 ml-4">
+                  <li>Full automation strategy</li>
+                  <li>Phased implementation across departments</li>
+                  <li>Dedicated team for 6+ months</li>
+                  <li>Continuous optimization and scaling</li>
+                </ul>
+              </div>
+              
+              <div className="space-y-2">
+                <p className="text-sm">
+                  <span className="inline-block bg-black text-white px-2 py-1">Investment: Quarterly partnership</span>
+                </p>
+                <p className="text-sm">
+                  <span className="inline-block bg-black text-white px-2 py-1">Timeline: Custom per scope</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
