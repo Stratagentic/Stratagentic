@@ -298,8 +298,8 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Services Grid - ALTERNATIVE LAYOUT (commented out) */}
-      {/* <section
+      {/* Services Grid - ALTERNATIVE LAYOUT (disabled via false &&) */}
+      {false && <section
         className="bg-white"
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-services-grid"
@@ -467,7 +467,7 @@ export default function Landing() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>}
 
       {/* Services Accordion - NEW LAYOUT */}
       <section
