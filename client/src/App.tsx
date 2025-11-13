@@ -10,6 +10,7 @@ import ProspectResearchCaseStudy from "@/pages/prospect-research-case-study";
 import SalesCollateralCaseStudy from "@/pages/sales-collateral-case-study";
 import LinkedInGrowthCaseStudy from "@/pages/linkedin-growth-case-study";
 import OutreachEngineCaseStudy from "@/pages/outreach-engine-case-study";
+import SalesDeckCaseStudy from "@/pages/sales-deck-automation";
 import FAQ from "@/pages/faq";
 import Team from "@/pages/team";
 import NotFound from "@/pages/not-found";
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/case-studies/sales-collateral" component={SalesCollateralCaseStudy} />
       <Route path="/case-studies/linkedin-growth" component={LinkedInGrowthCaseStudy} />
       <Route path="/case-studies/outreach-engine" component={OutreachEngineCaseStudy} />
+      <Route path="/case-studies/sales-deck-automation" component={SalesDeckCaseStudy} />
       <Route path="/faq" component={FAQ} />
       <Route path="/team" component={Team} />
       <Route component={NotFound} />

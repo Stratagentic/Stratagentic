@@ -28,8 +28,16 @@ This is a landing page application for Stratagentic.ai, designed to showcase bus
 - Follows the same minimalist design system
 
 ### Case Study Pages
-- Individual pages for each case study
-- Consistent brutalist design aesthetic
+- Individual pages for each case study (/case-studies/*)
+  - Manufacturing
+  - Logistics
+  - Prospect Research
+  - Sales Collateral
+  - LinkedIn Growth
+  - Outreach Engine
+  - Sales Deck Automation
+- Consistent brutalist design aesthetic with CSS variables
+- Each page follows the same structure: challenge, solution, results, system diagram, CTA
 
 ## User Preferences
 
