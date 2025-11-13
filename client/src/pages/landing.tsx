@@ -492,40 +492,49 @@ export default function Landing() {
               </div>
               
               {expandedServices.intelligence && (
-                <div className="pb-8">
-                  <p className="text-sm mb-6 leading-relaxed">
-                    Define clear objectives. Align systems with business goals. We run workshops with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks—just practical roadmaps that guide adoption and ensure team-wide buy-in.
-                  </p>
-                  
-                  <div className="mb-6">
-                    <p className="text-sm font-bold mb-2">What You Get:</p>
-                    <ul className="text-sm space-y-1 list-none">
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Complete workflow audit identifying time-wasters and automation opportunities</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Prioritized roadmap showing which processes to automate first for maximum impact</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Implementation timeline with realistic milestones and resource requirements</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Team alignment workshops ensuring everyone understands the changes</span>
-                      </li>
-                    </ul>
-                  </div>
-                  
-                  <p className="text-sm mb-4 text-[#2563EB]">
-                    <span className="font-bold">Best For:</span> Businesses that know they need automation but don't know where to start. Teams spending more time on repetitive tasks than strategic work.
-                  </p>
-                  
-                  <div className="text-sm">
-                    <span className="inline-block bg-black text-white px-2 py-1">1-2 weeks</span>
-                    <span className="ml-2">from kickoff to delivery</span>
+                <div className="pb-8 border-t border-black pt-8">
+                  <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)] gap-8 items-start">
+                    {/* Column 1: Body copy */}
+                    <div>
+                      <p className="text-sm leading-relaxed">
+                        Define clear objectives. Align systems with business goals. We run workshops with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks - just practical roadmaps that guide adoption and ensure team-wide buy-in.
+                      </p>
+                    </div>
+                    
+                    {/* Column 2: What You Get */}
+                    <div>
+                      <p className="text-sm font-bold mb-2">What You Get:</p>
+                      <ul className="text-sm space-y-1 list-none">
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Complete workflow audit identifying time-wasters and automation opportunities</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Prioritized roadmap showing which processes to automate first for maximum impact</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Implementation timeline with realistic milestones and resource requirements</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Team alignment workshops ensuring everyone understands the changes</span>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    {/* Column 3: Best For + Timeline */}
+                    <div className="space-y-4">
+                      <p className="text-sm text-[#2563EB]">
+                        <span className="font-bold">Best For:</span> Businesses that know they need automation but don't know where to start. Teams spending more time on repetitive tasks than strategic work.
+                      </p>
+                      
+                      <div className="text-sm">
+                        <span className="inline-block bg-black text-white px-2 py-1">1-2 weeks</span>
+                        <span className="ml-2">from kickoff to delivery</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
@@ -545,40 +554,49 @@ export default function Landing() {
               </div>
               
               {expandedServices.automation && (
-                <div className="pb-8">
-                  <p className="text-sm mb-6 leading-relaxed">
-                    We build custom systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees—tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
-                  </p>
-                  
-                  <div className="mb-6">
-                    <p className="text-sm font-bold mb-2">What You Get:</p>
-                    <ul className="text-sm space-y-1 list-none">
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Custom automation tools built specifically for your unique workflows</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Integration with existing systems like CRM, email, spreadsheets, and databases</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>AI agents that handle customer inquiries, data entry, and routine decisions</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Complete handoff documentation so your team owns what we build</span>
-                      </li>
-                    </ul>
-                  </div>
-                  
-                  <p className="text-sm mb-4 text-[#2563EB]">
-                    <span className="font-bold">Best For:</span> Companies with unique processes that generic software can't handle. Teams tired of manual work that "someone should really automate."
-                  </p>
-                  
-                  <div className="text-sm">
-                    <span className="inline-block bg-black text-white px-2 py-1">2-6 weeks</span>
-                    <span className="ml-2">depending on complexity</span>
+                <div className="pb-8 border-t border-black pt-8">
+                  <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)] gap-8 items-start">
+                    {/* Column 1: Body copy */}
+                    <div>
+                      <p className="text-sm leading-relaxed">
+                        We build custom systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees - tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
+                      </p>
+                    </div>
+                    
+                    {/* Column 2: What You Get */}
+                    <div>
+                      <p className="text-sm font-bold mb-2">What You Get:</p>
+                      <ul className="text-sm space-y-1 list-none">
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Custom automation tools built specifically for your unique workflows</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Integration with existing systems like CRM, email, spreadsheets, and databases</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>AI agents that handle customer inquiries, data entry, and routine decisions</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Complete handoff documentation so your team owns what we build</span>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    {/* Column 3: Best For + Timeline */}
+                    <div className="space-y-4">
+                      <p className="text-sm text-[#2563EB]">
+                        <span className="font-bold">Best For:</span> Companies with unique processes that generic software can't handle. Teams tired of manual work that "someone should really automate."
+                      </p>
+                      
+                      <div className="text-sm">
+                        <span className="inline-block bg-black text-white px-2 py-1">2-6 weeks</span>
+                        <span className="ml-2">depending on complexity</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
@@ -598,40 +616,49 @@ export default function Landing() {
               </div>
               
               {expandedServices.experience && (
-                <div className="pb-8">
-                  <p className="text-sm mb-6 leading-relaxed">
-                    Transform how your team and customers interact with your systems. We design interfaces and workflows that feel natural, not technical. The goal is adoption without training—systems that work the way people think, removing friction from every interaction point your business has.
-                  </p>
-                  
-                  <div className="mb-6">
-                    <p className="text-sm font-bold mb-2">What You Get:</p>
-                    <ul className="text-sm space-y-1 list-none">
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>User interface design for internal tools and customer-facing applications</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Conversational AI that handles support inquiries in your brand voice</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Self-service portals that reduce your support workload by 60-80%</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Interaction patterns tested with real users, not assumptions or theory</span>
-                      </li>
-                    </ul>
-                  </div>
-                  
-                  <p className="text-sm mb-4 text-[#2563EB]">
-                    <span className="font-bold">Best For:</span> Businesses where adoption is the bottleneck. Teams with powerful systems that nobody actually uses because they're too complicated.
-                  </p>
-                  
-                  <div className="text-sm">
-                    <span className="inline-block bg-black text-white px-2 py-1">3-8 weeks</span>
-                    <span className="ml-2">for design and implementation</span>
+                <div className="pb-8 border-t border-black pt-8">
+                  <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)] gap-8 items-start">
+                    {/* Column 1: Body copy */}
+                    <div>
+                      <p className="text-sm leading-relaxed">
+                        Transform how your team and customers interact with your systems. We design interfaces and workflows that feel natural, not technical. The goal is adoption without training - systems that work the way people think, removing friction from every interaction point your business has.
+                      </p>
+                    </div>
+                    
+                    {/* Column 2: What You Get */}
+                    <div>
+                      <p className="text-sm font-bold mb-2">What You Get:</p>
+                      <ul className="text-sm space-y-1 list-none">
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>User interface design for internal tools and customer-facing applications</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Conversational AI that handles support inquiries in your brand voice</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Self-service portals that reduce your support workload by 60-80%</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Interaction patterns tested with real users, not assumptions or theory</span>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    {/* Column 3: Best For + Timeline */}
+                    <div className="space-y-4">
+                      <p className="text-sm text-[#2563EB]">
+                        <span className="font-bold">Best For:</span> Businesses where adoption is the bottleneck. Teams with powerful systems that nobody actually uses because they're too complicated.
+                      </p>
+                      
+                      <div className="text-sm">
+                        <span className="inline-block bg-black text-white px-2 py-1">3-8 weeks</span>
+                        <span className="ml-2">for design and implementation</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
@@ -651,40 +678,49 @@ export default function Landing() {
               </div>
               
               {expandedServices.growth && (
-                <div className="pb-8">
-                  <p className="text-sm mb-6 leading-relaxed">
-                    Scale revenue without scaling headcount. We automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
-                  </p>
-                  
-                  <div className="mb-6">
-                    <p className="text-sm font-bold mb-2">What You Get:</p>
-                    <ul className="text-sm space-y-1 list-none">
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Lead scoring and qualification systems that run automatically</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Outreach sequences that adapt based on prospect behavior and engagement</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Pipeline management that updates itself as deals progress through stages</span>
-                      </li>
-                      <li className="pl-6 -indent-6">
-                        <span className="mr-2">+</span>
-                        <span>Performance dashboards showing what's working and what's not in real-time</span>
-                      </li>
-                    </ul>
-                  </div>
-                  
-                  <p className="text-sm mb-4 text-[#2563EB]">
-                    <span className="font-bold">Best For:</span> Sales and marketing teams drowning in manual follow-up. Companies that need to grow revenue faster than they can hire.
-                  </p>
-                  
-                  <div className="text-sm">
-                    <span className="inline-block bg-black text-white px-2 py-1">2-4 weeks</span>
-                    <span className="ml-2">to first automation live</span>
+                <div className="pb-8 border-t border-black pt-8">
+                  <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)] gap-8 items-start">
+                    {/* Column 1: Body copy */}
+                    <div>
+                      <p className="text-sm leading-relaxed">
+                        Scale revenue without scaling headcount. We automate your go-to-market engine - lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
+                      </p>
+                    </div>
+                    
+                    {/* Column 2: What You Get */}
+                    <div>
+                      <p className="text-sm font-bold mb-2">What You Get:</p>
+                      <ul className="text-sm space-y-1 list-none">
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Lead scoring and qualification systems that run automatically</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Outreach sequences that adapt based on prospect behavior and engagement</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Pipeline management that updates itself as deals progress through stages</span>
+                        </li>
+                        <li className="pl-6 -indent-6">
+                          <span className="mr-2">+</span>
+                          <span>Performance dashboards showing what's working and what's not in real-time</span>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    {/* Column 3: Best For + Timeline */}
+                    <div className="space-y-4">
+                      <p className="text-sm text-[#2563EB]">
+                        <span className="font-bold">Best For:</span> Sales and marketing teams drowning in manual follow-up. Companies that need to grow revenue faster than they can hire.
+                      </p>
+                      
+                      <div className="text-sm">
+                        <span className="inline-block bg-black text-white px-2 py-1">2-4 weeks</span>
+                        <span className="ml-2">to first automation live</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
