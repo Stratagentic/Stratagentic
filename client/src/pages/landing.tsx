@@ -55,6 +55,8 @@ export default function Landing() {
     expansion: false,
     operations: false,
   });
+  const [highlightedWordIndex, setHighlightedWordIndex] = useState(-1);
+  const [manifestoParagraphs, setManifestoParagraphs] = useState<Array<Array<{ text: string; isSpace: boolean }>>>([]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -133,6 +135,53 @@ export default function Landing() {
       });
     };
   }, []);
+
+  // Parse manifesto text into words and set up animation
+  useEffect(() => {
+    const manifestoTexts = [
+      "Built for those who imagine better.",
+      "No endless decks. No recommendations that gather dust. No six-month roadmaps that never see execution. Just working systems. Real implementations. Actions that run quietly in the background while you move forward.",
+      "What took ten hours now takes one. Ideas become prototypes, prototypes become results - fast, because the world won't wait. Each project is an exploration: how to make work lighter, decisions sharper, growth inevitable.",
+      "It's not about being big. It's about adapting to progress."
+    ];
+
+    const paragraphs = manifestoTexts.map(text => 
+      text.split(/(\s+)/).map(segment => ({
+        text: segment,
+        isSpace: /^\s+$/.test(segment)
+      }))
+    );
+    
+    setManifestoParagraphs(paragraphs);
+  }, []);
+
+  // Animate word highlighting
+  useEffect(() => {
+    if (manifestoParagraphs.length === 0) return;
+
+    // Flatten paragraphs to get all word indices
+    let globalIndex = 0;
+    const wordIndices: number[] = [];
+    
+    manifestoParagraphs.forEach(paragraph => {
+      paragraph.forEach(word => {
+        if (!word.isSpace) {
+          wordIndices.push(globalIndex);
+        }
+        globalIndex++;
+      });
+    });
+
+    if (wordIndices.length === 0) return;
+
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      setHighlightedWordIndex(wordIndices[currentIndex]);
+      currentIndex = (currentIndex + 1) % wordIndices.length;
+    }, 200); // Change word every 200ms
+
+    return () => clearInterval(interval);
+  }, [manifestoParagraphs]);
 
   const formatTime = (date: Date) => {
     return date.toLocaleTimeString('en-US', { 
@@ -533,11 +582,36 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <div className="py-12 text-left" style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}>
-            <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-better-world-content">
-            <p>Built for those who imagine better.</p>
-            <p>No endless decks. No recommendations that gather dust. No six-month roadmaps that never see execution. Just working systems. Real implementations. Actions that run quietly  in the background while you move forward.</p>
-            <p>What took ten hours now takes one. Ideas become prototypes, prototypes become results - fast, because the world won't wait. Each project is an exploration: how to make work lighter, decisions sharper, growth inevitable.</p>
-            <p>It's not about being big. It's about adapting to progress.</p>
+            <div 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" 
+              data-testid="text-better-world-content"
+            >
+              {manifestoParagraphs.map((paragraph, pIndex) => {
+                let globalIndex = 0;
+                // Calculate the starting global index for this paragraph
+                for (let i = 0; i < pIndex; i++) {
+                  globalIndex += manifestoParagraphs[i].length;
+                }
+                
+                return (
+                  <p key={pIndex}>
+                    {paragraph.map((word, wIndex) => {
+                      const currentGlobalIndex = globalIndex + wIndex;
+                      return (
+                        <span
+                          key={wIndex}
+                          className={`transition-colors duration-300 ${
+                            currentGlobalIndex === highlightedWordIndex ? 'text-[#2563EB]' : 'text-black'
+                          }`}
+                          style={{ whiteSpace: word.isSpace ? 'pre' : 'normal' }}
+                        >
+                          {word.text}
+                        </span>
+                      );
+                    })}
+                  </p>
+                );
+              })}
             </div>
           </div>
         </div>
