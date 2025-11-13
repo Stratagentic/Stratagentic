@@ -631,9 +631,8 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto px-[var(--space-3)]">
           <div className="py-12 text-left">
             <div 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8 overflow-wrap-anywhere" 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" 
               data-testid="text-better-world-content"
-              style={{ wordBreak: 'normal', overflowWrap: 'break-word' }}
             >
               {manifestoParagraphs.map((paragraph, pIndex) => {
                 let globalIndex = 0;
@@ -649,7 +648,7 @@ export default function Landing() {
                       return (
                         <span
                           key={wIndex}
-                          className={`transition-colors duration-300 ${
+                          className={`inline-block transition-colors duration-300 ${
                             currentGlobalIndex === highlightedWordIndex ? 'text-[#2563EB]' : 'text-black'
                           }`}
                           style={{ whiteSpace: word.isSpace ? 'pre' : 'normal' }}
