@@ -55,15 +55,6 @@ export default function Landing() {
     expansion: false,
     operations: false,
   });
-  const [expandedOfferings, setExpandedOfferings] = useState<{
-    single: boolean;
-    scaled: boolean;
-    strategic: boolean;
-  }>({
-    single: false,
-    scaled: false,
-    strategic: false,
-  });
   const [highlightedWordIndex, setHighlightedWordIndex] = useState(-1);
   const [manifestoParagraphs, setManifestoParagraphs] = useState<Array<Array<{ text: string; isSpace: boolean }>>>([]);
 
@@ -586,7 +577,7 @@ export default function Landing() {
                 Eliminate the busywork strangling your business
               </p>
               <p className="text-base leading-relaxed mb-4">
-                Automate HR, finance, data processing, and administrative tasks that drain your team's energy. Free employees from repetitive work so they focus on strategic initiatives.
+                Automate HR, finance, data processing, and administrative tasks that drain your team's energy. Free employees from repetitive work so they focus on strategic initiatives that grow your business.
               </p>
               
               {expandedUseCases.operations && (
@@ -686,13 +677,7 @@ export default function Landing() {
             Ready to start?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <button
-              type="button"
-              onClick={() => setExpandedOfferings(prev => ({ ...prev, single: !prev.single }))}
-              className="text-left border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col w-full"
-              data-testid="card-offering-single"
-              aria-expanded={expandedOfferings.single}
-            >
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-single">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Single Automation
               </h3>
@@ -703,34 +688,26 @@ export default function Landing() {
                 Best for companies wanting to test automation with a specific pain point before committing to larger transformation.
               </p>
               
-              {expandedOfferings.single && (
-                <div className="mb-6">
-                  <p className="text-sm text-[#2563EB] mb-2">You Get</p>
-                  <ul className="text-sm space-y-1 list-none">
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>One workflow fully automated</li>
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>2-week implementation</li>
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>Handoff training for your team</li>
-                  </ul>
-                </div>
-              )}
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">You Get:</p>
+                <ul className="text-sm space-y-1 ml-4">
+                  <li>One workflow fully automated</li>
+                  <li>2-week implementation</li>
+                  <li>Handoff training for your team</li>
+                </ul>
+              </div>
               
               <div className="space-y-2 mt-auto">
                 <p className="text-sm">
-                  <span className="inline-block bg-black text-white px-2 py-1"><span className="text-[#2563EB]">Investment</span> Fixed project fee</span>
+                  <span className="inline-block bg-black text-white px-2 py-1">Investment: Fixed project fee</span>
                 </p>
                 <p className="text-sm">
-                  <span className="inline-block bg-black text-white px-2 py-1"><span className="text-[#2563EB]">Timeline</span> 2-3 weeks start to finish</span>
+                  <span className="inline-block bg-black text-white px-2 py-1">Timeline: 2-3 weeks start to finish</span>
                 </p>
               </div>
-            </button>
+            </div>
             
-            <button
-              type="button"
-              onClick={() => setExpandedOfferings(prev => ({ ...prev, scaled: !prev.scaled }))}
-              className="text-left border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col w-full"
-              data-testid="card-offering-scaled"
-              aria-expanded={expandedOfferings.scaled}
-            >
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-scaled">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Scaled AI System
               </h3>
@@ -741,35 +718,27 @@ export default function Landing() {
                 Best for businesses ready to automate multiple connected workflows and build an integrated automation layer.
               </p>
               
-              {expandedOfferings.scaled && (
-                <div className="mb-6">
-                  <p className="text-sm text-[#2563EB] mb-2">You Get</p>
-                  <ul className="text-sm space-y-1 list-none">
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>3-5 automated workflows</li>
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>Custom AI agents for your needs</li>
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>6 weeks implementation</li>
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>3 months optimization support</li>
-                  </ul>
-                </div>
-              )}
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">You Get:</p>
+                <ul className="text-sm space-y-1 ml-4">
+                  <li>3-5 automated workflows</li>
+                  <li>Custom AI agents for your needs</li>
+                  <li>6 weeks implementation</li>
+                  <li>3 months optimization support</li>
+                </ul>
+              </div>
               
               <div className="space-y-2 mt-auto">
                 <p className="text-sm">
-                  <span className="inline-block bg-black text-white px-2 py-1"><span className="text-[#2563EB]">Investment</span> Monthly engagement</span>
+                  <span className="inline-block bg-black text-white px-2 py-1">Investment: Monthly engagement</span>
                 </p>
                 <p className="text-sm">
-                  <span className="inline-block bg-black text-white px-2 py-1"><span className="text-[#2563EB]">Timeline</span> 6-8 weeks to full deployment</span>
+                  <span className="inline-block bg-black text-white px-2 py-1">Timeline: 6-8 weeks to full deployment</span>
                 </p>
               </div>
-            </button>
+            </div>
             
-            <button
-              type="button"
-              onClick={() => setExpandedOfferings(prev => ({ ...prev, strategic: !prev.strategic }))}
-              className="text-left border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col w-full"
-              data-testid="card-offering-enterprise"
-              aria-expanded={expandedOfferings.strategic}
-            >
+            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-enterprise">
               <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
                 Strategic Transformation
               </h3>
@@ -780,27 +749,25 @@ export default function Landing() {
                 Best for complete operational transformation with multiple departments and complex integration requirements.
               </p>
               
-              {expandedOfferings.strategic && (
-                <div className="mb-6">
-                  <p className="text-sm text-[#2563EB] mb-2">You Get</p>
-                  <ul className="text-sm space-y-1 list-none">
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>Full automation strategy</li>
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>Phased implementation across departments</li>
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>Dedicated team for 6+ months</li>
-                    <li className="pl-6 -indent-6"><span className="text-[#2563EB]">+ </span>Continuous optimization and scaling</li>
-                  </ul>
-                </div>
-              )}
+              <div className="mb-6">
+                <p className="text-sm font-bold mb-2">You Get:</p>
+                <ul className="text-sm space-y-1 ml-4">
+                  <li>Full automation strategy</li>
+                  <li>Phased implementation across departments</li>
+                  <li>Dedicated team for 6+ months</li>
+                  <li>Continuous optimization and scaling</li>
+                </ul>
+              </div>
               
               <div className="space-y-2 mt-auto">
                 <p className="text-sm">
-                  <span className="inline-block bg-black text-white px-2 py-1"><span className="text-[#2563EB]">Investment</span> Quarterly partnership</span>
+                  <span className="inline-block bg-black text-white px-2 py-1">Investment: Quarterly partnership</span>
                 </p>
                 <p className="text-sm">
-                  <span className="inline-block bg-black text-white px-2 py-1"><span className="text-[#2563EB]">Timeline</span> Custom per scope</span>
+                  <span className="inline-block bg-black text-white px-2 py-1">Timeline: Custom per scope</span>
                 </p>
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </section>
