@@ -493,7 +493,7 @@ export default function Landing() {
               
               {expandedServices.intelligence && (
                 <div className="pb-8 border-t border-black pt-8">
-                  <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)] gap-8 items-start">
+                  <div className="grid md:grid-cols-3 gap-12 items-start">
                     {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
@@ -555,7 +555,7 @@ export default function Landing() {
               
               {expandedServices.automation && (
                 <div className="pb-8 border-t border-black pt-8">
-                  <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)] gap-8 items-start">
+                  <div className="grid md:grid-cols-3 gap-12 items-start">
                     {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
@@ -617,7 +617,7 @@ export default function Landing() {
               
               {expandedServices.experience && (
                 <div className="pb-8 border-t border-black pt-8">
-                  <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)] gap-8 items-start">
+                  <div className="grid md:grid-cols-3 gap-12 items-start">
                     {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
@@ -679,7 +679,7 @@ export default function Landing() {
               
               {expandedServices.growth && (
                 <div className="pb-8 border-t border-black pt-8">
-                  <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)] gap-8 items-start">
+                  <div className="grid md:grid-cols-3 gap-12 items-start">
                     {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
