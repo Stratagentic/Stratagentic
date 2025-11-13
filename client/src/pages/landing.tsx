@@ -1142,7 +1142,7 @@ export default function Landing() {
         data-testid="section-case-studies"
       >
         <div className="max-w-[1400px] mx-auto" style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}>
-          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-case-studies-heading">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight tracking-tight" data-testid="text-case-studies-heading">
             Selected work
           </h2>
         </div>
