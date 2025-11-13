@@ -246,11 +246,11 @@ export default function Landing() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Intelligence & Strategy */}
-            <div className="border border-black p-8" data-testid="card-service-intelligence">
+            <div className="border border-black p-8 flex flex-col" data-testid="card-service-intelligence">
               <h3 className="text-2xl font-bold mb-4 tracking-tight">Intelligence & Strategy</h3>
               
               <p className="text-sm mb-6 leading-relaxed">
-                Define clear objectives. Align systems with business goals. We run workshops with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks—just practical roadmaps that guide adoption.
+                Define clear objectives. Align systems with business goals. We run workshops with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks—just practical roadmaps that guide adoption and ensure team-wide buy-in.
               </p>
               
               <div className="mb-6">
@@ -267,27 +267,27 @@ export default function Landing() {
                 <span className="font-bold">Best For:</span> Businesses that know they need automation but don't know where to start. Teams spending more time on repetitive tasks than strategic work.
               </p>
               
-              <div className="text-sm">
+              <div className="text-sm mt-auto">
                 <span className="inline-block bg-black text-white px-2 py-1">1-2 weeks</span>
                 <span className="ml-2">from kickoff to delivery</span>
               </div>
             </div>
 
             {/* Automation & Integration */}
-            <div className="border border-black p-8" data-testid="card-service-automation">
+            <div className="border border-black p-8 flex flex-col" data-testid="card-service-automation">
               <h3 className="text-2xl font-bold mb-4 tracking-tight">Automation & Integration</h3>
               
               <p className="text-sm mb-6 leading-relaxed">
-                We build custom systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees—tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate.
+                We build custom systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees—tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
               </p>
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">What You Get:</p>
                 <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>Custom automation tools built for your specific workflows</li>
-                  <li>Integration with existing systems (CRM, email, spreadsheets, databases)</li>
+                  <li>Custom automation tools built specifically for your unique workflows</li>
+                  <li>Integration with existing systems like CRM, email, spreadsheets, and databases</li>
                   <li>AI agents that handle customer inquiries, data entry, and routine decisions</li>
-                  <li>Handoff documentation so your team owns what we build</li>
+                  <li>Complete handoff documentation so your team owns what we build</li>
                 </ul>
               </div>
               
@@ -295,18 +295,18 @@ export default function Landing() {
                 <span className="font-bold">Best For:</span> Companies with unique processes that generic software can't handle. Teams tired of manual work that "someone should really automate."
               </p>
               
-              <div className="text-sm">
+              <div className="text-sm mt-auto">
                 <span className="inline-block bg-black text-white px-2 py-1">2-6 weeks</span>
                 <span className="ml-2">depending on complexity</span>
               </div>
             </div>
 
             {/* Experience & Interaction */}
-            <div className="border border-black p-8" data-testid="card-service-experience">
+            <div className="border border-black p-8 flex flex-col" data-testid="card-service-experience">
               <h3 className="text-2xl font-bold mb-4 tracking-tight">Experience & Interaction</h3>
               
               <p className="text-sm mb-6 leading-relaxed">
-                Transform how your team and customers interact with your systems. We design interfaces and workflows that feel natural, not technical. The goal is adoption without training—systems that work the way people think.
+                Transform how your team and customers interact with your systems. We design interfaces and workflows that feel natural, not technical. The goal is adoption without training—systems that work the way people think, removing friction from every interaction point your business has.
               </p>
               
               <div className="mb-6">
@@ -314,8 +314,8 @@ export default function Landing() {
                 <ul className="text-sm space-y-1 list-disc list-inside">
                   <li>User interface design for internal tools and customer-facing applications</li>
                   <li>Conversational AI that handles support inquiries in your brand voice</li>
-                  <li>Self-service portals that reduce support workload by 60-80%</li>
-                  <li>Interaction patterns tested with real users, not assumptions</li>
+                  <li>Self-service portals that reduce your support workload by 60-80%</li>
+                  <li>Interaction patterns tested with real users, not assumptions or theory</li>
                 </ul>
               </div>
               
@@ -323,27 +323,27 @@ export default function Landing() {
                 <span className="font-bold">Best For:</span> Businesses where adoption is the bottleneck. Teams with powerful systems that nobody actually uses because they're too complicated.
               </p>
               
-              <div className="text-sm">
+              <div className="text-sm mt-auto">
                 <span className="inline-block bg-black text-white px-2 py-1">3-8 weeks</span>
                 <span className="ml-2">for design and implementation</span>
               </div>
             </div>
 
             {/* Growth & Momentum */}
-            <div className="border border-black p-8" data-testid="card-service-growth">
+            <div className="border border-black p-8 flex flex-col" data-testid="card-service-growth">
               <h3 className="text-2xl font-bold mb-4 tracking-tight">Growth & Momentum</h3>
               
               <p className="text-sm mb-6 leading-relaxed">
-                Scale revenue without scaling headcount. We automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects.
+                Scale revenue without scaling headcount. We automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
               </p>
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">What You Get:</p>
                 <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>Lead scoring and qualification that runs automatically</li>
-                  <li>Outreach sequences that adapt based on prospect behavior</li>
-                  <li>Pipeline management that updates itself as deals progress</li>
-                  <li>Performance dashboards showing what's working and what's not</li>
+                  <li>Lead scoring and qualification systems that run automatically</li>
+                  <li>Outreach sequences that adapt based on prospect behavior and engagement</li>
+                  <li>Pipeline management that updates itself as deals progress through stages</li>
+                  <li>Performance dashboards showing what's working and what's not in real-time</li>
                 </ul>
               </div>
               
@@ -351,9 +351,9 @@ export default function Landing() {
                 <span className="font-bold">Best For:</span> Sales and marketing teams drowning in manual follow-up. Companies that need to grow revenue faster than they can hire.
               </p>
               
-              <div className="text-sm">
+              <div className="text-sm mt-auto">
                 <span className="inline-block bg-black text-white px-2 py-1">2-4 weeks</span>
-                <span className="ml-2">to first automation, continuous optimization after</span>
+                <span className="ml-2">to first automation live</span>
               </div>
             </div>
           </div>
