@@ -607,7 +607,11 @@ export default function Landing() {
             </div>
             
             {/* Operations & Back-Office */}
-            <div data-testid="card-use-case-operations" className="group">
+            <div 
+              data-testid="card-use-case-operations" 
+              className="group cursor-pointer"
+              onClick={() => setExpandedUseCases(prev => ({ ...prev, operations: !prev.operations }))}
+            >
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Operations & Back-Office
               </h3>
@@ -615,41 +619,56 @@ export default function Landing() {
                 Eliminate the busywork strangling your business
               </p>
               <p className="text-base leading-relaxed mb-4">
-                Automate HR, finance, data processing, and administrative tasks that drain your team's energy. Free employees from repetitive work so they focus on strategic initiatives that grow your business.
+                Automate HR, finance, data processing, and administrative tasks that drain your team's energy. Free employees from repetitive work so they focus on strategic initiatives.
               </p>
               
               {expandedUseCases.operations && (
                 <div className="mt-4 space-y-4">
                   <div>
-                    <p className="text-sm font-bold mb-2">What We Automate:</p>
-                    <ul className="text-sm space-y-1 list-disc list-inside ml-2">
-                      <li>Invoice processing and expense management running on autopilot</li>
-                      <li>HR onboarding and document processing with zero manual data entry</li>
-                      <li>Data analysis and reporting that takes minutes, not days</li>
-                      <li>Administrative workflows that currently waste 20+ hours weekly</li>
+                    <p className="text-sm text-[#2563EB] mb-2">What We Automate</p>
+                    <ul className="text-sm space-y-1 list-none">
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Invoice processing and expense management running on autopilot</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>HR onboarding and document processing with zero manual data entry</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Data analysis and reporting that takes minutes, not days</span>
+                      </li>
+                      <li className="pl-6 -indent-6">
+                        <span className="mr-2">+</span>
+                        <span>Administrative workflows that currently waste 20+ hours weekly</span>
+                      </li>
                     </ul>
                   </div>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Real Impact:</span> A professional services firm cut month-end reporting from 3 days to 45 minutes. Their finance team now spends time on analysis instead of spreadsheet babysitting.
+                    <span className="text-[#2563EB]">Real Impact</span> A professional services firm cut month-end reporting from 3 days to 45 minutes. Their finance team now spends time on analysis instead of spreadsheet babysitting.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Tech Stack:</span> Connects to your ERP, HRIS, and existing databases. Works with Excel, Google Sheets, or whatever you already use.
+                    <span className="text-[#2563EB]">Tech Stack</span> Connects to your ERP, HRIS, and existing databases. Works with Excel, Google Sheets, or whatever you already use.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Best For:</span> Businesses drowning in paperwork and manual data entry. Teams prevented from strategic work because they're stuck on administrative tasks.
+                    <span className="text-[#2563EB]">Best For</span> Businesses drowning in paperwork and manual data entry. Teams prevented from strategic work because they're stuck on administrative tasks.
                   </p>
                   
                   <p className="text-sm leading-relaxed">
-                    <span className="font-bold">Start Here:</span> Operations audit → Priority workflow automation → Deployment in 3-5 weeks
+                    <span className="text-[#2563EB]">Start Here</span> Operations audit → Priority workflow automation → Deployment in 3-5 weeks
                   </p>
                 </div>
               )}
               
               <button
-                onClick={() => setExpandedUseCases(prev => ({ ...prev, operations: !prev.operations }))}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setExpandedUseCases(prev => ({ ...prev, operations: !prev.operations }));
+                }}
                 className="text-sm text-[#2563EB] hover:text-[#1d4ed8] transition-colors underline mt-2"
                 data-testid="button-toggle-operations"
               >
