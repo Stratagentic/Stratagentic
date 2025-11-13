@@ -1002,15 +1002,15 @@ export default function Landing() {
         data-testid="section-offerings"
       >
         <div className="max-w-[1400px] mx-auto">
-          <h2 className="text-sm font-bold mb-8 tracking-tight" data-testid="text-offerings-heading">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight tracking-tight" data-testid="text-offerings-heading">
             Ready to start?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-single">
-              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
+            <div className="border border-black p-8 flex flex-col" data-testid="card-offering-single">
+              <h3 className="text-xl font-bold mb-4 tracking-tight">
                 Single Automation
               </h3>
-              <p className="text-sm mb-4 leading-relaxed">
+              <p className="text-sm mb-4 leading-relaxed text-[#2563EB]">
                 Start with one focused workflow
               </p>
               <p className="text-sm mb-6 leading-relaxed">
@@ -1019,10 +1019,19 @@ export default function Landing() {
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">You Get:</p>
-                <ul className="text-sm space-y-1 ml-4">
-                  <li>One workflow fully automated</li>
-                  <li>2-week implementation</li>
-                  <li>Handoff training for your team</li>
+                <ul className="text-sm space-y-1 list-none">
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>One workflow fully automated</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>2-week implementation</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>Handoff training for your team</span>
+                  </li>
                 </ul>
               </div>
               
@@ -1036,11 +1045,11 @@ export default function Landing() {
               </div>
             </div>
             
-            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-scaled">
-              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
+            <div className="border border-black p-8 flex flex-col" data-testid="card-offering-scaled">
+              <h3 className="text-xl font-bold mb-4 tracking-tight">
                 Scaled AI System
               </h3>
-              <p className="text-sm mb-4 leading-relaxed">
+              <p className="text-sm mb-4 leading-relaxed text-[#2563EB]">
                 Deploy comprehensive intelligence
               </p>
               <p className="text-sm mb-6 leading-relaxed">
@@ -1049,11 +1058,23 @@ export default function Landing() {
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">You Get:</p>
-                <ul className="text-sm space-y-1 ml-4">
-                  <li>3-5 automated workflows</li>
-                  <li>Custom AI agents for your needs</li>
-                  <li>6 weeks implementation</li>
-                  <li>3 months optimization support</li>
+                <ul className="text-sm space-y-1 list-none">
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>3-5 automated workflows</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>Custom AI agents for your needs</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>6 weeks implementation</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>3 months optimization support</span>
+                  </li>
                 </ul>
               </div>
               
@@ -1067,11 +1088,11 @@ export default function Landing() {
               </div>
             </div>
             
-            <div className="border border-black p-8 hover:border-[#2563EB] transition-all duration-300 group flex flex-col" data-testid="card-offering-enterprise">
-              <h3 className="text-xl font-bold mb-4 tracking-tight group-hover:text-[#2563EB] transition-colors">
+            <div className="border border-black p-8 flex flex-col" data-testid="card-offering-enterprise">
+              <h3 className="text-xl font-bold mb-4 tracking-tight">
                 Strategic Transformation
               </h3>
-              <p className="text-sm mb-4 leading-relaxed">
+              <p className="text-sm mb-4 leading-relaxed text-[#2563EB]">
                 Build a custom automation roadmap
               </p>
               <p className="text-sm mb-6 leading-relaxed">
@@ -1080,11 +1101,23 @@ export default function Landing() {
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">You Get:</p>
-                <ul className="text-sm space-y-1 ml-4">
-                  <li>Full automation strategy</li>
-                  <li>Phased implementation across departments</li>
-                  <li>Dedicated team for 6+ months</li>
-                  <li>Continuous optimization and scaling</li>
+                <ul className="text-sm space-y-1 list-none">
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>Full automation strategy</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>Phased implementation across departments</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>Dedicated team for 6+ months</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="flex-shrink-0">+</span>
+                    <span>Continuous optimization and scaling</span>
+                  </li>
                 </ul>
               </div>
               
