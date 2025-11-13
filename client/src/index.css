@@ -332,14 +332,6 @@
     }
   }
 
-  a {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  a:hover {
-    transform: translateY(-1px);
-  }
-
   button {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -350,18 +342,6 @@
 
   button:active:not(:disabled) {
     transform: translateY(0px);
-  }
-
-  .group:hover .group-hover\:scale-105 {
-    transform: scale(1.05);
-  }
-
-  img {
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .group:hover img {
-    transform: scale(1.08);
   }
 
   input,

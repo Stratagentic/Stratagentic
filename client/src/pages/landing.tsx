@@ -1176,19 +1176,19 @@ export default function Landing() {
                 </div>
               </Link> */}
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-2">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-2">
                   <div className="relative aspect-square">
                     <img 
                       src={logisticsImage} 
                       alt="Relaxed productivity and growth illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                       data-testid="img-case-study-2"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 group-hover:text-[#2563EB] transition-colors">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         40% cost reduction
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
@@ -1199,19 +1199,19 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-3">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-3">
                   <div className="relative aspect-square">
                     <img 
                       src={prospectResearchImage} 
                       alt="Yoga with documents illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                       data-testid="img-case-study-3"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 group-hover:text-[#2563EB] transition-colors">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         80% time savings
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
@@ -1222,19 +1222,19 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-4">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-4">
                   <div className="relative aspect-square">
                     <img 
                       src={salesCollateralImage} 
                       alt="Reading in the park illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                       data-testid="img-case-study-4"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 group-hover:text-[#2563EB] transition-colors">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         75% time reduction
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
@@ -1245,19 +1245,19 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-5">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-5">
                   <div className="relative aspect-square">
                     <img 
                       src={linkedInGrowthImage} 
                       alt="Chatting with AI illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                       data-testid="img-case-study-5"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">LinkedIn Growth</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 group-hover:text-[#2563EB] transition-colors">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         10-15 hours saved/month
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
@@ -1268,19 +1268,19 @@ export default function Landing() {
                 </div>
               </Link>
               <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer group" data-testid="card-case-study-6">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-6">
                   <div className="relative aspect-square">
                     <img 
                       src={outreachEngineImage} 
                       alt="Automated workflow bliss illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                       data-testid="img-case-study-6"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3 group-hover:text-[#2563EB] transition-colors">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                         4x outbound volume
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
@@ -1321,7 +1321,7 @@ export default function Landing() {
                     <img 
                       src={logisticsImage} 
                       alt="Relaxed productivity and growth illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
@@ -1343,7 +1343,7 @@ export default function Landing() {
                     <img 
                       src={prospectResearchImage} 
                       alt="Yoga with documents illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
@@ -1365,7 +1365,7 @@ export default function Landing() {
                     <img 
                       src={salesCollateralImage} 
                       alt="Reading in the park illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
@@ -1387,7 +1387,7 @@ export default function Landing() {
                     <img 
                       src={linkedInGrowthImage} 
                       alt="Chatting with AI illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">LinkedIn Growth</p>
@@ -1409,7 +1409,7 @@ export default function Landing() {
                     <img 
                       src={outreachEngineImage} 
                       alt="Automated workflow bliss illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top"
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
                       <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
