@@ -304,11 +304,23 @@ export default function Landing() {
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">What You Get:</p>
-                <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>Complete workflow audit identifying time-wasters and automation opportunities</li>
-                  <li>Prioritized roadmap showing which processes to automate first for maximum impact</li>
-                  <li>Implementation timeline with realistic milestones and resource requirements</li>
-                  <li>Team alignment workshops ensuring everyone understands the changes</li>
+                <ul className="text-sm space-y-1 list-none">
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Complete workflow audit identifying time-wasters and automation opportunities</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Prioritized roadmap showing which processes to automate first for maximum impact</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Implementation timeline with realistic milestones and resource requirements</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Team alignment workshops ensuring everyone understands the changes</span>
+                  </li>
                 </ul>
               </div>
               
@@ -332,11 +344,23 @@ export default function Landing() {
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">What You Get:</p>
-                <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>Custom automation tools built specifically for your unique workflows</li>
-                  <li>Integration with existing systems like CRM, email, spreadsheets, and databases</li>
-                  <li>AI agents that handle customer inquiries, data entry, and routine decisions</li>
-                  <li>Complete handoff documentation so your team owns what we build</li>
+                <ul className="text-sm space-y-1 list-none">
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Custom automation tools built specifically for your unique workflows</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Integration with existing systems like CRM, email, spreadsheets, and databases</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>AI agents that handle customer inquiries, data entry, and routine decisions</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Complete handoff documentation so your team owns what we build</span>
+                  </li>
                 </ul>
               </div>
               
@@ -360,11 +384,23 @@ export default function Landing() {
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">What You Get:</p>
-                <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>User interface design for internal tools and customer-facing applications</li>
-                  <li>Conversational AI that handles support inquiries in your brand voice</li>
-                  <li>Self-service portals that reduce your support workload by 60-80%</li>
-                  <li>Interaction patterns tested with real users, not assumptions or theory</li>
+                <ul className="text-sm space-y-1 list-none">
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>User interface design for internal tools and customer-facing applications</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Conversational AI that handles support inquiries in your brand voice</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Self-service portals that reduce your support workload by 60-80%</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Interaction patterns tested with real users, not assumptions or theory</span>
+                  </li>
                 </ul>
               </div>
               
@@ -388,11 +424,23 @@ export default function Landing() {
               
               <div className="mb-6">
                 <p className="text-sm font-bold mb-2">What You Get:</p>
-                <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>Lead scoring and qualification systems that run automatically</li>
-                  <li>Outreach sequences that adapt based on prospect behavior and engagement</li>
-                  <li>Pipeline management that updates itself as deals progress through stages</li>
-                  <li>Performance dashboards showing what's working and what's not in real-time</li>
+                <ul className="text-sm space-y-1 list-none">
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Lead scoring and qualification systems that run automatically</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Outreach sequences that adapt based on prospect behavior and engagement</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Pipeline management that updates itself as deals progress through stages</span>
+                  </li>
+                  <li className="pl-6 -indent-6">
+                    <span className="mr-2">+</span>
+                    <span>Performance dashboards showing what's working and what's not in real-time</span>
+                  </li>
                 </ul>
               </div>
               
