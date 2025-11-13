@@ -505,20 +505,20 @@ export default function Landing() {
                     <div>
                       <p className="text-sm font-bold mb-2">What You Get:</p>
                       <ul className="text-sm space-y-1 list-none">
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Complete workflow audit identifying time-wasters and automation opportunities</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Prioritized roadmap showing which processes to automate first for maximum impact</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Implementation timeline with realistic milestones and resource requirements</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Team alignment workshops ensuring everyone understands the changes</span>
                         </li>
                       </ul>
@@ -567,20 +567,20 @@ export default function Landing() {
                     <div>
                       <p className="text-sm font-bold mb-2">What You Get:</p>
                       <ul className="text-sm space-y-1 list-none">
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Custom automation tools built specifically for your unique workflows</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Integration with existing systems like CRM, email, spreadsheets, and databases</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>AI agents that handle customer inquiries, data entry, and routine decisions</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Complete handoff documentation so your team owns what we build</span>
                         </li>
                       </ul>
@@ -629,20 +629,20 @@ export default function Landing() {
                     <div>
                       <p className="text-sm font-bold mb-2">What You Get:</p>
                       <ul className="text-sm space-y-1 list-none">
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>User interface design for internal tools and customer-facing applications</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Conversational AI that handles support inquiries in your brand voice</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Self-service portals that reduce your support workload by 60-80%</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Interaction patterns tested with real users, not assumptions or theory</span>
                         </li>
                       </ul>
@@ -691,20 +691,20 @@ export default function Landing() {
                     <div>
                       <p className="text-sm font-bold mb-2">What You Get:</p>
                       <ul className="text-sm space-y-1 list-none">
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Lead scoring and qualification systems that run automatically</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Outreach sequences that adapt based on prospect behavior and engagement</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Pipeline management that updates itself as deals progress through stages</span>
                         </li>
-                        <li className="pl-6 -indent-6">
-                          <span className="mr-2">+</span>
+                        <li className="flex gap-2">
+                          <span className="flex-shrink-0">+</span>
                           <span>Performance dashboards showing what's working and what's not in real-time</span>
                         </li>
                       </ul>
