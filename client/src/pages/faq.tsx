@@ -115,7 +115,7 @@ export default function FAQ() {
         data-testid="section-strategy"
       >
         <div className="max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr,480px] gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr,600px] gap-12">
             {/* Left Column - FAQ Content */}
             <div className="max-w-[700px]">
               <h2 className="text-sm font-bold uppercase tracking-wider mb-8 text-[#2563EB]" data-testid="text-strategy-heading">Strategy</h2>
