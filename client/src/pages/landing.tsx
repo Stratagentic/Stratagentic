@@ -337,7 +337,7 @@ export default function Landing() {
                   "AI agents that handle customer inquiries, data entry, and routine decisions",
                   "Complete handoff documentation so your team owns what we build"
                 ]}
-                bestFor="Companies with unique processes that generic software can't handle. Teams tired of manual work that \"someone should really automate.\""
+                bestFor="Companies with unique processes that generic software can't handle. Teams tired of manual work that someone should really automate."
                 timeline="2-6 weeks"
                 timelineDetail="depending on complexity"
               />
@@ -728,3 +728,14 @@ function ServiceAccordion({ title, isExpanded, onToggle, testId, children }: Ser
         <div className="pb-8 border-t border-black pt-8">
           {children}
         </div>
+      )}
+    </div>
+  );
+}
+
+type ServiceContentProps = {
+  description: string;
+  benefits: string[];
+  bestFor: string;
+  timeline: string;
+  timelineDetail: string;
