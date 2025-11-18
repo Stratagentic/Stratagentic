@@ -7,7 +7,6 @@ const faqImage = "/MeAndAI_ThinkingLeft.png";
 
 export default function FAQ() {
   const [time, setTime] = useState(new Date());
-  const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<string | null>(null);
 
   const toggleFaq = (faqId: string) => {
