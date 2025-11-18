@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
-import faqImage from "../../attached_assets/images/MeAndAI_ThinkingLeft.png";
+import faqImage from "../../../attached_assets/images/MeAndAI_ThinkingLeft.png";
 
 export default function FAQ() {
   const [time, setTime] = useState(new Date());
