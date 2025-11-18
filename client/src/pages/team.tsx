@@ -79,8 +79,9 @@ export default function Team() {
     setJohannesPhotoIndex((prev) => (prev + 1) % 6);
   };
 
-  return (
-    <div className="min-h-screen bg-white text-black">
+ return (
+  <div className="min-h-screen bg-white text-black">
+    <Header />
      
       {/* Ethos Section */}
       <section
