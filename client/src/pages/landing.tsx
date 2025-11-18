@@ -9,6 +9,7 @@ import salesCollateralImage from "@assets/20251106_2132_Reading in the Park_remi
 import linkedInGrowthImage from "@assets/20251106_2052_Chatting with AI_simple_compose_01k9dbhq30f8m9968761vrqywq_1762463943885.png";
 import outreachEngineImage from "@assets/20251106_2058_Automated Workflow Bliss_remix_01k9dbsp5qejw8148yk03b5qve_1762463943885.png";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
+import { Header } from "@/components/header";
 
 const getSessionId = () => {
   let sessionId = sessionStorage.getItem('analytics_session_id');
@@ -41,7 +42,6 @@ export default function Landing() {
   const [maxScrollDepth, setMaxScrollDepth] = useState(0);
   const [nextMilestone, setNextMilestone] = useState(25);
   const pageLoadTime = useRef(Date.now());
-  const [menuOpen, setMenuOpen] = useState(false);
   const [expandedUseCases, setExpandedUseCases] = useState<{
     revenue: boolean;
     expansion: boolean;
@@ -198,58 +198,6 @@ export default function Landing() {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* Header */}
-<header style={{ padding: "var(--space-3)" }}>
-  <div className="max-w-[1400px] mx-auto flex justify-between items-start">
-    <div>
-      <Link href="/">
-        <img 
-          src={logoImage}
-          alt="Stratagentic" 
-          className="h-10 cursor-pointer"
-          style={{ filter: 'invert(1)' }}
-          data-testid="img-logo"
-        />
-      </Link>
-    </div>
-    <div 
-      className="relative flex items-center overflow-hidden"
-      onMouseEnter={() => setMenuOpen(true)}
-      onMouseLeave={() => setMenuOpen(false)}
-    >
-      <div className={`flex items-center gap-6 transition-all duration-300 ease-out ${menuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}>
-        <Link 
-          href="/faq" 
-          className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
-          data-testid="link-menu-faqs"
-        >
-          FAQs
-        </Link>
-        <Link 
-          href="/team"
-          className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
-          data-testid="link-menu-team"
-        >
-          Team
-        </Link>
-        <Link 
-          href="/resources" 
-          className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap"
-          data-testid="link-menu-resources"
-        >
-          Resources
-        </Link>
-      </div>
-      <button 
-        className={`p-2 absolute right-0 transition-all duration-300 ease-out cursor-pointer ${menuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
-        data-testid="button-menu"
-        aria-label="Menu"
-      >
-        <Menu className="w-6 h-6" />
-      </button>
-    </div>
-  </div>
-</header>
 
       <section className="h-screen flex items-center justify-center bg-white" style={{ padding: "var(--space-3)" }}>
         <div className="max-w-4xl mx-auto w-full text-center" style={{ padding: "var(--space-7) var(--space-3)" }}>
