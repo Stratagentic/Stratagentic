@@ -1379,18 +1379,18 @@ export default function Landing() {
         </div>
       </section>
 
-     {/* Footer */}
-      <footer
-        className="bg-white text-black border-t border-black"
-        style={{ padding: "var(--space-5) var(--space-3)" }}
-        data-testid="footer"
-      >
-        <div className="max-w-[1400px] mx-auto text-sm">
-          <p data-testid="text-footer">
-            © 2025 Stratagentic – All rights reserved. AI-assisted, human-approved
-          </p>
-      </div>
-      </footer>
-    </div> 
-  );
+          {/* Footer */}
+      <footer
+        className="bg-white text-black border-t border-black"
+        style={{ padding: "var(--space-5) var(--space-3)" }}
+        data-testid="footer"
+      >
+        <div className="max-w-[1400px] mx-auto text-sm">
+          <p data-testid="text-footer">
+            © 2025 Stratagentic – All rights reserved. AI-assisted, human-approved
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
 }
