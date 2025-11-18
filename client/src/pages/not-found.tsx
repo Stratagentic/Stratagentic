@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ContactForm } from "@/components/contact-form";
 import { Globe } from "@/components/globe";
 import { Menu } from "lucide-react";
+import { Header } from "@/components/header";
 import logisticsImage from "@assets/20251106_2128_Relaxed Productivity Growth_remix_01k9ddkydze5fbb85envg8ewet_1762463943885.png";
 import prospectResearchImage from "@assets/20251106_2144_Yoga with Documents_remix_01k9degg35fj9vbrjbgdcgnxm6_1762463943885.png";
 import salesCollateralImage from "@assets/20251106_2132_Reading in the Park_remix_01k9ddv12rfqvrpzqte4g8r9yy_1762463943885.png";
@@ -198,58 +199,7 @@ export default function Landing() {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      <header style={{ padding: "var(--space-3)" }}>
-        <div className="max-w-[1400px] mx-auto flex justify-between items-start">
-          <div>
-            <img 
-              src={logoImage}
-              alt="Stratagentic" 
-              className="h-10"
-              style={{ filter: 'invert(1)' }}
-              data-testid="img-logo"
-            />
-          </div>
-          <div 
-            className="relative flex items-center overflow-hidden"
-            onMouseEnter={() => setMenuOpen(true)}
-            onMouseLeave={() => setMenuOpen(false)}
-          >
-            <div className={`flex items-center gap-6 transition-all duration-300 ease-out ${menuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}>
-              <Link 
-                href="/faq" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-                style={{ transform: 'none' }}
-                data-testid="link-menu-faqs"
-              >
-                FAQs
-              </Link>
-              <a 
-                href="#team" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-                style={{ transform: 'none' }}
-                data-testid="link-menu-team"
-              >
-                Team
-              </a>
-              <a 
-                href="#resources" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-                style={{ transform: 'none' }}
-                data-testid="link-menu-resources"
-              >
-                Resources
-              </a>
-            </div>
-            <button 
-              className={`p-2 absolute right-0 transition-all duration-300 ease-out ${menuOpen ? 'opacity-0 translate-x-8 pointer-events-none' : 'opacity-100 translate-x-0'}`}
-              data-testid="button-menu"
-            >
-              <Menu className="w-6 h-6" />
-            </button>
-          </div>
-        </div>
-      </header>
-
+     
       <section className="h-screen flex items-center justify-center bg-white" style={{ padding: "var(--space-3)" }}>
         <div className="max-w-4xl mx-auto w-full text-center" style={{ padding: "var(--space-7) var(--space-3)" }}>
           <div className="mb-12 flex justify-center">
