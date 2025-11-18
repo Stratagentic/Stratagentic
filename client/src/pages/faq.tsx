@@ -199,7 +199,7 @@ export default function FAQ() {
                 <img 
                   src={faqImage} 
                   alt="Person reading with technology elements" 
-                  className="w-full h-auto object-cover"
+                  className="max-w-[400px] h-auto object-cover"
                   data-testid="img-faq-strategy"
                 />
               </div>
