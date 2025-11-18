@@ -31,8 +31,9 @@ export default function FAQ() {
     });
   };
 
-  return (
-    <div className="min-h-screen bg-white text-black">
+return (
+  <div className="min-h-screen bg-white text-black">
+    <Header />
       {/* Hero */}
       <section className="bg-white text-black border-t border-black" style={{ padding: "var(--space-8) var(--space-3)" }}>
         <div className="max-w-[1400px] mx-auto">
