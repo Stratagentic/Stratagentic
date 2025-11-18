@@ -216,8 +216,8 @@ export function GlobeError({ maxWidth = 512, maxHeight = 512 }: GlobeErrorProps)
           const influenceRadius = 220;
           if (d < influenceRadius) {
             const strength = Math.pow(1 - d / influenceRadius, 2.5) * 8 * proximityBoost;
-            p.offsetX = (p.offsetX - dx * 0.01 * strength) * 0.9;
-            p.offsetY = (p.offsetY - dy * 0.01 * strength) * 0.9;
+            p.offsetX = (p.offsetX + dx * 0.01 * strength) * 0.9;
+            p.offsetY = (p.offsetY + dy * 0.01 * strength) * 0.9;
           } else {
             p.offsetX *= 0.9;
             p.offsetY *= 0.9;
