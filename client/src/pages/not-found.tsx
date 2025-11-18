@@ -11,7 +11,7 @@ export default function NotFound() {
         <div className="flex flex-col items-center justify-center min-h-[80vh] text-center">
           {/* Error Globe with Plus Signs */}
           <div className="mb-8">
-            <GlobeError maxWidth={256} maxHeight={256} />
+            <GlobeError maxWidth={512} maxHeight={512} />
           </div>
           
           {/* Fun 404 Message */}
@@ -49,11 +49,6 @@ export default function NotFound() {
               <button className="inline-flex items-center justify-center bg-black text-white px-6 py-3 text-sm hover-elevate active-elevate-2 transition-all">
                 <span className="mr-2">←</span>
                 Back to Home
-              </button>
-            </Link>
-            <Link href="/#contact-section">
-              <button className="inline-flex items-center justify-center border border-black text-black px-6 py-3 text-sm hover:bg-black hover:text-white transition-all">
-                Get in Touch
               </button>
             </Link>
           </div>
