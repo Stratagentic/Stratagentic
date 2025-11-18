@@ -194,8 +194,9 @@ export default function Landing() {
     });
   };
 
-  return (
-    <div className="min-h-screen bg-white text-black">
+return (
+  <div className="min-h-screen bg-white text-black">
+    <Header />
 
       <section className="h-screen flex items-center justify-center bg-white" style={{ padding: "var(--space-3)" }}>
         <div className="max-w-4xl mx-auto w-full text-center" style={{ padding: "var(--space-7) var(--space-3)" }}>
