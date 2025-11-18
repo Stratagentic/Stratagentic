@@ -1390,5 +1390,6 @@ export default function Landing() {
           </p>
         </div>
       </footer>
-    </div> // <--- This closes the main container div
-  ); // <--- This closes the return statement
+    </div>
+  );
+}
