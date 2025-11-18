@@ -1390,6 +1390,8 @@ export default function Landing() {
           </p>
         </div>
       </footer>
+   </div>
+      </footer>
     </div>
   );
 }
