@@ -30,7 +30,7 @@ function Router() {
       <Route path="/faq" component={FAQ} />
       <Route path="/team" component={Team} />
       <Route path="/resources" component={Resources} /> {/* ADD THIS LINE */}
-      <Route component={NotFound} />
+      <Route path="/:rest*" component={NotFound} /> {/* CHANGE THIS LINE */}
     </Switch>
   );
 }
