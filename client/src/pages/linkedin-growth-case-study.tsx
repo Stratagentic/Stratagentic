@@ -101,6 +101,7 @@ export default function LinkedInGrowthCaseStudy() {
                 data-testid="link-menu-team"
               >
                 Team
+                </Link>
               </a>
               <a 
                 href="#resources" 
