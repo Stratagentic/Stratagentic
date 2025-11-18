@@ -163,7 +163,7 @@ function drawPlus(x: number, y: number, size: number, alpha: number) {
   ctx.font = `${size * 3}px monospace`; // or 'Arial', 'sans-serif'
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
-  ctx.fillText("×", x, y);
+  ctx.fillText("□", x, y);
 }
 
     function draw() {
