@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Header } from "@/components/header";
-import { Globe } from "@/components/globe";
+import { GlobeError } from "@/components/globe-error";
 
 export default function NotFound() {
   return (
@@ -9,9 +9,9 @@ export default function NotFound() {
       
       <div className="max-w-[1400px] mx-auto" style={{ padding: "var(--space-7) var(--space-3)" }}>
         <div className="flex flex-col items-center justify-center min-h-[80vh] text-center">
-          {/* Animated Globe */}
+          {/* Error Globe with Plus Signs */}
           <div className="mb-8">
-            <Globe maxWidth={256} maxHeight={256} />
+            <GlobeError maxWidth={256} maxHeight={256} />
           </div>
           
           {/* Fun 404 Message */}
@@ -31,7 +31,7 @@ export default function NotFound() {
           <div className="grid grid-cols-3 gap-8 mb-12 max-w-2xl">
             <div className="border border-black p-4">
               <p className="text-3xl font-bold text-[#2563EB]">0%</p>
-              <p className="text-sm">Page Found</p>
+              <p className="text-sm">Page found</p>
             </div>
             <div className="border border-black p-4">
               <p className="text-3xl font-bold text-[#2563EB]">404%</p>
@@ -72,3 +72,4 @@ export default function NotFound() {
     </div>
   );
 }
+   
