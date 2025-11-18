@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
+import { Header } from "@/components/header";
 
 export default function LinkedInGrowthCaseStudy() {
   const [time, setTime] = useState(new Date());
-  const [menuOpen, setMenuOpen] = useState(false);
   const [, setLocation] = useLocation();
 
   useEffect(() => {
@@ -66,81 +66,7 @@ export default function LinkedInGrowthCaseStudy() {
 
   return (
     <div className="min-h-screen bg-white text-black">
-     {/* Header */}
-<header style={{ padding: "var(--space-3)" }}>
-  <div className="max-w-[1400px] mx-auto flex justify-between items-start">
-    <div>
-      <Link href="/">
-        <img 
-          src={logoImage}
-          alt="Stratagentic" 
-          className="h-10 cursor-pointer"
-          style={{ filter: 'invert(1)' }}
-          data-testid="img-logo"
-        />
-      </Link>
-    </div>
-    <div 
-      className="relative flex items-center overflow-hidden"
-      onMouseEnter={() => setMenuOpen(true)}
-      onMouseLeave={() => setMenuOpen(false)}
-    >
-      <div className={`flex items-center gap-6 transition-all duration-300 ease-out ${menuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}>
-        <Link 
-          href="/faq" 
-          className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-          style={{ transform: 'none' }}
-          data-testid="link-menu-faqs"
-        >
-          FAQs
-        </Link>
-        <Link 
-          href="/team"
-          className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-          style={{ transform: 'none' }}
-          data-testid="link-menu-team"
-        >
-          Team
-        </Link>
-        <Link 
-          href="/resources" 
-          className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-          style={{ transform: 'none' }}
-          data-testid="link-menu-resources"
-        >
-          Resources
-        </Link>
-      </div>
-      <button 
-        className={`p-2 absolute right-0 transition-all duration-300 ease-out ${menuOpen ? 'opacity-0 translate-x-8 pointer-events-none' : 'opacity-100 translate-x-0'}`}
-        data-testid="button-menu"
-      >
-        <Menu className="w-6 h-6" />
-      </button>
-    </div>
-  </div>
-</header>
-      {/* Hero */}
-      <section className="bg-white text-black border-t border-black" style={{ padding: "var(--space-8) var(--space-3)" }}>
-        <div className="max-w-[1400px] mx-auto">
-          <p className="text-xs mb-4 uppercase tracking-wider opacity-60" data-testid="text-category">Case Study</p>
-          <h1 
-            className="font-bold mb-6"
-            style={{ 
-              fontSize: "clamp(2rem, 6vw + 0.5rem, 6rem)",
-              lineHeight: "0.92",
-              letterSpacing: "-0.04em"
-            }}
-            data-testid="text-hero-heading"
-          >
-            Consistent LinkedIn presence without the time drain
-          </h1>
-          <p className="text-lg max-w-5xl leading-relaxed" data-testid="text-hero-description">
-            An AI-driven system that helps teams and executives maintain a strong, authentic LinkedIn presence in minutes a week.
-          </p>
-        </div>
-      </section>
-
+   
       {/* Challenge */}
       <section 
         className="bg-white text-black border-t border-gray-300"
