@@ -1,3 +1,4 @@
+import { Header } from "@/components/header";
 export default function Resources() {
   return (
     <div className="min-h-screen bg-white text-black p-8">
