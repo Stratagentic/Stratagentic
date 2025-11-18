@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
+import { Header } from "@/components/header";
 import manufacturingImage from "@assets/stock_images/modern_manufacturing_76235c89.jpg";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 export default function ManufacturingCaseStudy() {
   const [time, setTime] = useState(new Date());
-  const [menuOpen, setMenuOpen] = useState(false);
   const [, setLocation] = useLocation();
 
   useEffect(() => {
@@ -67,60 +67,6 @@ export default function ManufacturingCaseStudy() {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* Header */}
-      <header style={{ padding: "var(--space-3)" }}>
-        <div className="max-w-[1400px] mx-auto flex justify-between items-start">
-          <div>
-            <Link href="/">
-              <img 
-                src={logoImage}
-                alt="Stratagentic" 
-                className="h-10 cursor-pointer"
-                style={{ filter: 'invert(1)' }}
-                data-testid="img-logo"
-              />
-            </Link>
-          </div>
-          <div 
-            className="relative flex items-center overflow-hidden"
-            onMouseEnter={() => setMenuOpen(true)}
-            onMouseLeave={() => setMenuOpen(false)}
-          >
-            <div className={`flex items-center gap-6 transition-all duration-300 ease-out ${menuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'}`}>
-              <Link 
-                href="/faq" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-                style={{ transform: 'none' }}
-                data-testid="link-menu-faqs"
-              >
-                FAQs
-              </Link>
-              <a 
-                href="#team" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-                style={{ transform: 'none' }}
-                data-testid="link-menu-team"
-              >
-                Team
-              </a>
-              <a 
-                href="#resources" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-                style={{ transform: 'none' }}
-                data-testid="link-menu-resources"
-              >
-                Resources
-              </a>
-            </div>
-            <button 
-              className={`p-2 absolute right-0 transition-all duration-300 ease-out ${menuOpen ? 'opacity-0 translate-x-8 pointer-events-none' : 'opacity-100 translate-x-0'}`}
-              data-testid="button-menu"
-            >
-              <Menu className="w-6 h-6" />
-            </button>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Image */}
       <section className="relative h-[60vh] min-h-[400px]" data-testid="section-hero">
