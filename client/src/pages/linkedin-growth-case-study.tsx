@@ -101,8 +101,7 @@ export default function LinkedInGrowthCaseStudy() {
                 data-testid="link-menu-team"
               >
                 Team
-                </Link>
-              </a>
+              </Link>
               <a 
                 href="#resources" 
                 className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
