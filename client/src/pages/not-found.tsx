@@ -17,10 +17,10 @@ export default function NotFound() {
           {/* Fun 404 Message */}
           <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight">404</h1>
           <h2 className="text-2xl md:text-4xl font-bold mb-6 tracking-tight">
-            This workflow needs automation
+            This is it. You reached the end of the line. Its all over
           </h2>
           <p className="text-lg mb-8 max-w-2xl leading-relaxed">
-            Looks like this page took a wrong turn. Even our AI couldn't find it. 
+            Or not. Just a misdirected link. It happens. 
             <br />
             <span className="text-[#2563EB] font-bold">
               Let's get you back on track.
@@ -34,12 +34,12 @@ export default function NotFound() {
               <p className="text-sm">Page Found</p>
             </div>
             <div className="border border-black p-4">
-              <p className="text-3xl font-bold text-[#2563EB]">100%</p>
+              <p className="text-3xl font-bold text-[#2563EB]">404%</p>
               <p className="text-sm">Lost</p>
             </div>
             <div className="border border-black p-4">
-              <p className="text-3xl font-bold text-[#2563EB]">∞</p>
-              <p className="text-sm">Better Pages</p>
+              <p className="text-3xl font-bold text-[#2563EB]">10x</p>
+              <p className="text-sm">Less value</p>
             </div>
           </div>
           
