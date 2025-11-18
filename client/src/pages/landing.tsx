@@ -1388,9 +1388,8 @@ export default function Landing() {
           <p data-testid="text-footer">
             © 2025 Stratagentic – All rights reserved. AI-assisted, human-approved
           </p>
-        </div>
+      </div>
       </footer>
-    </div>
-    </div>
+    </div> 
   );
 }
