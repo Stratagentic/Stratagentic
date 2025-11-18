@@ -311,7 +311,7 @@ export default function Landing() {
               <h3 className="text-2xl font-bold mb-4 tracking-tight">Intelligence & Strategy</h3>
               
               <p className="text-sm mb-6 leading-relaxed">
-                Define clear objectives. Align systems with business goals. We run workshops with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks—just practical roadmaps that guide adoption and ensure team-wide buy-in.
+                Define clear objectives. Align systems with business goals. Let's workshop with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks—just practical roadmaps that guide adoption and ensure team-wide buy-in.
               </p>
               
               <div className="mb-6">
@@ -351,7 +351,7 @@ export default function Landing() {
               <h3 className="text-2xl font-bold mb-4 tracking-tight">Automation & Integration</h3>
               
               <p className="text-sm mb-6 leading-relaxed">
-                We build custom systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees—tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
+                Bespoke systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees — tailored automation that fits exactly how your business operates. Integrating with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
               </p>
               
               <div className="mb-6">
@@ -391,7 +391,7 @@ export default function Landing() {
               <h3 className="text-2xl font-bold mb-4 tracking-tight">Experience & Interaction</h3>
               
               <p className="text-sm mb-6 leading-relaxed">
-                Transform how your team and customers interact with your systems. We design interfaces and workflows that feel natural, not technical. The goal is adoption without training—systems that work the way people think, removing friction from every interaction point your business has.
+                Transform how your team and customers interact with your systems. With interfaces and workflows that feel natural, not technical. The goal is adoption without training—systems that work the way people think, removing friction from every interaction point your business has.
               </p>
               
               <div className="mb-6">
@@ -431,7 +431,7 @@ export default function Landing() {
               <h3 className="text-2xl font-bold mb-4 tracking-tight">Growth & Momentum</h3>
               
               <p className="text-sm mb-6 leading-relaxed">
-                Scale revenue without scaling headcount. We automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
+                Scale revenue without scaling headcount. Automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
               </p>
               
               <div className="mb-6">
@@ -497,7 +497,7 @@ export default function Landing() {
                     {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
-                        Define clear objectives. Align systems with business goals. We run workshops with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks - just practical roadmaps that guide adoption and ensure team-wide buy-in.
+                        Define clear objectives. Align systems with business goals. Let's workshop with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks - just practical roadmaps that guide adoption and ensure team-wide buy-in.
                       </p>
                     </div>
                     
@@ -559,7 +559,7 @@ export default function Landing() {
                     {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
-                        We build custom systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees - tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
+                        Bespoke systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees — tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
                       </p>
                     </div>
                     
@@ -683,7 +683,7 @@ export default function Landing() {
                     {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
-                        Scale revenue without scaling headcount. We automate your go-to-market engine - lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
+                        Scale revenue without scaling headcount. Automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
                       </p>
                     </div>
                     
@@ -821,7 +821,7 @@ export default function Landing() {
                 Scale globally without operational overhead
               </p>
               <p className="text-base leading-relaxed mb-4">
-                Break language barriers and enter new markets without hiring international teams. AI-powered translation, localization, and cultural adaptation let you serve customers worldwide.
+                Break language barriers and enter new markets without hiring international teams. AI delivered translation, localization, and cultural adaptation to let you serve customers worldwide.
               </p>
               
               {expandedUseCases.expansion && (
@@ -1014,7 +1014,7 @@ export default function Landing() {
                 Start with one focused workflow
               </p>
               <p className="text-sm mb-6 leading-relaxed">
-                Best for companies wanting to test automation with a specific pain point before committing to larger transformation.
+                Best for companies wanting to trial automation with a specific pain point before committing to larger transformation.
               </p>
               
               <div className="mb-6">
@@ -1156,7 +1156,7 @@ export default function Landing() {
                     <img 
                       src={manufacturingImage} 
                       alt="Modern manufacturing facility with automation" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-100"
                       data-testid="img-case-study-1"
                     />
                     <div className="absolute top-8 left-8 right-8 text-black z-10">
@@ -1235,7 +1235,7 @@ export default function Landing() {
                     </div>
                     <div className="absolute bottom-8 left-8 right-8 text-black z-10">
                       <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        75% time reduction
+                        Same-day turnaround
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed">
                         Automated creation of branded, context-aware sales materials that match opportunity stage
@@ -1314,113 +1314,7 @@ export default function Landing() {
                     </div>
                   </div>
                 </div>
-              </Link> */}
-              <Link href="/case-studies/logistics" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={logisticsImage} 
-                      alt="Relaxed productivity and growth illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
-                    />
-                    <div className="absolute top-8 left-8 right-8 text-black z-10">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        40% cost reduction
-                      </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
-                        Smart routing algorithms and inventory optimization cut operational costs while improving delivery times
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={prospectResearchImage} 
-                      alt="Yoga with documents illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
-                    />
-                    <div className="absolute top-8 left-8 right-8 text-black z-10">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Sales Intelligence</p>
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        80% time savings
-                      </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
-                        AI agent replaced manual prospecting with personalized, ready-to-use sales insights
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/case-studies/sales-collateral" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={salesCollateralImage} 
-                      alt="Reading in the park illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
-                    />
-                    <div className="absolute top-8 left-8 right-8 text-black z-10">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Collateral automation</p>
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        75% time reduction
-                      </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
-                        Automated creation of branded, context-aware sales materials that match opportunity stage
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/case-studies/linkedin-growth" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={linkedInGrowthImage} 
-                      alt="Chatting with AI illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
-                    />
-                    <div className="absolute top-8 left-8 right-8 text-black z-10">
-                      <p className="text-xs uppercase tracking-wider opacity-80">LinkedIn Growth</p>
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        10-15 hours saved/month
-                      </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
-                        AI-driven system maintains strong, authentic LinkedIn presence in minutes per week
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/case-studies/outreach-engine" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden cursor-pointer">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={outreachEngineImage} 
-                      alt="Automated workflow bliss illustration" 
-                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
-                    />
-                    <div className="absolute top-8 left-8 right-8 text-black z-10">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Outreach Engine</p>
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        4x outbound volume
-                      </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
-                        AI-powered multi-channel engine personalizes and automates entire outbound workflow
-                      </p>
+             
                     </div>
                   </div>
                 </div>
