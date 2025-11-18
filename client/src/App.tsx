@@ -13,6 +13,7 @@ import OutreachEngineCaseStudy from "@/pages/outreach-engine-case-study";
 import SalesDeckCaseStudy from "@/pages/sales-deck-automation";
 import FAQ from "@/pages/faq";
 import Team from "@/pages/team";
+import Resources from "@/pages/resources"; // ADD THIS LINE
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/case-studies/sales-deck-automation" component={SalesDeckCaseStudy} />
       <Route path="/faq" component={FAQ} />
       <Route path="/team" component={Team} />
+      <Route path="/resources" component={Resources} /> {/* ADD THIS LINE */}
       <Route component={NotFound} />
     </Switch>
   );
