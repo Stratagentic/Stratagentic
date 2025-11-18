@@ -94,14 +94,15 @@ export default function LinkedInGrowthCaseStudy() {
               >
                 FAQs
               </Link>
-              <a 
-                href="#team" 
-                className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
-                style={{ transform: 'none' }}
-                data-testid="link-menu-team"
-              >
-                Team
-              </Link>
+             <Link 
+  href="/team"
+  className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
+  style={{ transform: 'none' }}
+  data-testid="link-menu-team"
+>
+  Team
+</Link>
+
               <a 
                 href="#resources" 
                 className="text-sm hover:text-[#2563EB] transition-colors whitespace-nowrap hover:transform-none"
