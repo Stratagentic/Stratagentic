@@ -337,7 +337,7 @@ export default function Landing() {
                   "AI agents that handle customer inquiries, data entry, and routine decisions",
                   "Complete handoff documentation so your team owns what we build"
                 ]}
-                bestFor="Companies with unique processes that generic software can't handle. Teams tired of manual work that someone should really automate."
+                bestFor='Companies with unique processes that generic software cannot handle. Teams tired of manual work that "someone should really automate."'
                 timeline="2-6 weeks"
                 timelineDetail="depending on complexity"
               />
@@ -739,3 +739,208 @@ type ServiceContentProps = {
   bestFor: string;
   timeline: string;
   timelineDetail: string;
+};
+
+function ServiceContent({ description, benefits, bestFor, timeline, timelineDetail }: ServiceContentProps) {
+  return (
+    <div className="grid md:grid-cols-2 gap-8">
+      <div>
+        <p className="text-base mb-6 leading-relaxed">{description}</p>
+        
+        <div className="mb-6">
+          <h4 className="font-bold mb-3 text-sm uppercase tracking-wide">What you get:</h4>
+          <ul className="space-y-2">
+            {benefits.map((benefit, idx) => (
+              <li key={idx} className="text-sm leading-relaxed flex items-start">
+                <span className="mr-2">•</span>
+                <span>{benefit}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <div className="mb-6">
+          <h4 className="font-bold mb-2 text-sm uppercase tracking-wide">Best for:</h4>
+          <p className="text-sm leading-relaxed">{bestFor}</p>
+        </div>
+        
+        <div>
+          <h4 className="font-bold mb-2 text-sm uppercase tracking-wide">Timeline:</h4>
+          <p className="text-sm">
+            <span className="font-bold">{timeline}</span> {timelineDetail}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type UseCaseCardProps = {
+  title: string;
+  subtitle: string;
+  description: string;
+  isExpanded: boolean;
+  onToggle: () => void;
+  testId: string;
+  children: React.ReactNode;
+};
+
+function UseCaseCard({ title, subtitle, description, isExpanded, onToggle, testId, children }: UseCaseCardProps) {
+  return (
+    <div 
+      className="border border-black p-6 cursor-pointer hover:shadow-lg transition-shadow"
+      onClick={onToggle}
+      data-testid={`card-use-case-${testId}`}
+    >
+      <h3 className="text-2xl font-bold mb-2 tracking-tight">{title}</h3>
+      <p className="text-sm font-bold mb-4 text-gray-600">{subtitle}</p>
+      <p className="text-sm mb-4 leading-relaxed">{description}</p>
+      
+      {isExpanded && (
+        <div className="mt-6 pt-6 border-t border-black">
+          {children}
+        </div>
+      )}
+      
+      <button className="text-sm font-bold text-[#2563EB] mt-4">
+        {isExpanded ? '− Less details' : '+ More details'}
+      </button>
+    </div>
+  );
+}
+
+type UseCaseDetailsProps = {
+  automations: string[];
+  impact: string;
+  techStack: string;
+  bestFor: string;
+  startHere: string;
+};
+
+function UseCaseDetails({ automations, impact, techStack, bestFor, startHere }: UseCaseDetailsProps) {
+  return (
+    <div className="space-y-6">
+      <div>
+        <h4 className="font-bold mb-3 text-sm uppercase tracking-wide">Automations included:</h4>
+        <ul className="space-y-2">
+          {automations.map((automation, idx) => (
+            <li key={idx} className="text-sm leading-relaxed flex items-start">
+              <span className="mr-2">•</span>
+              <span>{automation}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <div>
+        <h4 className="font-bold mb-2 text-sm uppercase tracking-wide">Real impact:</h4>
+        <p className="text-sm leading-relaxed italic">{impact}</p>
+      </div>
+      
+      <div>
+        <h4 className="font-bold mb-2 text-sm uppercase tracking-wide">Tech stack:</h4>
+        <p className="text-sm leading-relaxed">{techStack}</p>
+      </div>
+      
+      <div>
+        <h4 className="font-bold mb-2 text-sm uppercase tracking-wide">Best for:</h4>
+        <p className="text-sm leading-relaxed">{bestFor}</p>
+      </div>
+      
+      <div>
+        <h4 className="font-bold mb-2 text-sm uppercase tracking-wide">Start here:</h4>
+        <p className="text-sm leading-relaxed">{startHere}</p>
+      </div>
+    </div>
+  );
+}
+
+type OfferingCardProps = {
+  title: string;
+  subtitle: string;
+  description: string;
+  benefits: string[];
+  investment: string;
+  timeline: string;
+  testId: string;
+};
+
+function OfferingCard({ title, subtitle, description, benefits, investment, timeline, testId }: OfferingCardProps) {
+  return (
+    <div 
+      className="border border-black p-6"
+      data-testid={`card-offering-${testId}`}
+    >
+      <h3 className="text-2xl font-bold mb-2 tracking-tight">{title}</h3>
+      <p className="text-sm font-bold mb-4 text-gray-600">{subtitle}</p>
+      <p className="text-sm mb-6 leading-relaxed">{description}</p>
+      
+      <div className="mb-6">
+        <h4 className="font-bold mb-3 text-sm uppercase tracking-wide">Includes:</h4>
+        <ul className="space-y-2">
+          {benefits.map((benefit, idx) => (
+            <li key={idx} className="text-sm leading-relaxed flex items-start">
+              <span className="mr-2">•</span>
+              <span>{benefit}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <div className="pt-6 border-t border-black space-y-2">
+        <div className="flex justify-between items-center">
+          <span className="text-sm font-bold">Investment:</span>
+          <span className="text-sm">{investment}</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-sm font-bold">Timeline:</span>
+          <span className="text-sm">{timeline}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type CaseStudyCardProps = {
+  href: string;
+  image: string;
+  category: string;
+  title: string;
+  description: string;
+  testId: string;
+};
+
+function CaseStudyCard({ href, image, category, title, description, testId }: CaseStudyCardProps) {
+  return (
+    <a
+      href={href}
+      className="flex-shrink-0 block group"
+      style={{ 
+        width: '400px',
+        marginLeft: 'var(--space-3)',
+      }}
+      data-testid={`card-case-study-${testId}`}
+    >
+      <div className="border border-black overflow-hidden">
+        <div className="aspect-[4/3] overflow-hidden bg-gray-100">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+        <div className="p-6">
+          <p className="text-xs font-bold uppercase tracking-wide mb-2 text-gray-600">
+            {category}
+          </p>
+          <h3 className="text-xl font-bold mb-2 tracking-tight group-hover:text-[#2563EB] transition-colors">
+            {title}
+          </h3>
+          <p className="text-sm leading-relaxed">{description}</p>
+        </div>
+      </div>
+    </a>
+  );
+}
