@@ -157,24 +157,14 @@ export function GlobeError({ maxWidth = 512, maxHeight = 512 }: GlobeErrorProps)
     }
 
     // Function to draw a plus sign
-    function drawPlus(x: number, y: number, size: number, alpha: number) {
-      ctx.strokeStyle = COLOR;
-      ctx.globalAlpha = alpha;
-      ctx.lineWidth = size * 0.4;
-      ctx.lineCap = "round";
-
-      // Horizontal line
-      ctx.beginPath();
-      ctx.moveTo(x - size, y);
-      ctx.lineTo(x + size, y);
-      ctx.stroke();
-
-      // Vertical line
-      ctx.beginPath();
-      ctx.moveTo(x, y - size);
-      ctx.lineTo(x, y + size);
-      ctx.stroke();
-    }
+function drawPlus(x: number, y: number, size: number, alpha: number) {
+  ctx.fillStyle = COLOR;
+  ctx.globalAlpha = alpha;
+  ctx.font = `${size * 3}px monospace`; // or 'Arial', 'sans-serif'
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText("×", x, y);
+}
 
     function draw() {
       if (!ctx) return;
