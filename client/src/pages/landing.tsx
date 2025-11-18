@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { ContactForm } from "@/components/contact-form";
@@ -9,10 +8,6 @@ import prospectResearchImage from "@assets/20251106_2144_Yoga with Documents_rem
 import salesCollateralImage from "@assets/20251106_2132_Reading in the Park_remix_01k9ddv12rfqvrpzqte4g8r9yy_1762463943885.png";
 import linkedInGrowthImage from "@assets/20251106_2052_Chatting with AI_simple_compose_01k9dbhq30f8m9968761vrqywq_1762463943885.png";
 import outreachEngineImage from "@assets/20251106_2058_Automated Workflow Bliss_remix_01k9dbsp5qejw8148yk03b5qve_1762463943885.png";
-import growthMomentumImage from "@assets/Screenshot 2025-11-04 at 22.32.37_1762292437388.jpg";
-import experienceInteractionImage from "@assets/Screenshot 2025-11-04 at 22.27.30_1762292416859.jpg";
-import automationIntegrationImage from "@assets/Screenshot 2025-11-04 at 22.49.31_1762292999371.jpg";
-import intelligenceStrategyImage from "@assets/Screenshot 2025-11-04 at 23.01.10_1762293691773.jpg";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 
 const getSessionId = () => {
@@ -149,7 +144,6 @@ export default function Landing() {
     };
   }, []);
 
-  // Parse manifesto text into words and set up animation
   useEffect(() => {
     const manifestoTexts = [
       "Built for those who imagine better.",
@@ -168,11 +162,9 @@ export default function Landing() {
     setManifestoParagraphs(paragraphs);
   }, []);
 
-  // Animate word highlighting
   useEffect(() => {
     if (manifestoParagraphs.length === 0) return;
 
-    // Flatten paragraphs to get all word indices
     let globalIndex = 0;
     const wordIndices: number[] = [];
     
@@ -191,7 +183,7 @@ export default function Landing() {
     const interval = setInterval(() => {
       setHighlightedWordIndex(wordIndices[currentIndex]);
       currentIndex = (currentIndex + 1) % wordIndices.length;
-    }, 200); // Change word every 200ms
+    }, 200);
 
     return () => clearInterval(interval);
   }, [manifestoParagraphs]);
@@ -206,7 +198,6 @@ export default function Landing() {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* Header */}
       <header style={{ padding: "var(--space-3)" }}>
         <div className="max-w-[1400px] mx-auto flex justify-between items-start">
           <div>
@@ -259,15 +250,12 @@ export default function Landing() {
         </div>
       </header>
 
-      {/* Hero */}
       <section className="h-screen flex items-center justify-center bg-white" style={{ padding: "var(--space-3)" }}>
         <div className="max-w-4xl mx-auto w-full text-center" style={{ padding: "var(--space-7) var(--space-3)" }}>
-          {/* Focal Animation */}
           <div className="mb-12 flex justify-center">
             <Globe maxWidth={512} maxHeight={512} />
           </div>
           
-          {/* Headline */}
           <h1
             className="font-bold mb-8"
             style={{ 
@@ -281,14 +269,12 @@ export default function Landing() {
             <span style={{ display: "block", whiteSpace: "nowrap" }}>feel like less work.</span>
           </h1>
           
-          {/* Description */}
           <p className="text-sm mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="text-hero-description">
             Independent strategy and AI automation studio in Norway. 
             We move fast and combine strategy, design, and intelligent 
             automation to make growth measurable and sustainable.
           </p>
           
-          {/* CTA Button */}
           <button 
             className="inline-flex items-center justify-center bg-black text-white px-6 py-3 text-sm hover-elevate active-elevate-2 transition-all"
             data-testid="button-hero-cta"
@@ -299,187 +285,13 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Services Grid - ALTERNATIVE LAYOUT (disabled via false &&) */}
-      {false && <section
-        className="bg-white"
-        style={{ padding: "var(--space-7) var(--space-3)" }}
-        data-testid="section-services-grid"
-      >
-        <div className="max-w-[1400px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Intelligence & Strategy */}
-            <div className="border border-black p-8 flex flex-col" data-testid="card-service-intelligence">
-              <h3 className="text-2xl font-bold mb-4 tracking-tight">Intelligence & Strategy</h3>
-              
-              <p className="text-sm mb-6 leading-relaxed">
-                Define clear objectives. Align systems with business goals. Let's workshop with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks—just practical roadmaps that guide adoption and ensure team-wide buy-in.
-              </p>
-              
-              <div className="mb-6">
-                <p className="text-sm font-bold mb-2">What You Get:</p>
-                <ul className="text-sm space-y-1 list-none">
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Complete workflow audit identifying time-wasters and automation opportunities</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Prioritized roadmap showing which processes to automate first for maximum impact</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Implementation timeline with realistic milestones and resource requirements</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Team alignment workshops ensuring everyone understands the changes</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <p className="text-sm mb-4 text-[#2563EB]">
-                <span className="font-bold">Best For:</span> Businesses that know they need automation but don't know where to start. Teams spending more time on repetitive tasks than strategic work.
-              </p>
-              
-              <div className="text-sm mt-auto">
-                <span className="inline-block bg-black text-white px-2 py-1">1-2 weeks</span>
-                <span className="ml-2">from kickoff to delivery</span>
-              </div>
-            </div>
-
-            {/* Automation & Integration */}
-            <div className="border border-black p-8 flex flex-col" data-testid="card-service-automation">
-              <h3 className="text-2xl font-bold mb-4 tracking-tight">Automation & Integration</h3>
-              
-              <p className="text-sm mb-6 leading-relaxed">
-                Bespoke systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees — tailored automation that fits exactly how your business operates. Integrating with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
-              </p>
-              
-              <div className="mb-6">
-                <p className="text-sm font-bold mb-2">What You Get:</p>
-                <ul className="text-sm space-y-1 list-none">
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Custom automation tools built specifically for your unique workflows</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Integration with existing systems like CRM, email, spreadsheets, and databases</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>AI agents that handle customer inquiries, data entry, and routine decisions</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Complete handoff documentation so your team owns what we build</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <p className="text-sm mb-4 text-[#2563EB]">
-                <span className="font-bold">Best For:</span> Companies with unique processes that generic software can't handle. Teams tired of manual work that "someone should really automate."
-              </p>
-              
-              <div className="text-sm mt-auto">
-                <span className="inline-block bg-black text-white px-2 py-1">2-6 weeks</span>
-                <span className="ml-2">depending on complexity</span>
-              </div>
-            </div>
-
-            {/* Experience & Interaction */}
-            <div className="border border-black p-8 flex flex-col" data-testid="card-service-experience">
-              <h3 className="text-2xl font-bold mb-4 tracking-tight">Experience & Interaction</h3>
-              
-              <p className="text-sm mb-6 leading-relaxed">
-                Transform how your team and customers interact with your systems. With interfaces and workflows that feel natural, not technical. The goal is adoption without training—systems that work the way people think, removing friction from every interaction point your business has.
-              </p>
-              
-              <div className="mb-6">
-                <p className="text-sm font-bold mb-2">What You Get:</p>
-                <ul className="text-sm space-y-1 list-none">
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>User interface design for internal tools and customer-facing applications</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Conversational AI that handles support inquiries in your brand voice</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Self-service portals that reduce your support workload by 60-80%</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Interaction patterns tested with real users, not assumptions or theory</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <p className="text-sm mb-4 text-[#2563EB]">
-                <span className="font-bold">Best For:</span> Businesses where adoption is the bottleneck. Teams with powerful systems that nobody actually uses because they're too complicated.
-              </p>
-              
-              <div className="text-sm mt-auto">
-                <span className="inline-block bg-black text-white px-2 py-1">3-8 weeks</span>
-                <span className="ml-2">for design and implementation</span>
-              </div>
-            </div>
-
-            {/* Growth & Momentum */}
-            <div className="border border-black p-8 flex flex-col" data-testid="card-service-growth">
-              <h3 className="text-2xl font-bold mb-4 tracking-tight">Growth & Momentum</h3>
-              
-              <p className="text-sm mb-6 leading-relaxed">
-                Scale revenue without scaling headcount. Automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
-              </p>
-              
-              <div className="mb-6">
-                <p className="text-sm font-bold mb-2">What You Get:</p>
-                <ul className="text-sm space-y-1 list-none">
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Lead scoring and qualification systems that run automatically</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Outreach sequences that adapt based on prospect behavior and engagement</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Pipeline management that updates itself as deals progress through stages</span>
-                  </li>
-                  <li className="pl-6 -indent-6">
-                    <span className="mr-2">+</span>
-                    <span>Performance dashboards showing what's working and what's not in real-time</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <p className="text-sm mb-4 text-[#2563EB]">
-                <span className="font-bold">Best For:</span> Sales and marketing teams drowning in manual follow-up. Companies that need to grow revenue faster than they can hire.
-              </p>
-              
-              <div className="text-sm mt-auto">
-                <span className="inline-block bg-black text-white px-2 py-1">2-4 weeks</span>
-                <span className="ml-2">to first automation live</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>}
-
-      {/* Services Accordion - NEW LAYOUT */}
       <section
         className="bg-white"
         style={{ padding: "var(--space-7) var(--space-3)" }}
         data-testid="section-services"
       >
         <div className="max-w-[1400px] mx-auto">
-          {/* Accordion items */}
           <div className="space-y-0">
-            {/* Intelligence & Strategy */}
             <div 
               className="border-b border-black cursor-pointer group"
               onClick={() => setExpandedServices(prev => ({ ...prev, intelligence: !prev.intelligence }))}
@@ -495,14 +307,12 @@ export default function Landing() {
               {expandedServices.intelligence && (
                 <div className="pb-8 border-t border-black pt-8">
                   <div className="grid md:grid-cols-3 gap-12 items-start">
-                    {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
                         Define clear objectives. Align systems with business goals. Let's workshop with your team to map workflows, identify bottlenecks, and prioritize what to automate first. No theoretical frameworks - just practical roadmaps that guide adoption and ensure team-wide buy-in.
                       </p>
                     </div>
                     
-                    {/* Column 2: What You Get */}
                     <div>
                       <p className="text-sm font-bold mb-2">What You Get:</p>
                       <ul className="text-sm space-y-1 list-none">
@@ -525,7 +335,6 @@ export default function Landing() {
                       </ul>
                     </div>
                     
-                    {/* Column 3: Best For + Timeline */}
                     <div className="space-y-4">
                       <p className="text-sm text-[#2563EB]">
                         <span className="font-bold">Best For:</span> Businesses that know they need automation but don't know where to start. Teams spending more time on repetitive tasks than strategic work.
@@ -541,7 +350,6 @@ export default function Landing() {
               )}
             </div>
 
-            {/* Automation & Integration */}
             <div 
               className="border-b border-black cursor-pointer group"
               onClick={() => setExpandedServices(prev => ({ ...prev, automation: !prev.automation }))}
@@ -557,14 +365,12 @@ export default function Landing() {
               {expandedServices.automation && (
                 <div className="pb-8 border-t border-black pt-8">
                   <div className="grid md:grid-cols-3 gap-12 items-start">
-                    {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
                         Bespoke systems that eliminate repetitive work. Not off-the-shelf tools with monthly fees — tailored automation that fits exactly how your business operates. We integrate with what you already use, so nothing breaks and adoption is immediate without retraining your entire team.
                       </p>
                     </div>
                     
-                    {/* Column 2: What You Get */}
                     <div>
                       <p className="text-sm font-bold mb-2">What You Get:</p>
                       <ul className="text-sm space-y-1 list-none">
@@ -587,10 +393,9 @@ export default function Landing() {
                       </ul>
                     </div>
                     
-                    {/* Column 3: Best For + Timeline */}
                     <div className="space-y-4">
                       <p className="text-sm text-[#2563EB]">
-                        <span className="font-bold">Best For:</span> Companies with unique processes that generic software can't handle. Teams tired of manual work that "someone should really automate."
+                        <span className="font-bold">Best For:</span> Companies with unique processes that generic software cannot handle. Teams tired of manual work that &quot;someone should really automate.&quot;
                       </p>
                       
                       <div className="text-sm">
@@ -603,7 +408,6 @@ export default function Landing() {
               )}
             </div>
 
-            {/* Experience & Interaction */}
             <div 
               className="border-b border-black cursor-pointer group"
               onClick={() => setExpandedServices(prev => ({ ...prev, experience: !prev.experience }))}
@@ -619,14 +423,12 @@ export default function Landing() {
               {expandedServices.experience && (
                 <div className="pb-8 border-t border-black pt-8">
                   <div className="grid md:grid-cols-3 gap-12 items-start">
-                    {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
                         Transform how your team and customers interact with your systems. We design interfaces and workflows that feel natural, not technical. The goal is adoption without training - systems that work the way people think, removing friction from every interaction point your business has.
                       </p>
                     </div>
                     
-                    {/* Column 2: What You Get */}
                     <div>
                       <p className="text-sm font-bold mb-2">What You Get:</p>
                       <ul className="text-sm space-y-1 list-none">
@@ -649,7 +451,6 @@ export default function Landing() {
                       </ul>
                     </div>
                     
-                    {/* Column 3: Best For + Timeline */}
                     <div className="space-y-4">
                       <p className="text-sm text-[#2563EB]">
                         <span className="font-bold">Best For:</span> Businesses where adoption is the bottleneck. Teams with powerful systems that nobody actually uses because they're too complicated.
@@ -665,7 +466,6 @@ export default function Landing() {
               )}
             </div>
 
-            {/* Growth & Momentum */}
             <div 
               className="border-b border-black cursor-pointer group"
               onClick={() => setExpandedServices(prev => ({ ...prev, growth: !prev.growth }))}
@@ -681,14 +481,12 @@ export default function Landing() {
               {expandedServices.growth && (
                 <div className="pb-8 border-t border-black pt-8">
                   <div className="grid md:grid-cols-3 gap-12 items-start">
-                    {/* Column 1: Body copy */}
                     <div>
                       <p className="text-sm leading-relaxed">
                         Scale revenue without scaling headcount. Automate your go-to-market engine—lead generation, qualification, outreach, and follow-up. Your team focuses on closing deals and serving customers, not chasing prospects or updating spreadsheets with information that should flow automatically.
                       </p>
                     </div>
                     
-                    {/* Column 2: What You Get */}
                     <div>
                       <p className="text-sm font-bold mb-2">What You Get:</p>
                       <ul className="text-sm space-y-1 list-none">
@@ -711,7 +509,6 @@ export default function Landing() {
                       </ul>
                     </div>
                     
-                    {/* Column 3: Best For + Timeline */}
                     <div className="space-y-4">
                       <p className="text-sm text-[#2563EB]">
                         <span className="font-bold">Best For:</span> Sales and marketing teams drowning in manual follow-up. Companies that need to grow revenue faster than they can hire.
@@ -730,7 +527,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Use Cases */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
         className="fade-in-section"
@@ -739,7 +535,6 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-3 gap-12">
-            {/* Revenue Engine */}
             <div 
               data-testid="card-use-case-revenue" 
               className="group cursor-pointer"
@@ -809,7 +604,6 @@ export default function Landing() {
               </button>
             </div>
             
-            {/* International Expansion */}
             <div 
               data-testid="card-use-case-expansion" 
               className="group cursor-pointer"
@@ -879,7 +673,6 @@ export default function Landing() {
               </button>
             </div>
             
-            {/* Operations & Back-Office */}
             <div 
               data-testid="card-use-case-operations" 
               className="group cursor-pointer"
@@ -952,7 +745,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Manifesto */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
         className="fade-in-section bg-white text-black"
@@ -966,7 +758,6 @@ export default function Landing() {
             >
               {manifestoParagraphs.map((paragraph, pIndex) => {
                 let globalIndex = 0;
-                // Calculate the starting global index for this paragraph
                 for (let i = 0; i < pIndex; i++) {
                   globalIndex += manifestoParagraphs[i].length;
                 }
@@ -995,7 +786,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Offerings */}
       <section
         ref={(el) => (sectionsRef.current[2] = el)}
         className="fade-in-section bg-white text-black"
@@ -1135,7 +925,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Results */}
       <section
         ref={(el) => (sectionsRef.current[3] = el)}
         className="fade-in-section bg-white text-black border-t border-black overflow-hidden"
@@ -1150,32 +939,6 @@ export default function Landing() {
         <div className="relative">
           <div className="overflow-x-auto overflow-y-hidden scrollbar-hide" style={{ WebkitOverflowScrolling: 'touch' }}>
             <div className="flex">
-              {/* Manufacturing card hidden for now */}
-              {/* <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300" data-testid="card-case-study-1">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={manufacturingImage} 
-                      alt="Modern manufacturing facility with automation" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-100"
-                      data-testid="img-case-study-1"
-                    />
-                    <div className="absolute top-8 left-8 right-8 text-black z-10">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Manufacturing</p>
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        60% efficiency
-                        <br />
-                        increase
-                      </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
-                        Automated quality control and production scheduling reduced downtime and increased throughput
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Link> */}
               <Link href="/case-studies/logistics" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-2">
                   <div className="relative aspect-square">
@@ -1291,41 +1054,11 @@ export default function Landing() {
                   </div>
                 </div>
               </Link>
-              {/* Duplicate set for seamless infinite scroll */}
-              {/* <Link href="/case-studies/manufacturing" className="flex-shrink-0 w-[400px] md:w-[500px] mx-4">
-                <div className="relative border border-black overflow-hidden group cursor-pointer transition-all duration-300">
-                  <div className="relative aspect-square">
-                    <img 
-                      src={manufacturingImage} 
-                      alt="Modern manufacturing facility with automation" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute top-8 left-8 right-8 text-black z-10">
-                      <p className="text-xs uppercase tracking-wider opacity-80">Manufacturing</p>
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
-                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-                        60% efficiency
-                        <br />
-                        increase
-                      </p>
-                      <p className="text-sm opacity-90 leading-relaxed">
-                        Automated quality control and production scheduling reduced downtime and increased throughput
-                      </p>
-                    </div>
-                  </div>
-                </div>
-             
-                    </div>
-                  </div>
-                </div>
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact */}
       <section
         id="contact-section"
         ref={(el) => (sectionsRef.current[4] = el)}
@@ -1335,7 +1068,7 @@ export default function Landing() {
       >
         <div className="max-w-[1400px] mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight leading-tight" data-testid="text-contact-heading">
-            Scale faster than ever - guaranteed results or it's free.
+            Scale faster than ever - guaranteed results or it&apos;s free.
           </h2>
           
           <div className="mb-12 max-w-3xl">
@@ -1379,7 +1112,6 @@ export default function Landing() {
         </div>
       </section>
 
-          {/* Footer */}
       <footer
         className="bg-white text-black border-t border-black"
         style={{ padding: "var(--space-5) var(--space-3)" }}
@@ -1391,6 +1123,6 @@ export default function Landing() {
           </p>
         </div>
       </footer>
-    </div>
+    </div> 
   );
 }
