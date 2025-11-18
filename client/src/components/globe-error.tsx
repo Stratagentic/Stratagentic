@@ -163,7 +163,7 @@ function drawPlus(x: number, y: number, size: number, alpha: number) {
   ctx.font = `${size * 3}px monospace`; // or 'Arial', 'sans-serif'
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
-  ctx.fillText("□", x, y);
+  ctx.fillText("+", x, y);
 }
 
     function draw() {
@@ -203,12 +203,14 @@ function drawPlus(x: number, y: number, size: number, alpha: number) {
           const dx = pr.px - mouse.x;
           const dy = pr.py - mouse.y;
           const d = Math.sqrt(dx * dx + dy * dy);
-          const influenceRadius = 220;
-          if (d < influenceRadius) {
-            const strength = Math.pow(1 - d / influenceRadius, 2.5) * 8 * proximityBoost;
-            p.offsetX = (p.offsetX + dx * 0.01 * strength) * 0.9;
-            p.offsetY = (p.offsetY + dy * 0.01 * strength) * 0.9;
-          } else {
+          const influenceRadius = 260;
+         if (d < influenceRadius) {
+  const strength = Math.pow(1 - d / influenceRadius, 2.5) * 20 * proximityBoost; // Increased strength
+  const pushX = (dx / d) * strength; // Normalized direction away from mouse
+  const pushY = (dy / d) * strength;
+  p.offsetX = (p.offsetX + pushX) * 0.97; // Less damping = more movement
+  p.offsetY = (p.offsetY + pushY) * 0.97;
+} else {
             p.offsetX *= 0.9;
             p.offsetY *= 0.9;
           }
