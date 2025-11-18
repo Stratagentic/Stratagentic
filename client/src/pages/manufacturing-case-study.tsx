@@ -65,8 +65,9 @@ export default function ManufacturingCaseStudy() {
     });
   };
 
-  return (
-    <div className="min-h-screen bg-white text-black">
+return (
+  <div className="min-h-screen bg-white text-black">
+    <Header />
 
       {/* Hero Image */}
       <section className="relative h-[60vh] min-h-[400px]" data-testid="section-hero">
