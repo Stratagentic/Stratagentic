@@ -910,6 +910,29 @@ return (
                   </div>
                 </div>
               </Link>
+               <Link href="/case-studies/prompt-engine" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
+                <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-2">
+                  <div className="relative aspect-square">
+                    <img 
+                      src={logisticsImage} 
+                      alt="Relaxed productivity and growth illustration" 
+                      className="absolute inset-0 w-full h-full pt-8 object-contain object-top transition-none"
+                      data-testid="img-case-study-2"
+                    />
+                    <div className="absolute top-8 left-8 right-8 text-black z-10">
+                      <p className="text-xs uppercase tracking-wider opacity-80">Logistics</p>
+                    </div>
+                    <div className="absolute bottom-8 left-8 right-8 text-black z-10">
+                      <p className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+                        70% less reprompting
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed">
+                        A refined, multi-stage pipeline turns rough ideas into customized, high-performance prompts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
               <Link href="/case-studies/prospect-research" className="flex-shrink-0 w-[320px] md:w-[500px] mx-4">
                 <div className="relative border border-black overflow-hidden cursor-pointer" data-testid="card-case-study-3">
                   <div className="relative aspect-square">
