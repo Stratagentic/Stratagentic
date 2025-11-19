@@ -42,7 +42,7 @@ export default function OutreachEngineCaseStudy() {
           setLocation('/case-studies/manufacturing');
         } else {
           // Swiped right - go to previous
-          setLocation('/case-studies/linkedin-growth');
+          setLocation('/case-studies/prompt-engine');
         }
       }
     };
