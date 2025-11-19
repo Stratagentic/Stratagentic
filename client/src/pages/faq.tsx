@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import logoImage from "@assets/Stratagentic_White_1762185093889.png";
 import { Header } from "@/components/header";
-const faqImage = "/MeAndAI_ThinkingLeft.png";
+const faqImage = "/MeAndAI_Hammock1.png";
 
 export default function FAQ() {
   const [time, setTime] = useState(new Date());
