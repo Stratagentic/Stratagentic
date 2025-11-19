@@ -187,7 +187,7 @@ return (
               </h3>
               {openFaq === 'solutions-2' && (
                 <p className="text-base leading-relaxed pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
-                  We combine both approaches. Some systems are built from the ground up using APIs and workflows, while others integrate best-in-class platforms such as n8n, Zapier, Relevance AI, or custom GPTs, always tailored to your stack and goals.
+                  We combine both approaches. Some systems are built from the ground up using APIs and workflows, while others integrate best-in-class platforms such as n8n, Zapier, Relevance AI, or custom GPTs, always tailored to your stack and goals. 
                 </p>
               )}
             </div>
