@@ -92,7 +92,7 @@ export default function Team() {
           <div className="py-12 text-left" style={{ paddingLeft: "var(--space-3)", paddingRight: "var(--space-3)" }}>
             <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight space-y-8" data-testid="text-ethos-content">
               <p>We believe great systems start with great thinking.</p>
-              <p>Every solution we build begins with clarity—about purpose, process, and people. Strategy sets the direction, automation scales it, and design keeps it human. That's how we help ambitious teams work smarter, move faster, and grow with intent.</p>
+              <p>Every solution we build begins with clarity - about purpose, process, and people. Strategy sets the direction, automation scales it, and design keeps it human. That's how we help ambitious teams work smarter, move faster, and grow with intent.</p>
             </div>
           </div>
         </div>
