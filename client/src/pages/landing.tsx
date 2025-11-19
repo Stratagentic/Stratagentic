@@ -359,7 +359,7 @@ return (
                 <h3 className="text-2xl font-bold tracking-tight transition-colors group-hover:text-[#2563EB] flex items-center">
                   <span className="text-[#2563EB] mr-4">+</span>
                   Experience & Interaction
-                </b>
+                </h3>
               </div>
               
               {expandedServices.experience && (
@@ -622,7 +622,7 @@ return (
             >
               <h3 className="text-2xl font-bold mb-3 tracking-tight transition-colors group-hover:text-[#2563EB]">
                 Operations & Back-Office
-              </b>
+              </h3>
               <p className="text-sm font-bold mb-3">
                 Eliminate the busywork strangling your business
               </p>
