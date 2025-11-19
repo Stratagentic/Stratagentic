@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { ContactForm } from "@/components/contact-form";
 import { Globe } from "@/components/globe";
 import logisticsImage from "@assets/20251106_2128_Relaxed Productivity Growth_remix_01k9ddkydze5fbb85envg8ewet_1762463943885.png";
-import promptImage from "@assets/2MeAndAI_Gardening1.png";
+import promptImage from "@assets/MeAndAI_Gardening1.png";
 import prospectResearchImage from "@assets/20251106_2144_Yoga with Documents_remix_01k9degg35fj9vbrjbgdcgnxm6_1762463943885.png";
 import salesCollateralImage from "@assets/20251106_2132_Reading in the Park_remix_01k9ddv12rfqvrpzqte4g8r9yy_1762463943885.png";
 import linkedInGrowthImage from "@assets/20251106_2052_Chatting with AI_simple_compose_01k9dbhq30f8m9968761vrqywq_1762463943885.png";
